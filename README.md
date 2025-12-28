@@ -4,10 +4,10 @@ A comprehensive, pattern-based approach to mastering Data Structures & Algorithm
 
 ## What's Inside
 
-This repository contains **75 algorithm patterns** organized into a complete 6-week study system designed to help you:
+This repository contains **75 algorithm patterns** designed to help you:
 - **Understand** core DSA concepts and how they relate
 - **Recognize** which pattern to apply to new problems
-- **Practice** systematically with a structured learning path
+- **Practice** systematically at your own pace
 - **Master** technical interviews through pattern-based thinking
 
 ## Repository Structure
@@ -16,10 +16,8 @@ This repository contains **75 algorithm patterns** organized into a complete 6-w
 learn-dsa/
 │
 ├── 📖 Study Guides (Start Here)
-│   ├── study-plan.md                  # 6-week structured learning path
 │   ├── pattern-recognition-guide.md   # How to identify which pattern to use
 │   ├── concept-relationships.md       # How patterns connect and build on each other
-│   ├── practice-tracker.md            # Track your progress across all 75 patterns
 │   ├── quick-reference.md             # One-page cheat sheet for interviews
 │   └── pattern-combinations.md        # How patterns combine in hard problems
 │
@@ -37,39 +35,33 @@ learn-dsa/
 ## Quick Start
 
 ### 1. Understand the Big Picture
-Read **[concept-relationships.md](concept-relationships.md)** to understand how all patterns connect (30 min)
+Read **[concept-relationships.md](concept-relationships.md)** to understand how all patterns connect
 
-### 2. Start Your Study Plan
-Open **[study-plan.md](study-plan.md)** and begin Week 1, Day 1
+### 2. Browse the Patterns
+Explore **[notes/DSA-Patterns-Index.md](notes/DSA-Patterns-Index.md)** to see all 75 patterns organized by category
 
-### 3. Track Your Progress
-Use **[practice-tracker.md](practice-tracker.md)** to mark patterns as you learn them
-
-### 4. Practice Pattern Recognition
+### 3. Practice Pattern Recognition
 When solving problems, use **[pattern-recognition-guide.md](pattern-recognition-guide.md)** to identify the right approach
+
+### 4. Learn Pattern Combinations
+Study **[pattern-combinations.md](pattern-combinations.md)** to understand how patterns work together
 
 ### 5. Before Interviews
 Review **[quick-reference.md](quick-reference.md)** - your one-page cheat sheet
 
-## Study System Overview
+## Study Approach
 
-### 📅 6-Week Study Plan
-- **Week 1-2:** Fundamentals (Arrays, Two Pointers, Sliding Window, Stack, Strings, Linked Lists)
-- **Week 3:** Trees & Graphs (DFS, BFS, Dijkstra, Union Find, Topological Sort)
-- **Week 4:** Backtracking & Greedy (Decision-making patterns, Heaps, Design patterns)
-- **Week 5-6:** Dynamic Programming (All 11 DP patterns)
+### 🎯 Recommended Learning Flow
+1. Study pattern from notes
+2. Implement from scratch
+3. Solve practice problems
+4. Review connections to other patterns
 
-### 🎯 Daily Routine (2-3 hours)
-1. Study pattern from notes (30 min)
-2. Implement from scratch (45 min)
-3. Solve 2-3 practice problems (45 min)
-4. Review connections (30 min)
-
-### 📈 Progress Tracking
-- **Target:** 60+ patterns mastered before interview
-- **Practice:** 150+ problems solved (2-3 per pattern)
-- **Speed:** Pattern recognition in < 2 minutes
-- **Implementation:** Medium problems in < 25 minutes
+### 📈 Building Mastery
+- Focus on understanding patterns deeply rather than memorizing solutions
+- Practice pattern recognition on new problems
+- Learn how patterns combine in complex problems
+- Build speed through repeated practice
 
 ## Pattern Categories Covered
 
@@ -102,25 +94,25 @@ Understand WHY patterns work and WHEN to use them, not just memorizing solutions
 - Code templates for common patterns
 - Common pitfalls and how to avoid them
 
-### ✅ Progress Visibility
-Track mastery levels for all 75 patterns and know exactly where you stand
+### ✅ Comprehensive Coverage
+75 patterns covering all common interview topics and data structures
 
 ## Key Features
 
 - **75 Algorithm Patterns:** Complete coverage of interview topics
 - **TypeScript Implementations:** Clean, working code for every pattern
-- **LeetCode Problem Mapping:** 150+ curated problems organized by pattern
-- **Spaced Repetition Schedule:** Built-in review system for retention
+- **Pattern Recognition Guide:** Learn to identify which pattern to apply
+- **Concept Relationships:** Understand how patterns connect and build on each other
 - **Pattern Combinations Guide:** Learn how patterns combine in hard problems
-- **Pre-Interview Checklist:** Final week preparation guide
+- **Quick Reference:** One-page cheat sheet for interviews
 
 ## Success Metrics
 
-Track in practice-tracker.md:
-- Patterns mastered: X / 75
-- Problems solved: X / 150+
-- Pattern recognition speed: < 2 min
-- Implementation speed: < 25 min (medium)
+As you progress, aim for:
+- Deep understanding of core patterns
+- Ability to recognize patterns in new problems
+- Confidence implementing solutions from scratch
+- Understanding how patterns combine
 
 ## Learning Philosophy
 
@@ -130,29 +122,30 @@ Instead of solving 300 random problems, master 75 patterns that cover ALL proble
 
 ## Resources
 
-- **Study Plan:** Structured 6-week progression
 - **Pattern Recognition:** Decision trees and triggers
 - **Concept Map:** How patterns relate and evolve
-- **Practice Tracker:** Mastery level tracking
 - **Quick Reference:** One-page interview cheat sheet
 - **Combinations:** Multi-pattern problem strategies
+- **75 Pattern Notes:** Detailed implementations and explanations
 
 ## Getting Started
 
 1. Clone/fork this repository
-2. Open **study-plan.md** and start Day 1
-3. Use **practice-tracker.md** to track progress
-4. Review **quick-reference.md** before interviews
+2. Read **[concept-relationships.md](concept-relationships.md)** to understand the big picture
+3. Browse patterns in **[notes/DSA-Patterns-Index.md](notes/DSA-Patterns-Index.md)**
+4. Use **[pattern-recognition-guide.md](pattern-recognition-guide.md)** when solving problems
+5. Review **[quick-reference.md](quick-reference.md)** before interviews
 
-## Interview Preparation Timeline
+## Study at Your Own Pace
 
-- **6+ weeks:** Follow full study plan
-- **3-4 weeks:** Focus on weak areas + practice tracker
-- **1-2 weeks:** Quick reference + pattern combinations
-- **1 day before:** Light review of quick-reference.md
+This repository is designed to be flexible:
+- Study patterns in the order that makes sense for you
+- Focus on areas relevant to your upcoming interviews
+- Use the pattern recognition guide to identify which patterns to learn
+- Combine patterns as you gain confidence
 
 ---
 
-**Ready to master DSA interviews? Start with [study-plan.md](study-plan.md)!**
+**Ready to master DSA interviews? Start exploring the patterns!**
 
 Good luck! 🚀

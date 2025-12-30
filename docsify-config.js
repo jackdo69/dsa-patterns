@@ -1,8 +1,7 @@
 window.$docsify = {
   name: 'DSA Patterns',
   repo: '',
-  basePath: '/dsa-patterns/',
-  loadSidebar: '_sidebar.md',
+  loadSidebar: true,
   alias: {
     '/.*/_sidebar.md': '/_sidebar.md'
   },

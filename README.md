@@ -38,7 +38,7 @@ learn-dsa/
 Read **[concept-relationships.md](concept-relationships.md)** to understand how all patterns connect
 
 ### 2. Browse the Patterns
-Explore **[notes/DSA-Patterns-Index.md](notes/DSA-Patterns-Index.md)** to see all 75 patterns organized by category
+Explore **[notes/dsa-patterns-index.md](notes/dsa-patterns-index.md)** to see all 75 patterns organized by category
 
 ### 3. Practice Pattern Recognition
 When solving problems, use **[pattern-recognition-guide.md](pattern-recognition-guide.md)** to identify the right approach
@@ -77,26 +77,6 @@ Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Tries
 - **Greedy:** Intervals, Scheduling, Optimization
 - **Advanced:** Monotonic Stack, Prefix Sum, Cyclic Sort, Floyd's Cycle Detection
 
-## How This System Helps
-
-### ✅ Structured Learning
-No more random problem solving - follow a proven progression from basics to advanced
-
-### ✅ Pattern Recognition
-Learn to identify "this is a sliding window problem" or "this needs DP + Binary Search" in seconds
-
-### ✅ Deep Understanding
-Understand WHY patterns work and WHEN to use them, not just memorizing solutions
-
-### ✅ Interview Ready
-- Quick reference cheat sheet
-- Pattern recognition decision trees
-- Code templates for common patterns
-- Common pitfalls and how to avoid them
-
-### ✅ Comprehensive Coverage
-75 patterns covering all common interview topics and data structures
-
 ## Key Features
 
 - **75 Algorithm Patterns:** Complete coverage of interview topics
@@ -105,47 +85,3 @@ Understand WHY patterns work and WHEN to use them, not just memorizing solutions
 - **Concept Relationships:** Understand how patterns connect and build on each other
 - **Pattern Combinations Guide:** Learn how patterns combine in hard problems
 - **Quick Reference:** One-page cheat sheet for interviews
-
-## Success Metrics
-
-As you progress, aim for:
-- Deep understanding of core patterns
-- Ability to recognize patterns in new problems
-- Confidence implementing solutions from scratch
-- Understanding how patterns combine
-
-## Learning Philosophy
-
-**Pattern-Based > Problem-Based**
-
-Instead of solving 300 random problems, master 75 patterns that cover ALL problem types. When you see a new problem, you'll think: "This is just pattern X with a twist" rather than "I've never seen this before."
-
-## Resources
-
-- **Pattern Recognition:** Decision trees and triggers
-- **Concept Map:** How patterns relate and evolve
-- **Quick Reference:** One-page interview cheat sheet
-- **Combinations:** Multi-pattern problem strategies
-- **75 Pattern Notes:** Detailed implementations and explanations
-
-## Getting Started
-
-1. Clone/fork this repository
-2. Read **[concept-relationships.md](concept-relationships.md)** to understand the big picture
-3. Browse patterns in **[notes/DSA-Patterns-Index.md](notes/DSA-Patterns-Index.md)**
-4. Use **[pattern-recognition-guide.md](pattern-recognition-guide.md)** when solving problems
-5. Review **[quick-reference.md](quick-reference.md)** before interviews
-
-## Study at Your Own Pace
-
-This repository is designed to be flexible:
-- Study patterns in the order that makes sense for you
-- Focus on areas relevant to your upcoming interviews
-- Use the pattern recognition guide to identify which patterns to learn
-- Combine patterns as you gain confidence
-
----
-
-**Ready to master DSA interviews? Start exploring the patterns!**
-
-Good luck! 🚀

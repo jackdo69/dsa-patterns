@@ -1,20 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DSA Interview Prep System</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="A comprehensive, pattern-based approach to mastering Data Structures & Algorithms">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <!-- Prism theme for syntax highlighting -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css">
+  <style>
+    /* Dark Solarized Theme */
+    :root {
+      --base03: #002b36;
+      --base02: #073642;
+      --base01: #586e75;
+      --base00: #657b83;
+      --base0: #839496;
+      --base1: #93a1a1;
+      --base2: #eee8d5;
+      --base3: #fdf6e3;
+      --yellow: #b58900;
+      --orange: #cb4b16;
+      --red: #dc322f;
+      --magenta: #d33682;
+      --violet: #6c71c4;
+      --blue: #268bd2;
+      --cyan: #2aa198;
+      --green: #859900;
+    }
+
+    /* Main background and text colors */
+    body {
+      background-color: var(--base03) !important;
+      color: var(--base0) !important;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: var(--base02) !important;
+      border-right: 1px solid var(--base01);
+    }
+
+    .sidebar ul li a {
+      color: var(--base0) !important;
+    }
+
+    .sidebar ul li a:hover {
+      color: var(--blue) !important;
+    }
+
+    .sidebar ul li.active > a {
+      color: var(--cyan) !important;
+      border-right: 2px solid var(--cyan);
+    }
+
+    .sidebar .app-name {
+      color: var(--base1) !important;
+    }
+
+    /* Main content area */
+    .content {
+      background-color: var(--base03) !important;
+    }
+
+    .markdown-section {
+      font-size: 20px;
+      color: var(--base0) !important;
+    }
+
+    /* Headings */
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4,
+    .markdown-section h5,
+    .markdown-section h6 {
+      color: var(--base1) !important;
+    }
+
+    .markdown-section h1 {
+      font-size: 3em;
+      border-bottom: 2px solid var(--base01);
+    }
+
+    .markdown-section h2 {
+      font-size: 2.2em;
+      border-bottom: 1px solid var(--base01);
+    }
+
+    .markdown-section h3 {
+      font-size: 1.6em;
+    }
+
+    /* Links */
+    .markdown-section a {
+      color: var(--blue) !important;
+      text-decoration: none;
+    }
+
+    .markdown-section a:hover {
+      color: var(--cyan) !important;
+    }
+
+    /* Code blocks */
+    .markdown-section pre {
+      background-color: var(--base02) !important;
+      border: 1px solid var(--base01);
+    }
+
+    .markdown-section pre code {
+      color: var(--base0) !important;
+      font-size: 16px !important;
+      background-color: var(--base02) !important;
+    }
+
+    /* Inline code */
+    .markdown-section code {
+      font-size: 0.8em !important;
+      color: var(--cyan) !important;
+      background-color: var(--base02) !important;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .markdown-section pre code {
+      color: var(--base0) !important;
+    }
+
+    /* Blockquotes */
+    .markdown-section blockquote {
+      border-left: 4px solid var(--green) !important;
+      background-color: var(--base02) !important;
+      color: var(--base0) !important;
+    }
+
+    /* Lists */
+    .markdown-section li {
+      color: var(--base0) !important;
+    }
+
+    /* Tables */
+    .markdown-section table {
+      border-color: var(--base01) !important;
+    }
+
+    .markdown-section th {
+      background-color: var(--base02) !important;
+      color: var(--base1) !important;
+      border-color: var(--base01) !important;
+    }
+
+    .markdown-section td {
+      border-color: var(--base01) !important;
+    }
+
+    .markdown-section tr:nth-child(2n) {
+      background-color: var(--base02) !important;
+    }
+
+    /* Search box */
+    .search input {
+      background-color: var(--base02) !important;
+      color: var(--base0) !important;
+      border: 1px solid var(--base01) !important;
+    }
+
+    .search input:focus {
+      border-color: var(--blue) !important;
+    }
+
+    .matching-post {
+      border-bottom: 1px solid var(--base01) !important;
+    }
+
+    .search .results-panel {
+      background-color: var(--base02) !important;
+    }
+
+    .search .results-panel a {
+      color: var(--base0) !important;
+    }
+
+    .search .results-panel a:hover {
+      color: var(--blue) !important;
+    }
+
+    /* Strong/bold text */
+    .markdown-section strong {
+      color: var(--base1) !important;
+    }
+
+    /* Emphasis/italic text */
+    .markdown-section em {
+      color: var(--yellow) !important;
+    }
+
+    /* Horizontal rule */
+    .markdown-section hr {
+      border-color: var(--base01) !important;
+    }
+
+    /* Selection */
+    ::selection {
+      background-color: var(--base01) !important;
+      color: var(--base1) !important;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--base02);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--base01);
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--base00);
+    }
+  </style>
 </head>
+
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: 'DSA Patterns',
       repo: '',
-      loadSidebar: true,
+      loadSidebar: '_sidebar.md',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       subMaxLevel: 2,
       auto2top: true,
       homepage: 'README.md',
@@ -39,8 +264,12 @@
   <!-- Copy code -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- Prism for syntax highlighting -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-jsx.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-tsx.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 # Sorted Array Target Sum - Container With Most Water
 
-Tags: array
+Tags: array, two-pointer, greedy
 
 ### Ideas
 

@@ -6,6 +6,14 @@ Tags: sliding window, string
 
 *Given two strings `s` and `p`, return an array of all the start indices of `p`'s anagrams in `s`. You may return the answer in **any order**.*
 
+### Ideas
+
+- Use a fixed-size sliding window of length `p`
+- Maintain a frequency map of characters in the current window
+- Compare the window's frequency map with `p`'s frequency map to check for anagrams
+- When the window exceeds size `p.length`, shrink from the left by decrementing the character count
+- **Time complexity:** O(n) where n is the length of s
+
 ### Implementations
 
 ```jsx

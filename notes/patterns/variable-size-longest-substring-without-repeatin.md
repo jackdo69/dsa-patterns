@@ -15,21 +15,20 @@ Tags: sliding window, string
 ### Implementations
 
 ```jsx
-  function lengthOfLongestSubstring(s: string): number {
-    let longest = 0;
-    const set = new Set();
-    let i = 0;
-    let j = 0;
-    while (j < s.length) {
-      if (!set.has(s[j])) {
-        set.add(s[j]);
-        longest = Math.max(longest, set.size);
-        j++;
-      } else {
-        set.delete(s[i]);
-        i++;
-      }
+function lengthOfLongestSubstring(s: string): number {
+  const set = new Set<string>();
+  let l = 0;
+  let r = 0;
+  let max = 0;
+  while (r < s.length) {
+    while (set.has(s[r])) {
+      set.delete(s[l]);
+      l++;
     }
-    return longest;
+    set.add(s[r]);
+    r++;
+    max = Math.max(max, set.size);
   }
+  return max;
+}
 ```

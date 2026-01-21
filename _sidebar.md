@@ -9,7 +9,7 @@
   * [Pattern Combinations](pattern-combinations.md)
 
 * Patterns - Arrays & Strings
-  * [Two Pointer - Sorted Array Target Sum](notes/patterns/sorted-array-target-sum-container-with-most-wate.md)
+  * [Two Pointer - Container With Most Water](notes/patterns/container-with-most-water.md)
   * [Fixed Size - Find all anagrams](notes/patterns/fixed-size-find-all-anagrams-in-a-string.md)
   * [Variable Size - Longest Substring](notes/patterns/variable-size-longest-substring-without-repeatin.md)
   * [Prefix Sum](notes/patterns/prefix-sum.md)

@@ -1,4 +1,4 @@
-# Sorted Array Target Sum - Container With Most Water
+# Container With Most Water
 
 Tags: array, two-pointer, greedy
 

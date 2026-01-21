@@ -17,6 +17,19 @@ Input: nums = [1,2,3,4]
 Output: [24,12,8,6]
 ```
 
+### Ideas
+
+The key insight is that for each index `i`, the result is the product of all elements to its left multiplied by all elements to its right.
+
+1. **Prefix products**: First pass builds prefix products where `result[i]` stores the product of all elements before index `i`
+2. **Suffix products**: Second pass multiplies each position by the product of all elements after it, using a running `suffixProd` variable
+
+For `nums = [1,2,3,4]`:
+- After prefix pass: `[1, 1, 2, 6]` (1, 1, 1×2, 1×2×3)
+- After suffix pass: `[24, 12, 8, 6]` (1×24, 1×12, 2×4, 6×1)
+
+This achieves O(n) time and O(1) extra space (excluding the output array).
+
 ### Implementation
 
 ```jsx

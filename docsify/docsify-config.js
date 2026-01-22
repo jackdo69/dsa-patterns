@@ -26,6 +26,7 @@ window.$docsify = {
           const tagList = tags.split(',').map(tag => tag.trim());
           const tagColors = {
             'array': '#dc322f',
+            'matrix': '#c4716c',
             'string': '#cb4b16',
             'linked list': '#b58900',
             'tree': '#859900',

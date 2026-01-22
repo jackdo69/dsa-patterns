@@ -6,13 +6,18 @@ A pattern-based Data Structures & Algorithms study system for technical intervie
 
 ```
 /
-├── notes/       # 75 pattern markdown files (main content)
-├── _sidebar.md           # Navigation hierarchy
-├── quick-reference.md    # One-page cheat sheet with complexities
-├── pattern-recognition-guide.md  # Decision tree for choosing patterns
-├── concept-relationships.md      # How patterns interconnect
-├── pattern-combinations.md       # Complex problem strategies
-└── docsify-config.js     # Site config with tag colors
+├── guides/                       # Study guides (start here)
+│   ├── pattern-recognition-guide.md  # Decision tree for choosing patterns
+│   ├── concept-relationships.md      # How patterns interconnect
+│   ├── quick-reference.md            # One-page cheat sheet with complexities
+│   └── pattern-combinations.md       # Complex problem strategies
+├── notes/                        # 75 pattern markdown files (main content)
+├── docsify/                      # Docsify configuration files
+│   ├── docsify-config.js             # Site config with tag colors
+│   ├── custom.css                    # Custom styling
+│   └── favicon.svg                   # Site favicon
+├── _sidebar.md                   # Navigation hierarchy
+└── index.html                    # Docsify entry point
 ```
 
 ## Pattern Categories
@@ -66,10 +71,10 @@ Uses Docsify for documentation site with search and tag filtering.
 
 ## Key Files for Quick Reference
 
-- `quick-reference.md` - All 75 patterns with time/space complexity
-- `pattern-recognition-guide.md` - Decision tree: "What pattern should I use?"
+- `guides/quick-reference.md` - All 75 patterns with time/space complexity
+- `guides/pattern-recognition-guide.md` - Decision tree: "What pattern should I use?"
 - `_sidebar.md` - Full navigation structure
-- `docsify-config.js` - Tag color definitions (25 tags)
+- `docsify/docsify-config.js` - Tag color definitions (25 tags)
 
 ## When Adding New Patterns
 

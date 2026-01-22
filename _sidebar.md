@@ -3,10 +3,10 @@
 * [Home](/)
 
 * Study Guides
-  * [Pattern Recognition Guide](pattern-recognition-guide.md)
-  * [Concept Relationships](concept-relationships.md)
-  * [Quick Reference](quick-reference.md)
-  * [Pattern Combinations](pattern-combinations.md)
+  * [Pattern Recognition Guide](guides/pattern-recognition-guide.md)
+  * [Concept Relationships](guides/concept-relationships.md)
+  * [Quick Reference](guides/quick-reference.md)
+  * [Pattern Combinations](guides/pattern-combinations.md)
 
 * Patterns - Arrays & Strings
   * [Two Pointer - Container With Most Water](notes/container-with-most-water.md)

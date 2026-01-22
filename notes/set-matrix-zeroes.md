@@ -12,52 +12,39 @@ You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
 
 The challenge: we can't zero cells immediately because we'd lose track of which zeros were original vs newly created.
 
-**Approach (using Set):**
-1. Iterate through matrix to find original zeros
-2. Use a Set to track visited cells (avoid processing newly created zeros)
-3. For each original zero, zero out its entire row and column
-
-**Better approach (O(1) space):**
-Use the first row and first column as markers instead of extra storage:
-1. First pass: mark `matrix[i][0]` and `matrix[0][j]` if `matrix[i][j] === 0`
-2. Second pass: zero cells based on markers (skip first row/col)
-3. Finally: zero first row/col if needed
+**Approach:**
+Use two arrays to mark which rows and columns need to be zeroed:
+1. First pass: scan matrix, mark `rows[i] = true` and `cols[j] = true` for each zero
+2. Second pass: zero any cell where its row or column is marked
 
 **Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n) with Set, O(1) with marker approach
+**Space Complexity:** O(m + n)
 
 ### Implementation
 
 ```typescript
 function setZeroes(matrix: number[][]): void {
-  const rows = matrix.length;
-  const cols = matrix[0].length;
-  const set = new Set<string>(); // Store visited cells for efficiency
+  const m = matrix.length;
+  const n = matrix[0].length;
 
-  function helper(x: number, y: number) {
-    // Set all elements in the same row to 0
-    for (let i = 0; i < cols; i++) {
-      if (!set.has(`${x},${i}`) && matrix[x][i] !== 0) {
-        matrix[x][i] = 0;
-        set.add(`${x},${i}`); // Mark as visited
-      }
-    }
+  const rows: boolean[] = new Array(m).fill(false);
+  const cols: boolean[] = new Array(n).fill(false);
 
-    // Set all elements in the same column to 0
-    for (let i = 0; i < rows; i++) {
-      if (!set.has(`${i},${y}`) && matrix[i][y] !== 0) {
-        matrix[i][y] = 0;
-        set.add(`${i},${y}`); // Mark as visited
+  // First pass: mark which rows and columns have zeros
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      if (matrix[i][j] === 0) {
+        rows[i] = true;
+        cols[j] = true;
       }
     }
   }
 
-  // Iterate over the matrix to find all zeros
-  for (let i = 0; i < rows; i++) {
-    for (let j = 0; j < cols; j++) {
-      if (matrix[i][j] === 0 && !set.has(`${i},${j}`)) {
-        set.add(`${i},${j}`); // Add the original zero to the set
-        helper(i, j);
+  // Second pass: zero cells based on markers
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      if (rows[i] || cols[j]) {
+        matrix[i][j] = 0;
       }
     }
   }

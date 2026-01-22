@@ -13,41 +13,42 @@ This repository contains **75 algorithm patterns** designed to help you:
 ## Repository Structure
 
 ```
-learn-dsa/
-│
-├── 📖 Study Guides (Start Here)
+/
+├── guides/                            # Study guides (start here)
 │   ├── pattern-recognition-guide.md   # How to identify which pattern to use
 │   ├── concept-relationships.md       # How patterns connect and build on each other
 │   ├── quick-reference.md             # One-page cheat sheet for interviews
 │   └── pattern-combinations.md        # How patterns combine in hard problems
 │
-└── 📚 Notes
-    └── notes/
-        ├── patterns/              # 75 pattern implementations
-        │   ├── Arrays & Strings
-        │   ├── Trees & Graphs
-        │   ├── Dynamic Programming
-        │   ├── Backtracking & Greedy
-        │   └── Advanced Data Structures
-        └── patterns [index].md    # Original pattern index
+├── notes/                             # 75 pattern implementations
+│   ├── Arrays & Strings
+│   ├── Trees & Graphs
+│   ├── Dynamic Programming
+│   ├── Backtracking & Greedy
+│   └── Advanced Data Structures
+│
+└── docsify/                           # Site configuration
+    ├── docsify-config.js
+    ├── custom.css
+    └── favicon.svg
 ```
 
 ## Quick Start
 
 ### 1. Understand the Big Picture
-Read **[concept-relationships.md](concept-relationships.md)** to understand how all patterns connect
+Read **[concept-relationships.md](guides/concept-relationships.md)** to understand how all patterns connect
 
 ### 2. Browse the Patterns
-Explore **[notes/dsa-patterns-index.md](notes/dsa-patterns-index.md)** to see all 75 patterns organized by category
+Explore **[quick-reference.md](guides/quick-reference.md)** to see all 75 patterns organized by category
 
 ### 3. Practice Pattern Recognition
-When solving problems, use **[pattern-recognition-guide.md](pattern-recognition-guide.md)** to identify the right approach
+When solving problems, use **[pattern-recognition-guide.md](guides/pattern-recognition-guide.md)** to identify the right approach
 
 ### 4. Learn Pattern Combinations
-Study **[pattern-combinations.md](pattern-combinations.md)** to understand how patterns work together
+Study **[pattern-combinations.md](guides/pattern-combinations.md)** to understand how patterns work together
 
 ### 5. Before Interviews
-Review **[quick-reference.md](quick-reference.md)** - your one-page cheat sheet
+Review **[quick-reference.md](guides/quick-reference.md)** - your one-page cheat sheet
 
 ## Study Approach
 

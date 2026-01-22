@@ -25,13 +25,18 @@ Output: [1,3,12,0,0]
 ### Implementations
 
 ```typescript
-function moveZeros(nums: number[]): void {
-    let slow = 0;
-    for (let fast = 0; fast < nums.length; fast++) {
-        if (nums[fast] !== 0) {
-            [nums[slow], nums[fast]] = [nums[fast], nums[slow]];
-            slow++;
-        }
+function moveZeroes(nums: number[]): void {
+  const n = nums.length;
+  let l = 0;
+  for (let i = 0; i < n; i++) {
+    if (nums[i] !== 0) {
+      nums[l] = nums[i];
+      l++;
     }
+  }
+  while (l < n) {
+    nums[l] = 0;
+    l++;
+  }
 }
 ```

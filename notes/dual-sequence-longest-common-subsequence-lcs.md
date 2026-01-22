@@ -15,7 +15,7 @@ Tags: dynamic programming
 
 ### Implementation
 
-```jsx
+```typescript
   function longestCommonSubsequence(text1: string, text2: string): number {
     // We need a 2-d grid to solve this problem using DP
     const n = text1.length;

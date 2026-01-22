@@ -8,7 +8,7 @@ Given the `head` of a linked list, rotate the list to the right by `k` plac
 
 ### Implementation
 
-```jsx
+```typescript
 function rotateRight(head: ListNode | null, k: number): ListNode | null {
     if (!head || !head.next || k === 0) return head;
     

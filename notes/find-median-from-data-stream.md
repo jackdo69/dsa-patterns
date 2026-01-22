@@ -38,7 +38,7 @@ findMedian Time Complexity: O(1)
 
 ### Implementations
 
-```jsx
+```typescript
 class MedianFinder {
   minHeap: _MinHeap;
   maxHeap: _MinHeap;

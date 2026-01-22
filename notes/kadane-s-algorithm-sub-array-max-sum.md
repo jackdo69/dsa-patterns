@@ -10,7 +10,7 @@ Tags: array
 
 ### Implementations
 
-```jsx
+```typescript
 function maxSubArray(nums: number[]): number {
     let currSum = 0;
     let maxSum = -Infinity;

@@ -18,7 +18,7 @@ Tags: dynamic programming, greedy
 
 ### Implementation
 
-```jsx
+```typescript
 function maxProfit(prices: number[]): number {
   let res = 0;
   for (let i = 1; i < prices.length; i++) {

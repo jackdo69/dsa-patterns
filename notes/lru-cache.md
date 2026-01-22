@@ -17,7 +17,7 @@ The tricky part is `put` must be implemented in `O(1)` . For `get` we can easily
 
 ### Implementations
 
-```jsx
+```typescript
 class DLNode {
   key: number;
   val: number;

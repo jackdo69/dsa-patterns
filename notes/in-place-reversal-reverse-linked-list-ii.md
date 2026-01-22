@@ -10,7 +10,7 @@ Given the `head` of a singly linked list and two integers `left` and `right
 
 For example, with list `1→2→3→4→5` (reversing from 2 to 4):
 
-```jsx
+```typescript
 Step 1 (initially):
 prevReversed = null
 curr = 2
@@ -36,7 +36,7 @@ Links: 4→3→2→null
 
 visual
 
-```jsx
+```typescript
 Before reversal:
 1 → 2 → 3 → 4 → 5
     ^
@@ -51,7 +51,7 @@ prevReversed acts as new head of reversed portion
 
 ### Implementation
 
-```jsx
+```typescript
 /**
  * Definition for singly-linked list.
  * class ListNode {

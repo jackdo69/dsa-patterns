@@ -11,7 +11,7 @@ Tags: array, two-pointer, greedy
 
 ### Implementations
 
-```jsx
+```typescript
 function containerWithMostWater(height: number[]): number {
     let left = 0;
     let right = height.length - 1;

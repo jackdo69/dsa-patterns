@@ -14,7 +14,7 @@ Tags: sliding window, string
 
 ### Implementations
 
-```jsx
+```typescript
 function lengthOfLongestSubstring(s: string): number {
   const set = new Set<string>();
   let l = 0;

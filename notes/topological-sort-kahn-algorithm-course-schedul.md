@@ -23,7 +23,7 @@ Tags: bfs, graph
 
 ### Implementation
 
-```jsx
+```typescript
 function canFinish(numCourses: number, prerequisites: number[][]): boolean {
   const inDegree = new Map();
   const subcourses = new Map();

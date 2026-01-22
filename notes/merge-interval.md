@@ -16,7 +16,7 @@ Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
 
 ### Implementation
 
-```jsx
+```typescript
 function merge(intervals: number[][]): number[][] {
   /**
    * 2 steps needed

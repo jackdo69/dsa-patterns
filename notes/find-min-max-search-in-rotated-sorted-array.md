@@ -21,7 +21,7 @@ Output: 4
 
 ### Implementation
 
-```jsx
+```typescript
 function search(nums: number[], target: number): number {
   let n = nums.length;
   let left = 0,

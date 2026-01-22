@@ -20,7 +20,7 @@ Tags: dynamic programming, greedy
 
 ### Implementation
 
-```jsx
+```typescript
 function maxProfit(prices: number[]): number {
     let maxProfitSoFar: number = 0;
     let minPrice: number = prices[0];

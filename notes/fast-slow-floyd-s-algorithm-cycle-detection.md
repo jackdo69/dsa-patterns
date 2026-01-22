@@ -10,7 +10,7 @@ Tags: linked list
 
 ### Implementations
 
-```jsx
+```typescript
   function detectCycle(head: ListNode | null): ListNode | null {
     if (head === null) return null;
     let slow: ListNode | null = head;

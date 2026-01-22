@@ -22,7 +22,7 @@ The Rabin-Karp algorithm is a string searching algorithm that finds a pattern wi
 
 ### Implementations
 
-```jsx
+```typescript
 function rabinKarp(text: string, pattern: string): number[] {
   const matches: number[] = [];
 

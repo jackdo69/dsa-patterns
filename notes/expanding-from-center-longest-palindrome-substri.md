@@ -21,7 +21,7 @@ For each center, expand outward while characters match. Track the longest palind
 
 ### Implementations
 
-```jsx
+```typescript
 function longestPalindrome(s: string): string {
   const n = s.length;
 

@@ -12,7 +12,7 @@ The final sorted array should not be returned by the function, but instead be *
 
 ### Implementation
 
-```jsx
+```typescript
 /**
  Do not return anything, modify nums1 in-place instead.
  */

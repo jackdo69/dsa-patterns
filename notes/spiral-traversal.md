@@ -8,7 +8,7 @@ Given an `m x n` `matrix`, return *all elements of the* `matrix` *in spiral
 
 ### Implementation
 
-```jsx
+```typescript
 function spiralOrder(matrix: number[][]): number[] {
         const result: number[] = [];
     const cols = matrix[0].length;

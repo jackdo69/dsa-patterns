@@ -8,7 +8,7 @@ Tags: string, two pointer
 
 ### Implementations
 
-```jsx
+```typescript
 function reverseString(s: string[]): void {
     let i = 0;
     let j = s.length - 1;

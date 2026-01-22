@@ -10,7 +10,7 @@ Tags: graph
 
 ### Implementations
 
-```jsx
+```typescript
 function kruskalAlgorithm(V: number, edges: [number, number, number][]): number {
     // Sort edges by weight
     edges.sort((a, b) => a[2] - b[2]);

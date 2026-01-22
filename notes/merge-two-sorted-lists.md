@@ -12,7 +12,7 @@ Return *the head of the merged linked list*.
 
 ### Implementation
 
-```jsx
+```typescript
 function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
     // Early return if one list is empty
     if (!list1) return list2;

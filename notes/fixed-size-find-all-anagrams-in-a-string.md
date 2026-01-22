@@ -16,7 +16,7 @@ Tags: sliding window, string
 
 ### Implementations
 
-```jsx
+```typescript
 function findAnagrams(s: string, p: string): number[] {
   function isAnagram(m1: Map<string, number>, m2: Map<string, number>): boolean {
     for (const k of [...m1.keys()]) {

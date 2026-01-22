@@ -6,13 +6,13 @@ Tags: array, prefix sum
 
 if exist a sub array from position `i` to `j` that has a `sum` of `k` then
 
-```jsx
+```typescript
 prefixSum(j) - prefixSum(i-1) = k
 ```
 
 ### Implementation
 
-```jsx
+```typescript
 function prefixSum(arr: number[]): number[] {
   const prefixSums: number[] = [];
   let currentSum = 0;

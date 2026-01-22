@@ -23,7 +23,7 @@ if we out of loop or sum > target, we breaks
 
 ### Implementation
 
-```jsx
+```typescript
 function combinationSum(candidates: number[], target: number): number[][] {
       const results: number[][] = [];
 

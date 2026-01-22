@@ -12,7 +12,7 @@ You must solve the problem **without** modifying the array `nums` and using 
 
 ### Implementation
 
-```jsx
+```typescript
   function findDuplicate(nums: number[]): number {
     // Floyd's algorithm
     // Part 1: place 2 pointers 1 slow, 1 fast and we find the meeting point

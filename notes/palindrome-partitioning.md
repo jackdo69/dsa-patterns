@@ -15,7 +15,7 @@ Output: [["a","a","b"],["aa","b"]]
 
 ### Implementations
 
-```jsx
+```typescript
 function partition(s: string): string[][] {
   function isPalindrome(str: string): boolean {
     let i = 0;

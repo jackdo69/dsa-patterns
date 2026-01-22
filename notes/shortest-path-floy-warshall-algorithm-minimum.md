@@ -19,7 +19,7 @@ Return *the **minimum** cost to convert the string* `source` *to the string
 
 **Note** that there may exist indices `i`, `j` such that `original[j] == original[i]` and `changed[j] == changed[i]`.
 
-```jsx
+```typescript
 function minimumCost(
   source: string,
   target: string,

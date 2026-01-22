@@ -12,7 +12,7 @@ Tags: string, trie
 
 ### Implementations
 
-```jsx
+```typescript
 class Node {
   next: Map<string, Node>;
   isEnd: boolean;

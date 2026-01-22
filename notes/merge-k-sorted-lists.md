@@ -16,7 +16,7 @@ You are given an array of `k` linked-lists `lists`, each linked-list is sorte
 
 ### Implementations
 
-```jsx
+```typescript
 function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
   const pointer = new ListNode(); // pointer
   let current = pointer;

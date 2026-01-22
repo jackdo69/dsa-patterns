@@ -17,7 +17,7 @@ Return the integer as the final result.
 
 ### Implementation
 
-```jsx
+```typescript
 function myAtoi(s: string): number {
   let result = 0;
   let sign = 1;

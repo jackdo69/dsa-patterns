@@ -14,7 +14,7 @@ Using the template below to solve questions like “*Find the first …. in a so
 
 **Classic Binary Search**
 
-```jsx
+```typescript
 function binarySearch(arr: number[], target: number): number {
     let left = 0;
     let right = arr.length - 1;
@@ -39,7 +39,7 @@ function binarySearch(arr: number[], target: number): number {
 
 **First True Binary Search (First Occurrence)**
 
-```jsx
+```typescript
 function binarySearch(arr: number[], target: number): number {
     let left = 0;
     let right = arr.length - 1;
@@ -65,7 +65,7 @@ function binarySearch(arr: number[], target: number): number {
 
 **Boundary Binary Search (Finding Position)**
 
-```jsx
+```typescript
 function binarySearch(arr: number[], target: number): number {
     let left = 0;
     let right = arr.length;  // Note: not arr.length - 1

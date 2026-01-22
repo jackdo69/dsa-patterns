@@ -9,7 +9,7 @@ Use `for` when:
 - You're iterating through an entire array/string sequentially
 - Index moves predictably (usually `i++`)
 
-```jsx
+```typescript
 // Iterating entire array
 for (let i = 0; i < arr.length; i++) { ... }
 
@@ -24,7 +24,7 @@ Use `while` when:
 - Index moves unpredictably (might skip, might stay)
 - Multiple pointers moving at different rates
 
-```jsx
+```typescript
 // Skipping whitespace - don't know how many
 while (i < n && s[i] === ' ') i++;
 

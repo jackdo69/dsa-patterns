@@ -7,7 +7,7 @@ Tags: backtracking, dfs
 - Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.*
 - Example
 
-```jsx
+```typescript
 Input: nums = [1,1,2]
 Output:
 [[1,1,2],
@@ -17,7 +17,7 @@ Output:
 
 ### Implementations
 
-```jsx
+```typescript
   function permuteUnique(nums: number[]): number[][] {
     const result: number[][] = [];
     // build a map to keep track of number and its frequency

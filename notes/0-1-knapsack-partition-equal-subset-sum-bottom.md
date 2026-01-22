@@ -15,7 +15,7 @@ Output: true
 
 ### Implementations
 
-```jsx
+```typescript
 function canPartition(nums: number[]): boolean {
   const sum = nums.reduce((a, b) => a + b, 0);
 

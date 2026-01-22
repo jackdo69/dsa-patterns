@@ -17,7 +17,7 @@ Tags: dfs, tree
 
 ### Implementation
 
-```jsx
+```typescript
 function isValidBST(root: TreeNode | null): boolean {
     function helper(node: TreeNode | null, min: number | null, max: number | null): boolean {
       if (!node) return true;

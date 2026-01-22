@@ -12,7 +12,7 @@ The solution using bottom up approach with time complexity is O(n*c)
 
 ### Implementations
 
-```jsx
+```typescript
 function coinChange(coins: number[], amount: number): number {
   const n = coins.length;
   const dp = Array.from({ length: amount + 1 }, () => Infinity);

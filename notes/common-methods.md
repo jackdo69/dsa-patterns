@@ -6,12 +6,12 @@ Tags: fundamentals
 
 Returns the Unicode code point of the character at a given index.
 
-```jsx
+```typescript
 string.charCodeAt(index)
 ```
 
 **Examples:**
-```jsx
+```typescript
 'A'.charCodeAt(0)   // 65
 'Z'.charCodeAt(0)   // 90
 'a'.charCodeAt(0)   // 97
@@ -21,7 +21,7 @@ string.charCodeAt(index)
 ```
 
 **Common use case - convert char digit to number:**
-```jsx
+```typescript
 const digit = s[i].charCodeAt(0) - '0'.charCodeAt(0);
 // '5'.charCodeAt(0) - '0'.charCodeAt(0) = 53 - 48 = 5
 ```
@@ -30,7 +30,7 @@ const digit = s[i].charCodeAt(0) - '0'.charCodeAt(0);
 
 Extracts a portion of a string between two indices.
 
-```jsx
+```typescript
 string.substring(startIndex, endIndex)
 ```
 
@@ -38,14 +38,14 @@ string.substring(startIndex, endIndex)
 - `endIndex` - exclusive (not included in result)
 
 **Examples:**
-```jsx
+```typescript
 "hello".substring(0, 2)   // "he"
 "hello".substring(1, 4)   // "ell"
 "hello".substring(2)      // "llo" (to end if no second arg)
 ```
 
 **Common use case - extract after expanding pointers:**
-```jsx
+```typescript
 // After while loop overshoots by one on each side
 return s.substring(left + 1, right);
 ```

@@ -12,7 +12,7 @@ Tags: dfs, graph
 
 ### Implementation
 
-```jsx
+```typescript
 function findOrder(numCourses: number, prerequisites: number[][]): number[] {
   const result: number[] = [];
   const prereqList = new Map<number, number[]>();

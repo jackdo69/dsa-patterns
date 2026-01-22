@@ -14,7 +14,7 @@ Tags: dynamic programming
 
 ### Implementation
 
-```jsx
+```typescript
 // top down approach
 function findTargetSumWays(nums: number[], target: number): number {
   // Map to store previously computed results

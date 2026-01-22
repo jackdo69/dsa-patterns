@@ -13,7 +13,7 @@ Tags: dynamic programming
 
 ### Implementations
 
-```jsx
+```typescript
 function lengthOfLIS(nums: number[]): number {
     const dp: number[] = Array(nums.length).fill(1); // start from this position
 

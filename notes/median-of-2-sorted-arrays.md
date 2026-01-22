@@ -27,7 +27,7 @@ Explanation: merged array = [1,2,3] and median is 2.
 
 e.g
 
-```jsx
+```typescript
 nums1 = [1, 3, 5]
 nums2 = [2, 4, 6]
 k = 4
@@ -50,7 +50,7 @@ k = 4
 
 ### Implementation
 
-```jsx
+```typescript
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
   const m = nums1.length;
   const n = nums2.length;

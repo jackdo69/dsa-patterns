@@ -15,7 +15,7 @@ Given `n`, calculate `F(n)`.
 
 ### Implementation
 
-```jsx
+```typescript
 function fib(n: number): number {
   const dp = Array.from({ length: n + 1 }, () => 0);
   dp[1] = 1;

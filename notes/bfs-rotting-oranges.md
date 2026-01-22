@@ -16,7 +16,7 @@ Tags: bfs, grid
 
 ### Implementation
 
-```jsx
+```typescript
 function orangesRotting(grid: number[][]): number {
   let fresh = 0;
   const rowSize = grid.length;

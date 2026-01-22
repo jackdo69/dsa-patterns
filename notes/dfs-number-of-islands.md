@@ -15,7 +15,7 @@ Tags: dfs, grid
 
 ### Implementation
 
-```jsx
+```typescript
 function numIslands(grid: string[][]): number {
   let total = 0;
   const rows = grid.length;

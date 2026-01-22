@@ -24,7 +24,7 @@ Explanation: Return true because "leetcode" can be segmented as "leet code".
 
 ### Implementation
 
-```jsx
+```typescript
   function wordBreak(s: string, wordDict: string[]): boolean {
     // for "leetcode" with 8 chars, we need array that has index 8 because substring(i,j) will include the last index
     const dp = Array(s.length + 1).fill(false);

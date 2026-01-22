@@ -16,7 +16,7 @@ Tags: monotonic, queue, sliding window, stack
 
 ### Implementation
 
-```jsx
+```typescript
 function maxSlidingWindow(nums: number[], k: number): number[] {
   const queue: number[] = [];
   const res: number[] = [];

@@ -13,7 +13,7 @@ Tags: dynamic programming
 
 ### Implementations
 
-```jsx
+```typescript
 function maxCoins(nums: number[]): number {
   const n = nums.length;
   // store the state for memoization

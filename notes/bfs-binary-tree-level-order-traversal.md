@@ -8,7 +8,7 @@ Tags: bfs, tree
 
 ### Implementation
 
-```jsx
+```typescript
 function levelOrder(root: TreeNode | null): number[][] {
   if (root === null) return [];
   const stack = [root]; // for storing child nodes

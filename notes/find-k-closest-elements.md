@@ -13,7 +13,7 @@ An integer `a` is closer to `x` than an integer `b` if:
 
 ### Implementation
 
-```jsx
+```typescript
 function findClosestElements(arr: number[], k: number, x: number): number[] {
   // If array length equals k, return the whole array
   if (arr.length === k) return arr;

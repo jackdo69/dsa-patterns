@@ -14,7 +14,7 @@ An input string is valid if:
 
 ### Implementation
 
-```jsx
+```typescript
 function isValid(s: string): boolean {
   if (s.length === 1) return false;
   const map = new Map([

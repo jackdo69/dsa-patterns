@@ -6,7 +6,7 @@
 
 ### Implementations
 
-```jsx
+```typescript
 class BinaryIndexTree {
     private tree: number[];
     private size: number;

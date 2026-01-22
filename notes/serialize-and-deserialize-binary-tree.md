@@ -8,7 +8,7 @@ Tags: dfs, tree
 
 ### Implementation
 
-```jsx
+```typescript
 /*
  * Encodes a tree to a single string.
  */

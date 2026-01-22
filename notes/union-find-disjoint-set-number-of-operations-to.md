@@ -10,7 +10,7 @@ Tags: graph
 
 ### Implementations
 
-```jsx
+```typescript
   function makeConnected(n: number, connections: number[][]): number {
   // we need minimum n-1 connections
   if (connections.length < n - 1) return -1;

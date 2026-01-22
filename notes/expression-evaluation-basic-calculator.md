@@ -28,7 +28,7 @@ Output: 23
 
 ### Implementation
 
-```jsx
+```typescript
 function calculate(s: string): number {
   const stack: number[] = [];
   const isDigit = (c: string) => "0123456789".includes(c);

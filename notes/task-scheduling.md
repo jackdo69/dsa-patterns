@@ -20,7 +20,7 @@ After completing task A, you must wait two intervals before doing A again. The s
 
 ### Implementation
 
-```jsx
+```typescript
 function leastIntervalGreedy(tasks: string[], n: number): number {
   // Count frequencies using Map
   const frequencies = new Map<string, number>();

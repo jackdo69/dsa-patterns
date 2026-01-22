@@ -12,7 +12,7 @@ Given the heads of two singly linked-lists `headA` and `headB`, return *the 
 - 2 cases will happen
     - if 2 list intersects, then the different in length will be from 2 heads to the intersection point, since 2 pointers have to travel that both of that different length, it will meet in the intersection point
     
-    ```jsx
+    ```typescript
     List A: a1 -> a2 -> c1 -> c2
     List B: b1 -> b2 -> b3 -> c1 -> c2
     
@@ -22,7 +22,7 @@ Given the heads of two singly linked-lists `headA` and `headB`, return *the 
     
     - if 2 list don’t intersects, both pointer will eventually becomes `null` then the loop exits
     
-    ```jsx
+    ```typescript
     List A: 1 -> 2 -> 3 -> null
     List B: 4 -> 5 -> null
     pointerA: 1 -> 2 -> 3 -> null -> 4 -> 5 -> null
@@ -32,7 +32,7 @@ Given the heads of two singly linked-lists `headA` and `headB`, return *the 
 
 ### Implementation
 
-```jsx
+```typescript
 function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
     if (!headA || !headB) return null;
     

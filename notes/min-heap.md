@@ -13,7 +13,7 @@ Tags: heap
 
 ### Implementations
 
-```jsx
+```typescript
 class _MinHeap {
   private items: number[];
   constructor() {

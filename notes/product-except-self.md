@@ -32,7 +32,7 @@ This achieves O(n) time and O(1) extra space (excluding the output array).
 
 ### Implementation
 
-```jsx
+```typescript
 function productExceptSelf(nums: number[]): number[] {
     const length = nums.length;
     const result = new Array(length);

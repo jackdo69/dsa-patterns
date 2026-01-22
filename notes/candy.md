@@ -30,7 +30,7 @@ Explanation: You can allocate to the first, second and third child with 2, 1, 2 
 
 ### Implementation
 
-```jsx
+```typescript
 function candy(ratings: number[]): number {
   const n = ratings.length;
   const travelFromLeft = Array.from({ length: n }, () => 1); // min 1 candy

@@ -8,7 +8,7 @@ Given an integer array `nums`, rotate the array to the right by `k` steps, wh
 
 ### Implementation
 
-```jsx
+```typescript
 /**
  Do not return anything, modify nums in-place instead.
  */

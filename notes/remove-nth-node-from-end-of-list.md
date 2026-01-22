@@ -8,7 +8,7 @@ Tags: linked list, stack
 
 ### Implementations
 
-```jsx
+```typescript
 /**
  * Definition for singly-linked list.
  * class ListNode {

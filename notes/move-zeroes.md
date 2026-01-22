@@ -24,7 +24,7 @@ Output: [1,3,12,0,0]
 
 ### Implementations
 
-```jsx
+```typescript
 function moveZeros(nums: number[]): void {
     let slow = 0;
     for (let fast = 0; fast < nums.length; fast++) {

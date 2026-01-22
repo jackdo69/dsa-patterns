@@ -10,7 +10,7 @@ Tags: dfs, tree
 
 ### Implementation
 
-```jsx
+```typescript
 function maxDepth(root: TreeNode | null): number {
     if (root === null) return 0;
     const maxLeft = maxDepth(root.left);

@@ -14,7 +14,7 @@ Tags: dynamic programming, grid
 
 ### Implementations
 
-```jsx
+```typescript
 function uniquePaths(m: number, n: number): number {
   const dp: number[][] = Array.from({ length: m }, () => Array.from({ length: n }, () => 1));
 

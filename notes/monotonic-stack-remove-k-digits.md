@@ -21,7 +21,7 @@ Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 whi
 
 ### Implementation
 
-```jsx
+```typescript
 function removeKdigits(num: string, k: number): string {
   if (k >= num.length) return "0";
   const stack: string[] = [];

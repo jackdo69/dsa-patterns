@@ -16,7 +16,7 @@ Example:
 
 Modulo (`%`) gives you the **remainder** after division. When you divide and have a remainder left over, that remainder is the modulo. Think of this as a “wrap around”, this becomes every useful in some algorithm to stop the numbers become so large, because the result is always smaller than the divisor. Some key characteristics
 
-```jsx
+```typescript
 (a + b) % n = ((a % n) + (b % n)) % n
 (a × b) % n = ((a % n) × (b % n)) % n
 (a - b) % n = ((a % n) - (b % n)) % n
@@ -29,7 +29,7 @@ Log represents *"To what power must we raise a base to get a number?”* In othe
 - Many algorithms **split problems in half** (divide and conquer)
 - Binary search, merge sort, binary trees all use this principle
 
-```jsx
+```typescript
 If 2^x = n, then log₂(n) = x
 ```
 
@@ -50,7 +50,7 @@ So a set of `n` elements will have 2 ^ n subsets.
 
 Some examples of this decision making are binary tree `O(logn)`. And the opposite of time complexity backtracking with `O(2^n)`
 
-```jsx
+```typescript
                    {}
                  /    \
                {1}     {}

@@ -112,3 +112,4 @@
   * [Time Complexity](notes/patterns/time-complexity.md)
   * [Maths](notes/patterns/maths.md)
   * [Bitwise](notes/patterns/bitwise.md)
+  * [Loop Fundamentals](notes/patterns/loop-fundamentals.md)

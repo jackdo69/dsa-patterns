@@ -6,7 +6,7 @@ A pattern-based Data Structures & Algorithms study system for technical intervie
 
 ```
 /
-├── notes/patterns/       # 75 pattern markdown files (main content)
+├── notes/       # 75 pattern markdown files (main content)
 ├── _sidebar.md           # Navigation hierarchy
 ├── quick-reference.md    # One-page cheat sheet with complexities
 ├── pattern-recognition-guide.md  # Decision tree for choosing patterns
@@ -33,7 +33,7 @@ A pattern-based Data Structures & Algorithms study system for technical intervie
 
 ## File Conventions
 
-**Pattern files** in `notes/patterns/`:
+**Pattern files** in `notes/`:
 - Naming: `technique-name-problem.md` (e.g., `dfs-number-of-islands.md`, `0-1-knapsack-target-sum.md`)
 - All lowercase with hyphens
 
@@ -73,7 +73,7 @@ Uses Docsify for documentation site with search and tag filtering.
 
 ## When Adding New Patterns
 
-1. Create markdown file in `notes/patterns/` following naming convention
+1. Create markdown file in `notes/` following naming convention
 2. Use the standard template (Question → Ideas → Implementation)
 3. Add entry to `_sidebar.md` under appropriate category
 4. Include Tags line with relevant keywords

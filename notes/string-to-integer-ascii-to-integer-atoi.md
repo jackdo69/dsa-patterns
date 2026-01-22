@@ -1,4 +1,4 @@
-# *String To Integer - ASCII To Integer (ATOI)
+# ASCII To Integer (ATOI)
 
 Tags: string
 

@@ -15,10 +15,8 @@ This repository contains **92 algorithm patterns** designed to help you:
 ```
 /
 ├── guides/                            # Study guides (start here)
-│   ├── pattern-recognition-guide.md   # How to identify which pattern to use
-│   ├── concept-relationships.md       # How patterns connect and build on each other
-│   ├── quick-reference.md             # One-page cheat sheet for interviews
-│   └── pattern-combinations.md        # How patterns combine in hard problems
+│   ├── quick-reference.md             # Triggers, all patterns, code templates
+│   └── pattern-guide.md              # Pattern families, combinations, anti-patterns
 │
 ├── notes/                             # 92 pattern implementations
 │   ├── Arrays & Strings
@@ -35,20 +33,14 @@ This repository contains **92 algorithm patterns** designed to help you:
 
 ## Quick Start
 
-### 1. Understand the Big Picture
-Read **[concept-relationships.md](guides/concept-relationships.md)** to understand how all patterns connect
+### 1. Browse All Patterns
+Explore **[quick-reference.md](guides/quick-reference.md)** to see all 92 patterns with triggers, complexity, and code templates
 
-### 2. Browse the Patterns
-Explore **[quick-reference.md](guides/quick-reference.md)** to see all 92 patterns organized by category
+### 2. Understand Relationships & Combinations
+Read **[pattern-guide.md](guides/pattern-guide.md)** to learn how patterns connect, combine, and when NOT to use them
 
-### 3. Practice Pattern Recognition
-When solving problems, use **[pattern-recognition-guide.md](guides/pattern-recognition-guide.md)** to identify the right approach
-
-### 4. Learn Pattern Combinations
-Study **[pattern-combinations.md](guides/pattern-combinations.md)** to understand how patterns work together
-
-### 5. Before Interviews
-Review **[quick-reference.md](guides/quick-reference.md)** - your one-page cheat sheet
+### 3. Study Individual Patterns
+Dive into `notes/` for detailed explanations and TypeScript implementations of each problem
 
 ## Study Approach
 
@@ -80,9 +72,7 @@ Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Tries
 
 ## Key Features
 
-- **92 Algorithm Patterns:** Complete coverage of interview topics
+- **92 Algorithm Patterns:** Complete coverage of interview topics with interview frequency ratings
 - **TypeScript Implementations:** Clean, working code for every pattern
-- **Pattern Recognition Guide:** Learn to identify which pattern to apply
-- **Concept Relationships:** Understand how patterns connect and build on each other
-- **Pattern Combinations Guide:** Learn how patterns combine in hard problems
-- **Quick Reference:** One-page cheat sheet for interviews
+- **Quick Reference:** Triggers, all patterns with complexity, and code templates
+- **Pattern Guide:** How patterns relate, combine, and when NOT to use them

@@ -3,10 +3,8 @@
 * [Home](/)
 
 * Study Guides
-  * [Pattern Recognition Guide](guides/pattern-recognition-guide.md)
-  * [Concept Relationships](guides/concept-relationships.md)
   * [Quick Reference](guides/quick-reference.md)
-  * [Pattern Combinations](guides/pattern-combinations.md)
+  * [Pattern Guide](guides/pattern-guide.md)
 
 * Patterns - Arrays & Strings
   * [Two Sum](notes/two-sum.md)

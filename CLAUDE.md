@@ -7,10 +7,8 @@ A pattern-based Data Structures & Algorithms study system for technical intervie
 ```
 /
 ├── guides/                       # Study guides (start here)
-│   ├── pattern-recognition-guide.md  # Decision tree for choosing patterns
-│   ├── concept-relationships.md      # How patterns interconnect
-│   ├── quick-reference.md            # One-page cheat sheet with complexities
-│   └── pattern-combinations.md       # Complex problem strategies
+│   ├── quick-reference.md            # Cheat sheet: triggers, all patterns, templates
+│   └── pattern-guide.md              # Pattern families, combinations, when NOT to use
 ├── notes/                        # 92 pattern markdown files (main content)
 ├── docsify/                      # Docsify configuration files
 │   ├── docsify-config.js             # Site config with tag colors
@@ -73,8 +71,8 @@ Uses Docsify for documentation site with search and tag filtering.
 
 ## Key Files for Quick Reference
 
-- `guides/quick-reference.md` - All 92 patterns with time/space complexity
-- `guides/pattern-recognition-guide.md` - Decision tree: "What pattern should I use?"
+- `guides/quick-reference.md` - All 92 patterns with time/space complexity, triggers, templates
+- `guides/pattern-guide.md` - Pattern families, combinations, when NOT to use
 - `_sidebar.md` - Full navigation structure
 - `docsify/docsify-config.js` - Tag color definitions (25 tags)
 

@@ -8,10 +8,9 @@ Interview Frequency: High
 
 ### Question
 
-Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.
+*Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.*
 
-You may assume that each input would have **exactly one solution**, and you may not use the same element twice.
-
+*You may assume that each input would have **exactly one solution**, and you may not use the same element twice.*
 ### Ideas
 
 Use a hash map to store each number's index as you iterate. For each element, check if `target - nums[i]` already exists in the map. If it does, you've found the pair. This gives O(n) time instead of the brute-force O(n²) approach.

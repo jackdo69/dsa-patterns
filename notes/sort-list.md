@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given the `head` of a linked list, return the list after sorting it in **ascending order**.
-
+*Given the `head` of a linked list, return the list after sorting it in **ascending order**.*
 ### Ideas
 
 Merge sort is ideal for linked lists because:

@@ -8,10 +8,9 @@ Interview Frequency: High
 
 ### Question
 
-Given an array of strings `strs`, group the anagrams together. You can return the answer in **any order**.
+*Given an array of strings `strs`, group the anagrams together. You can return the answer in **any order**.*
 
-An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-
+*An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.*
 ### Ideas
 
 Two strings are anagrams if they have the same characters in the same frequency. Use a sorted version of each string as a hash map key — all anagrams will sort to the same string. Group strings by their sorted key.

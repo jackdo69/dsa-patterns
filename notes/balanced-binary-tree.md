@@ -8,10 +8,9 @@ Interview Frequency: Medium
 
 ### Question
 
-Given a binary tree, determine if it is **height-balanced**.
+*Given a binary tree, determine if it is **height-balanced**.*
 
-A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
-
+*A height-balanced binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.*
 ### Ideas
 
 A naive approach checks balance at each node by computing heights separately — O(n²). The optimal approach combines height computation and balance checking in a single postorder traversal.

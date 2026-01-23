@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given the `head` of a linked list, rotate the list to the right by `k` places.
-
+*Given the `head` of a linked list, rotate the list to the right by `k` places.*
 ### Ideas
 
 Rotating right by `k` means taking the last `k` nodes and moving them to the front. The key insight is that this is just breaking the list at position `length - k` and swapping the two halves.

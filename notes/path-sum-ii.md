@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given the `root` of a binary tree and an integer `targetSum`, return all **root-to-leaf** paths where the sum of the node values in the path equals `targetSum`.
-
+*Given the `root` of a binary tree and an integer `targetSum`, return all **root-to-leaf** paths where the sum of the node values in the path equals `targetSum`.*
 ### Ideas
 
 Extend Path Sum with backtracking to collect all valid paths. Maintain a `currentPath` array as you DFS down the tree. When you reach a leaf with the correct sum, copy the path into the result.

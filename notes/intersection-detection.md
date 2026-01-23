@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given the heads of two singly linked-lists `headA` and `headB`, return *the node at which the two lists intersect*. If the two linked lists have no intersection at all, return `null`.
-
+*Given the heads of two singly linked-lists `headA` and `headB`, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return `null`.*
 ### Ideas
 
 Use two pointers starting at each head. When a pointer reaches the end of its list, redirect it to the head of the **other** list. This equalizes the total distance each pointer travels: both walk exactly `lengthA + lengthB` steps. The length difference is absorbed in the first pass, so on the second pass both pointers are aligned and will meet at the intersection node.

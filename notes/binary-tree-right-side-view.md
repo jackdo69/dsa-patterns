@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given the `root` of a binary tree, imagine yourself standing on the **right side** of it, return the values of the nodes you can see ordered from top to bottom.
-
+*Given the `root` of a binary tree, imagine yourself standing on the **right side** of it, return the values of the nodes you can see ordered from top to bottom.*
 ### Ideas
 
 Use BFS (level-order traversal). For each level, the last node in the queue is the rightmost node visible from that side. Process each level completely and take the last element.

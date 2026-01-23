@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
-
+*Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.*
 ### Solution
 
 ```typescript

@@ -8,8 +8,7 @@ Interview Frequency: High
 
 ### Question
 
-Given `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
-
+*Given `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.*
 ### Ideas
 
 Water at any position is determined by `min(maxLeft, maxRight) - height[i]`. The key insight is that you don't need to know both maximums to compute water at a position — you only need to know which side is the bottleneck.

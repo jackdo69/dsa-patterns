@@ -8,8 +8,8 @@ Interview Frequency: Medium
 
 ### Question
 
-- Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.*
-- Example
+- *Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.**
+- *Example*
 
 ```typescript
 Input: nums = [1,1,2]

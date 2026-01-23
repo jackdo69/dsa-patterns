@@ -8,12 +8,11 @@ Interview Frequency: Medium
 
 ### Question
 
-Given two words `beginWord` and `endWord`, and a dictionary `wordList`, return the number of words in the **shortest transformation sequence** from `beginWord` to `endWord`, such that:
+*Given two words `beginWord` and `endWord`, and a dictionary `wordList`, return the number of words in the **shortest transformation sequence** from `beginWord` to `endWord`, such that:
 - Only one letter can be changed at a time.
-- Each transformed word must exist in the word list.
+- Each transformed word must exist in the word list.*
 
-Return 0 if no such sequence exists.
-
+*Return 0 if no such sequence exists.*
 ### Ideas
 
 Model this as an unweighted graph problem: each word is a node, and edges connect words that differ by exactly one letter. The shortest path in an unweighted graph is found by BFS.

@@ -8,14 +8,13 @@ Interview Frequency: High
 
 ### Question
 
-Design a stack that supports push, pop, top, and retrieving the minimum element in **constant time**.
+*Design a stack that supports push, pop, top, and retrieving the minimum element in **constant time**.*
 
-Implement the `MinStack` class:
+*Implement the `MinStack` class:
 - `push(val)` pushes the element val onto the stack.
 - `pop()` removes the element on the top of the stack.
 - `top()` gets the top element of the stack.
-- `getMin()` retrieves the minimum element in the stack.
-
+- `getMin()` retrieves the minimum element in the stack.*
 ### Ideas
 
 The challenge is tracking the minimum as elements are pushed and popped. A single `min` variable breaks when the minimum is popped — you'd need to know the "previous minimum."

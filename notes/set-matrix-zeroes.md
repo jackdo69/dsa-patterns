@@ -8,10 +8,9 @@ Interview Frequency: Low
 
 ### Question
 
-Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
+*Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.*
 
-You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
-
+*You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).*
 ### Ideas
 
 The challenge: we can't zero cells immediately because we'd lose track of which zeros were original vs newly created.

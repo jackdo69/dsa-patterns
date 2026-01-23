@@ -8,10 +8,9 @@ Interview Frequency: High
 
 ### Question
 
-Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
+*Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j`, `i != k`, and `j != k`, and `nums[i] + nums[j] + nums[k] == 0`.*
 
-Notice that the solution set must not contain duplicate triplets.
-
+*Notice that the solution set must not contain duplicate triplets.*
 ### Ideas
 
 Sort the array first. Then for each element `nums[i]`, use two pointers (`left` and `right`) on the remaining subarray to find pairs that sum to `-nums[i]`. This reduces the problem to a series of two-sum problems on a sorted array.

@@ -8,8 +8,7 @@ Interview Frequency: Low
 
 ### Question
 
-Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.
-
+*Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.*
 ### Ideas
 
 The key insight: rotating right by k is equivalent to moving the last k elements to the front.

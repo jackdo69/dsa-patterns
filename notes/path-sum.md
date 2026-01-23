@@ -8,10 +8,9 @@ Interview Frequency: Medium
 
 ### Question
 
-Given the `root` of a binary tree and an integer `targetSum`, return `true` if the tree has a **root-to-leaf** path such that adding up all the values along the path equals `targetSum`.
+*Given the `root` of a binary tree and an integer `targetSum`, return `true` if the tree has a **root-to-leaf** path such that adding up all the values along the path equals `targetSum`.*
 
-A **leaf** is a node with no children.
-
+*A **leaf** is a node with no children.*
 ### Ideas
 
 Use DFS, subtracting the current node's value from `targetSum` as you go. At each leaf node, check if the remaining sum equals 0. This avoids needing to track the accumulated sum — instead you track what's "left to find."

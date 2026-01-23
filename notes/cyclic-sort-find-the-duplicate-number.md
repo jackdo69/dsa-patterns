@@ -8,12 +8,11 @@ Interview Frequency: Low
 
 ### Question
 
-Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive.
+*Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive.*
 
-There is only **one repeated number** in `nums`, return *this repeated number*.
+*There is only **one repeated number** in `nums`, return this repeated number.*
 
-You must solve the problem **without** modifying the array `nums` and using only constant extra space.
-
+*You must solve the problem **without** modifying the array `nums` and using only constant extra space.*
 ### Ideas
 
 **Key insight:** Treat the array as a linked list. Since values are in range `[1, n]`, each value is a pointer to the next index. A duplicate value means two indices point to the same "node" → creating a **cycle**. The cycle entry point is the duplicate.

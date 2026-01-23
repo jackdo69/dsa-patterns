@@ -8,10 +8,9 @@ Interview Frequency: High
 
 ### Question
 
-Given a reference of a node in a **connected** undirected graph, return a **deep copy** (clone) of the graph.
+*Given a reference of a node in a **connected** undirected graph, return a **deep copy** (clone) of the graph.*
 
-Each node in the graph contains a value (`int`) and a list (`List[Node]`) of its neighbors.
-
+*Each node in the graph contains a value (`int`) and a list (`List[Node]`) of its neighbors.*
 ### Ideas
 
 The challenge is handling cycles — you must not clone the same node twice, or you'll loop forever. Use a hash map (`original → clone`) to track already-cloned nodes.

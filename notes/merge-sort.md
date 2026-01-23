@@ -8,8 +8,7 @@ Interview Frequency: Medium
 
 ### Question
 
-Given an array of integers `nums`, sort the array in ascending order using merge sort and return it.
-
+*Given an array of integers `nums`, sort the array in ascending order using merge sort and return it.*
 ### Ideas
 
 Divide and conquer: recursively split the array in half until you have single elements (which are trivially sorted), then merge the sorted halves back together.

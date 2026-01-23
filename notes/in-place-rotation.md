@@ -1,10 +1,10 @@
 # In-place Rotation
 
-Tags: array
+Topic: array
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

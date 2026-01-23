@@ -1,10 +1,10 @@
 # Group Anagrams
 
-Tags: array, hash map, string, medium
+Topic: array, hash map, string
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

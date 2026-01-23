@@ -1,10 +1,10 @@
 # Unbounded Knapsack - Coin Change
 
-Tags: dynamic programming
+Topic: dynamic programming
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

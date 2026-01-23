@@ -1,10 +1,10 @@
 # Variable Size - Longest Substring Without Repeating Characters
 
-Tags: sliding window, string
+Topic: sliding window, string
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

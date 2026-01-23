@@ -1,10 +1,10 @@
 # DFS Cycle Detection - Course Schedule II
 
-Tags: dfs, graph
+Topic: dfs, graph
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

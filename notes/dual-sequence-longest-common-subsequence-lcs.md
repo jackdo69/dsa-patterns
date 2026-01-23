@@ -1,10 +1,10 @@
 # Dual Sequence - Longest Common Subsequence (LCS)
 
-Tags: dynamic programming
+Topic: dynamic programming
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

@@ -1,10 +1,10 @@
 # DFS In-order Traversal - Validate Binary Search Tree
 
-Tags: dfs, tree
+Topic: dfs, tree
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

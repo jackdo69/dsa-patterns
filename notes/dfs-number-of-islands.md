@@ -1,10 +1,10 @@
 # DFS - Number of Islands
 
-Tags: dfs, grid
+Topic: dfs, grid
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

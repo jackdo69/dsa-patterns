@@ -1,10 +1,10 @@
 # Monotonic function- Binary Search Patterns
 
-Tags: binary search, monotonic
+Topic: binary search, monotonic
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Ideas
 

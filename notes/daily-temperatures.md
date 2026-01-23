@@ -1,10 +1,10 @@
 # Daily Temperatures
 
-Tags: array, stack, monotonic stack, medium
+Topic: array, stack, monotonic stack
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

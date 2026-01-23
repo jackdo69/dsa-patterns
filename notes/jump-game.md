@@ -1,10 +1,10 @@
 # Jump Game
 
-Tags: greedy
+Topic: greedy
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

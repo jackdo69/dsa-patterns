@@ -1,10 +1,10 @@
 # Merge Sorted Array
 
-Tags: array, two pointers
+Topic: array, two pointers
 
-### Interview Frequency
+Difficulty: Easy
 
-Low
+Interview Frequency: Low
 
 ### Question
 

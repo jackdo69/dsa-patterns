@@ -1,10 +1,10 @@
 # Min Stack
 
-Tags: stack, design, medium
+Topic: stack, design
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Permutations Unique
 
-Tags: backtracking, dfs
+Topic: backtracking, dfs
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

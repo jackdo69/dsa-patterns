@@ -1,10 +1,10 @@
 # Longest Consecutive Sequence
 
-Tags: array, hash map, medium
+Topic: array, hash map
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

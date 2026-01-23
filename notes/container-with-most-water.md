@@ -1,10 +1,10 @@
 # Container With Most Water
 
-Tags: array, two-pointer, greedy
+Topic: array, two-pointer, greedy
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Ideas
 

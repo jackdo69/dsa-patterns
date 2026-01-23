@@ -1,10 +1,10 @@
 # DFS Preorder Traversal - Same Tree
 
-Tags: dfs, tree
+Topic: dfs, tree
 
-### Interview Frequency
+Difficulty: Easy
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

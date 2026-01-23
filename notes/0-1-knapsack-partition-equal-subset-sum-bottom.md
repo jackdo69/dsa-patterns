@@ -1,8 +1,10 @@
 # *0/1 Knapsack - Partition Equal Subset Sum - Bottom up approach
 
-### Interview Frequency
+Topic: dynamic programming, knapsack
 
-Medium
+Difficulty: Medium
+
+Interview Frequency: Medium
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Floyd's Cycle Detection - Find the Duplicate Number
 
-Tags: array, two pointer, linked list
+Topic: array, two pointer, linked list
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

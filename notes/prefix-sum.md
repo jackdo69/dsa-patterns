@@ -1,10 +1,10 @@
 # Prefix sum
 
-Tags: array, prefix sum
+Topic: array, prefix sum
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Ideas
 

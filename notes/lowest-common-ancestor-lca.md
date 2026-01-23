@@ -1,10 +1,10 @@
 # Lowest Common Ancestor (LCA)
 
-Tags: dfs, tree
+Topic: dfs, tree
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

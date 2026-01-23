@@ -1,10 +1,10 @@
 # Merge Interval
 
-Tags: interval
+Topic: interval
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

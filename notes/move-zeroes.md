@@ -1,10 +1,10 @@
 # Move Zeroes
 
-Tags: two pointer
+Topic: two pointer
 
-### Interview Frequency
+Difficulty: Easy
 
-Low
+Interview Frequency: Low
 
 ### Question
 

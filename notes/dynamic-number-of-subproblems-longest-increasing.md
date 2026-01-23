@@ -1,10 +1,10 @@
 # Dynamic Number of Subproblems - Longest Increasing Subsequences (LIS)
 
-Tags: dynamic programming
+Topic: dynamic programming
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

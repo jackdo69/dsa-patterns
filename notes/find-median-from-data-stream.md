@@ -1,10 +1,10 @@
 # Find Median from Data Stream
 
-Tags: heap
+Topic: heap
 
-### Interview Frequency
+Difficulty: Hard
 
-Medium
+Interview Frequency: Medium
 
 ### **Question**
 

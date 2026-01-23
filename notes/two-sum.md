@@ -1,10 +1,10 @@
 # Two Sum
 
-Tags: array, hash map, easy
+Topic: array, hash map
 
-### Interview Frequency
+Difficulty: Easy
 
-High
+Interview Frequency: High
 
 ### Question
 

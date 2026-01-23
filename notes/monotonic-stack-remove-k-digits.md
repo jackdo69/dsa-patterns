@@ -1,10 +1,10 @@
 # Monotonic Stack - Remove k digits
 
-Tags: greedy, stack
+Topic: greedy, stack
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

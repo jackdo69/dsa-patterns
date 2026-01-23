@@ -1,10 +1,10 @@
 # Path Sum II
 
-Tags: tree, dfs, backtracking, medium
+Topic: tree, dfs, backtracking
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

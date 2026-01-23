@@ -1,10 +1,10 @@
 # Find Min/Max - Search in rotated sorted array
 
-Tags: binary search
+Topic: binary search
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Best Time to Buy and Sell Stock II
 
-Tags: dynamic programming, greedy
+Topic: dynamic programming, greedy
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

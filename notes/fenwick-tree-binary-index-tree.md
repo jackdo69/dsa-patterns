@@ -1,8 +1,10 @@
 # Fenwick tree - Binary Index Tree
 
-### Interview Frequency
+Topic: advanced data structure, tree
 
-Very Low
+Difficulty: Hard
+
+Interview Frequency: Very Low
 
 ### Ideas
 

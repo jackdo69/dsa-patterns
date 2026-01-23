@@ -1,10 +1,10 @@
 # Minimum Spanning Tree - Kruskal algorithm
 
-Tags: graph
+Topic: graph
 
-### Interview Frequency
+Difficulty: Medium
 
-Very Low
+Interview Frequency: Very Low
 
 ### Ideas
 

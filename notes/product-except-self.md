@@ -1,10 +1,10 @@
 # Product Except Self
 
-Tags: array, prefix sum
+Topic: array, prefix sum
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

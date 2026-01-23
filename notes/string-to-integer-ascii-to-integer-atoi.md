@@ -1,10 +1,10 @@
 # ASCII To Integer (ATOI)
 
-Tags: string
+Topic: string
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

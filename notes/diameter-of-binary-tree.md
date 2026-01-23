@@ -1,10 +1,10 @@
 # Diameter of Binary Tree
 
-Tags: tree, dfs, easy
+Topic: tree, dfs
 
-### Interview Frequency
+Difficulty: Easy
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

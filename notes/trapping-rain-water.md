@@ -1,10 +1,10 @@
 # Trapping Rain Water
 
-Tags: array, two-pointer, hard
+Topic: array, two-pointer
 
-### Interview Frequency
+Difficulty: Hard
 
-High
+Interview Frequency: High
 
 ### Question
 

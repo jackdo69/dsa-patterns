@@ -1,10 +1,10 @@
 # Expanding from Center - Longest Palindrome Substring
 
-Tags: string, two pointer
+Topic: string, two pointer
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

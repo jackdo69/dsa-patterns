@@ -1,10 +1,10 @@
 # Top K Frequent Elements
 
-Tags: array, hash map, heap, medium
+Topic: array, hash map, heap
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

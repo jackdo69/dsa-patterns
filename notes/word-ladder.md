@@ -1,10 +1,10 @@
 # Word Ladder
 
-Tags: graph, bfs, string, hard
+Topic: graph, bfs, string
 
-### Interview Frequency
+Difficulty: Hard
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

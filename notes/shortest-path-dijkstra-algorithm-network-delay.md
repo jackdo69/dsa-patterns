@@ -1,10 +1,10 @@
 # Shortest Path - Dijkstra algorithm - Network Delay time
 
-Tags: graph, heap
+Topic: graph, heap
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Ideas
 

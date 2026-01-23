@@ -1,10 +1,10 @@
 # Set Matrix Zeroes
 
-Tags: matrix
+Topic: matrix
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Grid - Unique Paths
 
-Tags: dynamic programming, grid
+Topic: dynamic programming, grid
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

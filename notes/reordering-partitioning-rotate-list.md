@@ -1,10 +1,10 @@
 # Reordering/ Partitioning - Rotate List
 
-Tags: linked list
+Topic: linked list
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

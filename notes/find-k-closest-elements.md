@@ -1,10 +1,10 @@
 # Find k closest elements
 
-Tags: binary search, sliding window
+Topic: binary search, sliding window
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

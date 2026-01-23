@@ -1,10 +1,10 @@
 # Expression Evaluation - Basic Calculator
 
-Tags: stack
+Topic: stack
 
-### Interview Frequency
+Difficulty: Hard
 
-Low
+Interview Frequency: Low
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Spiral Traversal
 
-Tags: array, matrix
+Topic: array, matrix
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Question
 

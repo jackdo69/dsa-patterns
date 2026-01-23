@@ -1,10 +1,10 @@
 # Shortest Path - Floy Warshall algorithm - Minimum Cost To Convert String
 
-Tags: graph
+Topic: graph
 
-### Interview Frequency
+Difficulty: Medium
 
-Very Low
+Interview Frequency: Very Low
 
 ### Ideas
 

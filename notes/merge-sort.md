@@ -1,10 +1,10 @@
 # Merge Sort
 
-Tags: sorting, divide and conquer, medium
+Topic: sorting, divide and conquer
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

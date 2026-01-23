@@ -1,10 +1,10 @@
 # BFS - Binary Tree Level Order Traversal
 
-Tags: bfs, tree
+Topic: bfs, tree
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

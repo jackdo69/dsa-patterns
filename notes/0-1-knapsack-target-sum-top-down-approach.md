@@ -1,10 +1,10 @@
 # 0/1 Knapsack - Target Sum - Top down approach
 
-Tags: dynamic programming
+Topic: dynamic programming
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

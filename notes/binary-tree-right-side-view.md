@@ -1,10 +1,10 @@
 # Binary Tree Right Side View
 
-Tags: tree, bfs, medium
+Topic: tree, bfs
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Interval DP - Busting balloons
 
-Tags: dynamic programming
+Topic: dynamic programming
 
-### Interview Frequency
+Difficulty: Hard
 
-Very Low
+Interview Frequency: Very Low
 
 ### Question
 

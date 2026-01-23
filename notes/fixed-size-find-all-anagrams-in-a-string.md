@@ -1,10 +1,10 @@
 # Fixed Size - Find all anagrams in a string
 
-Tags: sliding window, string
+Topic: sliding window, string
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

@@ -1,10 +1,10 @@
 # String Reversal - Reverse String in place
 
-Tags: string, two pointer
+Topic: string, two pointer
 
-### Interview Frequency
+Difficulty: Easy
 
-Low
+Interview Frequency: Low
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Intersection Detection
 
-Tags: linked list, two pointer
+Topic: linked list, two pointer
 
-### Interview Frequency
+Difficulty: Easy
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Clone Graph
 
-Tags: graph, bfs, dfs, hash map, medium
+Topic: graph, bfs, dfs, hash map
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

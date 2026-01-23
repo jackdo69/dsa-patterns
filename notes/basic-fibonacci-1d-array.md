@@ -1,10 +1,10 @@
 # Basic - Fibonacci - 1D Array
 
-Tags: array, dynamic programming
+Topic: array, dynamic programming
 
-### Interview Frequency
+Difficulty: Easy
 
-High
+Interview Frequency: High
 
 ### Question
 

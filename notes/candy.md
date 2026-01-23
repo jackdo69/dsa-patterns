@@ -1,10 +1,10 @@
 # Candy
 
-Tags: greedy
+Topic: greedy
 
-### Interview Frequency
+Difficulty: Hard
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

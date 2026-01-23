@@ -1,10 +1,10 @@
 # Merge Two Sorted Lists
 
-Tags: linked list, two pointer
+Topic: linked list, two pointer
 
-### Interview Frequency
+Difficulty: Easy
 
-High
+Interview Frequency: High
 
 ### Question
 

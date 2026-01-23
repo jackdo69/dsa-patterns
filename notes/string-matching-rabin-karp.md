@@ -1,10 +1,10 @@
 # String Matching - Rabin Karp
 
-Tags: string
+Topic: string
 
-### Interview Frequency
+Difficulty: Medium
 
-Low
+Interview Frequency: Low
 
 ### Ideas
 

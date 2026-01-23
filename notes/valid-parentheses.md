@@ -1,10 +1,10 @@
 # Valid Parentheses
 
-Tags: string
+Topic: string
 
-### Interview Frequency
+Difficulty: Easy
 
-High
+Interview Frequency: High
 
 ### Question
 

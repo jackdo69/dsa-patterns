@@ -1,10 +1,10 @@
 # Shortest Path - Bellman Ford algorithm - Cheapest Flights Within K Stops
 
-Tags: dynamic programming, graph
+Topic: dynamic programming, graph
 
-### Interview Frequency
+Difficulty: Medium
 
-Very Low
+Interview Frequency: Very Low
 
 ### Ideas
 

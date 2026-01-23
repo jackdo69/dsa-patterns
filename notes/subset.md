@@ -1,10 +1,10 @@
 # Subset
 
-Tags: backtracking
+Topic: backtracking
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

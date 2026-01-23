@@ -1,10 +1,10 @@
 # In-Place Reversal - Reverse Linked List II
 
-Tags: linked list
+Topic: linked list
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

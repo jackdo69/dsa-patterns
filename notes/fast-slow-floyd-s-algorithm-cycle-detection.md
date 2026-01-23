@@ -1,10 +1,10 @@
 # Fast & Slow Floyd’s algorithm cycle detection
 
-Tags: linked list
+Topic: linked list
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Ideas
 

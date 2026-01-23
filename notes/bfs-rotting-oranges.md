@@ -1,10 +1,10 @@
 # BFS - Rotting Oranges
 
-Tags: bfs, grid
+Topic: bfs, grid
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

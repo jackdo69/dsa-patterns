@@ -1,8 +1,10 @@
 # Quick Sort
 
-### Interview Frequency
+Topic: sorting, divide and conquer
 
-Medium
+Difficulty: Medium
+
+Interview Frequency: Medium
 
 ### Ideas
 

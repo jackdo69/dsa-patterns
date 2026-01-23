@@ -1,10 +1,10 @@
 # Merge k sorted lists
 
-Tags: heap
+Topic: heap
 
-### Interview Frequency
+Difficulty: Hard
 
-High
+Interview Frequency: High
 
 ### **Question**
 

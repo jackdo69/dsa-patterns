@@ -1,10 +1,10 @@
 # 3Sum
 
-Tags: array, two-pointer, sorting, medium
+Topic: array, two-pointer, sorting
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### Question
 

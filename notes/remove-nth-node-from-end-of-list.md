@@ -1,10 +1,10 @@
 # Remove Nth Node from End of list
 
-Tags: linked list, two-pointer
+Topic: linked list, two-pointer
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

@@ -1,10 +1,10 @@
 # Topological Sort - Kahn algorithm - Course Schedule
 
-Tags: bfs, graph
+Topic: bfs, graph
 
-### Interview Frequency
+Difficulty: Medium
 
-High
+Interview Frequency: High
 
 ### **Question**
 

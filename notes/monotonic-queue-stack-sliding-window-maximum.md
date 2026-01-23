@@ -1,10 +1,10 @@
 # Monotonic Queue | Stack - Sliding Window Maximum
 
-Tags: monotonic, queue, sliding window, stack
+Topic: monotonic, queue, sliding window, stack
 
-### Interview Frequency
+Difficulty: Hard
 
-Low
+Interview Frequency: Low
 
 ### Question
 

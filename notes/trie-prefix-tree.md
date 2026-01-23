@@ -1,10 +1,10 @@
 # Trie - Prefix Tree
 
-Tags: string, trie
+Topic: string, trie
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

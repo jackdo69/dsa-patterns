@@ -1,10 +1,10 @@
 # Median of 2 Sorted Arrays
 
-Tags: binary search, divide and conquer
+Topic: binary search, divide and conquer
 
-### Interview Frequency
+Difficulty: Hard
 
-Very Low
+Interview Frequency: Very Low
 
 ### Question
 

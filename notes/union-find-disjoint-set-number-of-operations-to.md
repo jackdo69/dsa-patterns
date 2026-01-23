@@ -1,10 +1,10 @@
 # Union Find / Disjoint Set - Number of Operations to make Network Connected
 
-Tags: graph
+Topic: graph
 
-### Interview Frequency
+Difficulty: Medium
 
-Medium
+Interview Frequency: Medium
 
 ### Question
 

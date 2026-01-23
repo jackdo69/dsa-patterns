@@ -10,6 +10,10 @@ Merge the two lists into one **sorted** list. The list should be made by splic
 
 Return *the head of the merged linked list*.
 
+### Ideas
+
+Use a dummy node and iterate both lists simultaneously. At each step, compare the current nodes and append the smaller one to the merged list. When one list is exhausted, attach the remainder of the other list directly.
+
 ### Implementation
 
 ```typescript

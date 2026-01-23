@@ -1,6 +1,6 @@
 # Merge Sorted Array
 
-Tags: array
+Tags: array, two pointers
 
 ### Question
 

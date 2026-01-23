@@ -26,7 +26,7 @@
   * [In-place Rotation](notes/in-place-rotation.md)
   * [Move Zeroes](notes/move-zeroes.md)
   * [Merge Sorted Array](notes/merge-sorted-array.md)
-  * [Cyclic Sort - Find Duplicate](notes/cyclic-sort-find-the-duplicate-number.md)
+  * [Floyd's Cycle Detection - Find Duplicate](notes/cyclic-sort-find-the-duplicate-number.md)
 
 * Patterns - Linked Lists
   * [Fast & Slow - Floyd's Algorithm](notes/fast-slow-floyd-s-algorithm-cycle-detection.md)

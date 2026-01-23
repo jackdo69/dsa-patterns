@@ -45,6 +45,8 @@ window.$docsify = {
             'math': '#6c71c4',
             'bit manipulation': '#d33682',
             'two pointers': '#dc322f',
+            'two pointer': '#dc322f',
+            'cyclic sort': '#b58900',
             'sliding window': '#cb4b16',
             'dfs': '#859900',
             'bfs': '#2aa198',

@@ -1,10 +1,14 @@
 # Remove Nth Node from End of list
 
-Tags: linked list, stack
+Tags: linked list, two-pointer
 
 ### Question
 
 *Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.*
+
+### Ideas
+
+Use two pointers with an `n`-step gap. Advance `right` by `n` steps, then move both `left` and `right` together until `right` reaches the last node. Now `left` is the predecessor of the target — relink it to skip the removed node. If `right` is null after the initial advance, the head itself is being removed so return `head.next`.
 
 ### Implementations
 
@@ -22,26 +26,22 @@ Tags: linked list, stack
  */
 
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
-    if (!head) return head;
-    // traverse to the end of the list
-    // build a stack then traverse back
-    const stack: ListNode[] = [];
-    let curr: ListNode | null = head;
-    while (curr) {
-      stack.push(curr);
-      curr = curr.next;
-    }
+  if (!head) return null;
+  let left = head;
+  let right = head;
+  // forward right
+  for (let i = 0; i < n; i++) {
+    right = right.next!;
+  }
+  if (!right) return head.next;
+  while (right.next) {
+    right = right.next;
+    left = left.next!;
+  }
+  const removed = left.next!;
+  left.next = removed.next;
+  removed.next = null;
 
-    if (n === stack.length) return head.next;
-    let counter = 1;
-    while (counter <= n) {
-      curr = stack.pop()!;
-      counter++;
-    }
-    // pointer the previous node to the new end
-    const nextNode = stack.pop()!;
-    nextNode.next = curr!.next;
-
-    return head;
-};
+  return head;
+}
 ```

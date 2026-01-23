@@ -2,6 +2,10 @@
 
 Tags: array, prefix sum
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 Given an integer array `nums`, return *an array* `answer` *such that* `answer[i]` *is equal to the product of all the elements of* `nums` *except* `nums[i]`.
@@ -30,7 +34,7 @@ For `nums = [1,2,3,4]`:
 
 This achieves O(n) time and O(1) extra space (excluding the output array).
 
-### Implementation
+### Solution
 
 ```typescript
 function productExceptSelf(nums: number[]): number[] {

@@ -2,6 +2,10 @@
 
 Tags: greedy
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 You are given an integer array `nums`. You are initially positioned at the array's **first index**, and each element in the array represents your maximum jump length at that position.
@@ -25,7 +29,7 @@ Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
     - If we can reach it, mark current position as new `lastGoodPosition`
     - At the end, check if we can reach the start (index 0)
 
-### Implementation
+### Solution
 
 Greedy approach
 

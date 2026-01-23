@@ -2,6 +2,10 @@
 
 Tags: bfs, graph
 
+### Interview Frequency
+
+High
+
 ### **Question**
 
 *There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you **must** take course `bi` first if you want to take course `ai`.*
@@ -21,7 +25,7 @@ Tags: bfs, graph
 5. If a node's in-degree drops to 0, then push it into the queue.
 6. repeat until the queue is empty. If any nodes remain unprocessed, then there must be a cycle.
 
-### Implementation
+### Solution
 
 ```typescript
 function canFinish(numCourses: number, prerequisites: number[][]): boolean {

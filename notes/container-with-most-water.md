@@ -2,6 +2,10 @@
 
 Tags: array, two-pointer, greedy
 
+### Interview Frequency
+
+High
+
 ### Ideas
 
 - Place 2 pointers one at the start and one at the end of the array
@@ -9,7 +13,7 @@ Tags: array, two-pointer, greedy
 - Move the pointer with the shorter height, which will increase the chance to get a taller height → increase the area given the width got decreased
 - **Time complexity:** O(n)
 
-### Implementations
+### Solution
 
 ```typescript
 function containerWithMostWater(height: number[]): number {

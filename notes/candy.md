@@ -2,6 +2,10 @@
 
 Tags: greedy
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 There are `n` children standing in a line. Each child is assigned a rating value given in the integer array `ratings`.
@@ -28,7 +32,7 @@ Explanation: You can allocate to the first, second and third child with 2, 1, 2 
 - the final result is the max of the value from left and from right (since this is the minimum value)
 - `travelFromLeft` and `travelFromRight` represents the minimum number of candies required if we only look at the neighbors from `left` and `right` respectively
 
-### Implementation
+### Solution
 
 ```typescript
 function candy(ratings: number[]): number {

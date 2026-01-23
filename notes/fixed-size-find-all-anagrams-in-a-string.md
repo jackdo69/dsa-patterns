@@ -2,6 +2,10 @@
 
 Tags: sliding window, string
 
+### Interview Frequency
+
+High
+
 ### Question
 
 *Given two strings `s` and `p`, return an array of all the start indices of `p`'s anagrams in `s`. You may return the answer in **any order**.*
@@ -14,7 +18,7 @@ Tags: sliding window, string
 - When the window exceeds size `p.length`, shrink from the left by decrementing the character count
 - **Time complexity:** O(n) where n is the length of s
 
-### Implementations
+### Solution
 
 ```typescript
 function findAnagrams(s: string, p: string): number[] {

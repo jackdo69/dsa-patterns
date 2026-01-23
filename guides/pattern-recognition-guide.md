@@ -107,6 +107,10 @@ INPUT TYPE
 
 ### Array/String Patterns
 
+**HASH MAP**
+- Keywords: "two sum", "complement", "frequency", "group by", "consecutive", "anagram"
+- Examples: Two Sum, Group Anagrams, Top K Frequent Elements, Longest Consecutive Sequence
+
 **TWO POINTERS**
 - Keywords: "sorted array", "pair", "triplet", "remove duplicates", "in-place"
 - Examples: Two Sum II, Container With Most Water, Remove Duplicates

@@ -2,12 +2,16 @@
 
 Tags: graph, heap
 
+### Interview Frequency
+
+Medium
+
 ### Ideas
 
 - Dijkstra algorithm was designed to find the shortest path between 2 nodes where all the edges are positive. In Dijkstra algorithm, each node will only be visited once.
 - **Time complexity:** *O*((*V*+*E*)log*V*) ****where V is the number of vertices and E is the number of edges, this is due to each vertex and edge is process with log V of the priority queue
 
-### Implementations
+### Solution
 
 **Question:** *You are given a network of `n` nodes, labeled from `1` to `n`. You are also given `times`, a list of travel times as directed edges `times[i] = (ui, vi, wi)`, where `ui` is the source node, `vi` is the target node, and `wi` is the time it takes for a signal to travel from source to target.*
 

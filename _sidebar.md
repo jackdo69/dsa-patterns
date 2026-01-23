@@ -9,7 +9,10 @@
   * [Pattern Combinations](guides/pattern-combinations.md)
 
 * Patterns - Arrays & Strings
+  * [Two Sum](notes/two-sum.md)
   * [Two Pointer - Container With Most Water](notes/container-with-most-water.md)
+  * [3Sum](notes/3sum.md)
+  * [Trapping Rain Water](notes/trapping-rain-water.md)
   * [Fixed Size - Find all anagrams](notes/fixed-size-find-all-anagrams-in-a-string.md)
   * [Variable Size - Longest Substring](notes/variable-size-longest-substring-without-repeatin.md)
   * [Prefix Sum](notes/prefix-sum.md)
@@ -19,6 +22,11 @@
   * [String Matching - Rabin Karp](notes/string-matching-rabin-karp.md)
   * [String to Integer (ATOI)](notes/string-to-integer-ascii-to-integer-atoi.md)
   * [Expanding from Center - Palindrome](notes/expanding-from-center-longest-palindrome-substri.md)
+
+* Patterns - Hash Maps
+  * [Group Anagrams](notes/group-anagrams.md)
+  * [Top K Frequent Elements](notes/top-k-frequent-elements.md)
+  * [Longest Consecutive Sequence](notes/longest-consecutive-sequence.md)
 
 * Patterns - Arrays Advanced
   * [Set Matrix Zeroes](notes/set-matrix-zeroes.md)
@@ -38,6 +46,8 @@
 
 * Patterns - Stacks & Queues
   * [Valid Parentheses](notes/valid-parentheses.md)
+  * [Min Stack](notes/min-stack.md)
+  * [Daily Temperatures](notes/daily-temperatures.md)
   * [Monotonic Stack - Remove k digits](notes/monotonic-stack-remove-k-digits.md)
   * [Monotonic Queue - Sliding Window Max](notes/monotonic-queue-stack-sliding-window-maximum.md)
   * [Expression Evaluation - Calculator](notes/expression-evaluation-basic-calculator.md)
@@ -52,16 +62,23 @@
   * [DFS Preorder - Same Tree](notes/dfs-preorder-traversal-same-tree.md)
   * [DFS In-order - Validate BST](notes/dfs-in-order-traversal-validate-binary-search-tr.md)
   * [DFS Postorder - Max Depth](notes/dfs-postorder-traversal-max-depth.md)
+  * [Path Sum](notes/path-sum.md)
+  * [Path Sum II](notes/path-sum-ii.md)
+  * [Diameter of Binary Tree](notes/diameter-of-binary-tree.md)
+  * [Balanced Binary Tree](notes/balanced-binary-tree.md)
   * [Lowest Common Ancestor (LCA)](notes/lowest-common-ancestor-lca.md)
   * [Serialize and Deserialize Tree](notes/serialize-and-deserialize-binary-tree.md)
 
 * Patterns - Trees & Graphs (BFS)
   * [BFS - Level Order Traversal](notes/bfs-binary-tree-level-order-traversal.md)
+  * [Binary Tree Right Side View](notes/binary-tree-right-side-view.md)
   * [BFS - Rotting Oranges](notes/bfs-rotting-oranges.md)
   * [DFS - Number of Islands](notes/dfs-number-of-islands.md)
   * [DFS Cycle Detection - Course Schedule](notes/dfs-cycle-detection-course-schedule-ii.md)
 
 * Patterns - Graph Algorithms
+  * [Clone Graph](notes/clone-graph.md)
+  * [Word Ladder](notes/word-ladder.md)
   * [Topological Sort - Kahn's Algorithm](notes/topological-sort-kahn-algorithm-course-schedul.md)
   * [Union Find - Disjoint Set](notes/union-find-disjoint-set-number-of-operations-to.md)
   * [Dijkstra - Shortest Path](notes/shortest-path-dijkstra-algorithm-network-delay.md)
@@ -106,6 +123,8 @@
   * [Fenwick Tree - Binary Index Tree](notes/fenwick-tree-binary-index-tree.md)
 
 * Patterns - Sorting
+  * [Merge Sort](notes/merge-sort.md)
+  * [Sort List](notes/sort-list.md)
   * [Quick Sort](notes/quick-sort.md)
 
 * Other Topics

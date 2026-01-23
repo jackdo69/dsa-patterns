@@ -2,6 +2,10 @@
 
 Tags: heap
 
+### Interview Frequency
+
+Medium
+
 ### **Question**
 
 *The **median** is the middle value in an ordered integer list. If the size of the list is even, there is no middle value, and the median is the mean of the two middle values.*
@@ -36,7 +40,7 @@ findMedian Time Complexity: O(1)
     2. Peek operations on heaps: O(1)
     3. Basic arithmetic: O(1)
 
-### Implementations
+### Solution
 
 ```typescript
 class MedianFinder {

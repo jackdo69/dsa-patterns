@@ -11,7 +11,7 @@ Tags: heap
 - **Time complexity:**
     - insert/delete: O(logn) → the height of the tree is logn
 
-### Implementations
+### Solution
 
 ```typescript
 class _MinHeap {

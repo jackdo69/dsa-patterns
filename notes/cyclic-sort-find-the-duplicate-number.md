@@ -2,6 +2,10 @@
 
 Tags: array, two pointer, linked list
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 Given an array of integers `nums` containing `n + 1` integers where each integer is in the range `[1, n]` inclusive.
@@ -28,7 +32,7 @@ Index: 0 → 1 → 3 → 2 → 4 → 2 → 4 → ...
 **Time Complexity:** O(n)
 **Space Complexity:** O(1)
 
-### Implementation
+### Solution
 
 ```typescript
   function findDuplicate(nums: number[]): number {

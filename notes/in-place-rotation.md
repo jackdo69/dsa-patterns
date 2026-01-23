@@ -2,6 +2,10 @@
 
 Tags: array
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.
@@ -31,7 +35,7 @@ Reverse k..n-1: [5,6,7,1,2,3,4] ✓
 **Time Complexity:** O(n)
 **Space Complexity:** O(1)
 
-### Implementation
+### Solution
 
 ```typescript
 /**

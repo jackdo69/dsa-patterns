@@ -2,6 +2,10 @@
 
 Tags: linked list
 
+### Interview Frequency
+
+High
+
 ### Question
 
 - *Design a data structure that follows the constraints of a [**Least Recently Used (LRU) cache**](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU).*
@@ -15,7 +19,7 @@ Tags: linked list
 
 The tricky part is `put` must be implemented in `O(1)` . For `get` we can easily use hash map, but to remove the LRU item, we need a data structure that can keep the order, grow in size with O(1). So a double linked list is the best option
 
-### Implementations
+### Solution
 
 ```typescript
 class DLNode {

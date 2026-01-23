@@ -2,6 +2,10 @@
 
 Tags: dfs, grid
 
+### Interview Frequency
+
+High
+
 ### Question
 
 *Given an `m x n` 2D binary grid `grid` which represents a map of `'1'`s (land) and `'0'`s (water), return the number of islands.*
@@ -13,7 +17,7 @@ Tags: dfs, grid
 - Loop through all cells, if it `0`, do nothing, if it’s `1` set it to `0` and recursively visit all his neighbors, then return `1` as the number of island
 - total number of island will be counted as the time we first visit an island
 
-### Implementation
+### Solution
 
 ```typescript
 function numIslands(grid: string[][]): number {

@@ -2,6 +2,10 @@
 
 Tags: greedy, stack
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 Given string num representing a non-negative integer `num`, and an integer `k`, return *the smallest possible integer after removing* `k` *digits from* `num`.
@@ -19,7 +23,7 @@ Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 whi
 - In order to get smallest number, smallest digits must be on the left
 - Use the greedy approach to scan from left to right
 
-### Implementation
+### Solution
 
 ```typescript
 function removeKdigits(num: string, k: number): string {

@@ -2,6 +2,10 @@
 
 Tags: monotonic, queue, sliding window, stack
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 *You are given an array of integers `nums`, there is a sliding window of size `k` which is moving from the very left of the array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one position.*
@@ -14,7 +18,7 @@ Tags: monotonic, queue, sliding window, stack
 - In order to know when that element is outside of the window, we store the index of the element instead of itself
 - In order to make the queue decreasing, whenever we push the new item to the queue, we compare that item to the last item of the queue and keep popping
 
-### Implementation
+### Solution
 
 ```typescript
 function maxSlidingWindow(nums: number[], k: number): number[] {

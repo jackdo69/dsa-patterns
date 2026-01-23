@@ -2,6 +2,10 @@
 
 Tags: sliding window, string
 
+### Interview Frequency
+
+High
+
 ### Question
 
 *Given a string `s`, find the length of the **longest** **substring** without duplicate characters.*
@@ -12,7 +16,7 @@ Tags: sliding window, string
 - *Once we find a character that exist in the set, we keep deleting all the character from the start until the set has only unique character.*
 - *Then we move the right pointer forward.*
 
-### Implementations
+### Solution
 
 ```typescript
 function lengthOfLongestSubstring(s: string): number {

@@ -2,6 +2,10 @@
 
 Tags: array, prefix sum
 
+### Interview Frequency
+
+Low
+
 ### Ideas
 
 if exist a sub array from position `i` to `j` that has a `sum` of `k` then
@@ -10,7 +14,7 @@ if exist a sub array from position `i` to `j` that has a `sum` of `k` then
 prefixSum(j) - prefixSum(i-1) = k
 ```
 
-### Implementation
+### Solution
 
 ```typescript
 function prefixSum(arr: number[]): number[] {

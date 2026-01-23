@@ -2,6 +2,10 @@
 
 Tags: array, two pointers
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 You are given two integer arrays `nums1` and `nums2`, sorted in **non-decreasing order**, and two integers `m` and `n`, representing the number of elements in `nums1` and `nums2` respectively.
@@ -26,7 +30,7 @@ Only need to handle leftover nums2 - leftover nums1 elements are already in plac
 **Time Complexity:** O(m + n)
 **Space Complexity:** O(1)
 
-### Implementation
+### Solution
 
 ```typescript
 function merge(nums1: number[], m: number, nums2: number[], n: number): void {

@@ -2,6 +2,10 @@
 
 Tags: string
 
+### Interview Frequency
+
+Low
+
 ### Ideas
 
 The Rabin-Karp algorithm is a string searching algorithm that finds a pattern within a text using **hashing**. Instead of comparing characters one by one, it converts substrings into numbers and compares those numbers. 
@@ -20,7 +24,7 @@ The Rabin-Karp algorithm is a string searching algorithm that finds a pattern wi
 - Average case: O(n + m) where n = text length, m = pattern length
 - Worst case: O(nm) when many hash collisions occur
 
-### Implementations
+### Solution
 
 ```typescript
 function rabinKarp(text: string, pattern: string): number[] {

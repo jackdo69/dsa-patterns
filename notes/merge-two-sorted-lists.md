@@ -2,6 +2,10 @@
 
 Tags: linked list, two pointer
 
+### Interview Frequency
+
+High
+
 ### Question
 
 You are given the heads of two sorted linked lists `list1` and `list2`.
@@ -14,7 +18,7 @@ Return *the head of the merged linked list*.
 
 Use a dummy node and iterate both lists simultaneously. At each step, compare the current nodes and append the smaller one to the merged list. When one list is exhausted, attach the remainder of the other list directly.
 
-### Implementation
+### Solution
 
 ```typescript
 function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {

@@ -2,6 +2,10 @@
 
 Tags: bfs, grid
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *You are given an `m x n` `grid` where each cell can have one of three values:*
@@ -14,7 +18,7 @@ Tags: bfs, grid
 
 *Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return `-1`.*
 
-### Implementation
+### Solution
 
 ```typescript
 function orangesRotting(grid: number[][]): number {

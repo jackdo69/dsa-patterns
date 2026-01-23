@@ -2,6 +2,10 @@
 
 Tags: binary search, divide and conquer
 
+### Interview Frequency
+
+Very Low
+
 ### Question
 
 Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return **the median** of the two sorted arrays.
@@ -48,7 +52,7 @@ k = 4
 - Therefore, we can safely eliminate these elements
 - We advance firstIndex by halfK
 
-### Implementation
+### Solution
 
 ```typescript
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {

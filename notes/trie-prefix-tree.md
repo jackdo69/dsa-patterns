@@ -2,6 +2,10 @@
 
 Tags: string, trie
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 - *A [**trie**](https://en.wikipedia.org/wiki/Trie) (pronounced as "try") or **prefix tree** is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker. Implement the Trie class:*
@@ -10,7 +14,7 @@ Tags: string, trie
 - `*boolean search(String word)` Returns `true` if the string `word` is in the trie (i.e., was inserted before), and `false` otherwise.*
 - `*boolean startsWith(String prefix)` Returns `true` if there is a previously inserted string `word` that has the prefix `prefix`, and `false` otherwise.*
 
-### Implementations
+### Solution
 
 ```typescript
 class Node {

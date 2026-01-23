@@ -2,13 +2,17 @@
 
 Tags: linked list
 
+### Interview Frequency
+
+Medium
+
 ### Ideas
 
 - It uses 2 pointers 1 `fast` and `slow`, if there is a cycle in the list, then eventually `fast` pointer will meet the `slow` pointer ⇒ detect cycle
 - When 2 pointers met, if we reset the slow pointer to the start, and move both pointers at the same speed, then they will meet again at the beginning of the cycle
 - **Time Complexity:** O(n)
 
-### Implementations
+### Solution
 
 ```typescript
   function detectCycle(head: ListNode | null): ListNode | null {

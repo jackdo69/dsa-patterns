@@ -1,5 +1,9 @@
 # Quick Sort
 
+### Interview Frequency
+
+Medium
+
 ### Ideas
 
 1. Choose the last element in the array as the pivot (`right`)
@@ -9,7 +13,7 @@
 
 **Time complexity:** O(nlogn) because we have to loop through all the element once, each time, the size of the array is split by half
 
-### Implementation
+### Solution
 
 ```typescript
 function quickSort(arr: number[]): number[] {

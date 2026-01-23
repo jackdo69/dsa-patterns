@@ -2,6 +2,10 @@
 
 Tags: dynamic programming
 
+### Interview Frequency
+
+High
+
 ### Question
 
 Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` can be segmented into a space-separated sequence of one or more dictionary words.
@@ -22,7 +26,7 @@ Explanation: Return true because "leetcode" can be segmented as "leet code".
 - This leads to dynamic programming, the solution is built from subproblems, if we know whether all prefixes of the string can be segmented, then the entire string can be segmented
 - `dp[i]` represents whether `s[0:i]` can be segmented
 
-### Implementation
+### Solution
 
 ```typescript
   function wordBreak(s: string, wordDict: string[]): boolean {

@@ -2,6 +2,10 @@
 
 Tags: dynamic programming
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Given an integer array `nums`, return the length of the longest **strictly increasing subsequence**.*
@@ -11,7 +15,7 @@ Tags: dynamic programming
 - We use bottom up approach, if at each position, we start a new subsequence, then the `dp[i]`  will be 1. From `i` we loop back, if there is any number `nums[j]` less than `nums[i]`  then we can extend the subsequence
 - Time complexity: O(n^2)
 
-### Implementations
+### Solution
 
 ```typescript
 function lengthOfLIS(nums: number[]): number {

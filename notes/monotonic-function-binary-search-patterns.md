@@ -2,6 +2,10 @@
 
 Tags: binary search, monotonic
 
+### Interview Frequency
+
+Medium
+
 ### Ideas
 
 A monotonic function is a function that is either **non-decreasing** or **non-increasing**. Given `x1` and `x2` where `x1 > x2`, we should have `f(x1) >= f(x2)`.

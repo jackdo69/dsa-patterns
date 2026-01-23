@@ -4,7 +4,7 @@ A comprehensive, pattern-based approach to mastering Data Structures & Algorithm
 
 ## What's Inside
 
-This repository contains **75 algorithm patterns** designed to help you:
+This repository contains **92 algorithm patterns** designed to help you:
 - **Understand** core DSA concepts and how they relate
 - **Recognize** which pattern to apply to new problems
 - **Practice** systematically at your own pace
@@ -20,7 +20,7 @@ This repository contains **75 algorithm patterns** designed to help you:
 │   ├── quick-reference.md             # One-page cheat sheet for interviews
 │   └── pattern-combinations.md        # How patterns combine in hard problems
 │
-├── notes/                             # 75 pattern implementations
+├── notes/                             # 92 pattern implementations
 │   ├── Arrays & Strings
 │   ├── Trees & Graphs
 │   ├── Dynamic Programming
@@ -39,7 +39,7 @@ This repository contains **75 algorithm patterns** designed to help you:
 Read **[concept-relationships.md](guides/concept-relationships.md)** to understand how all patterns connect
 
 ### 2. Browse the Patterns
-Explore **[quick-reference.md](guides/quick-reference.md)** to see all 75 patterns organized by category
+Explore **[quick-reference.md](guides/quick-reference.md)** to see all 92 patterns organized by category
 
 ### 3. Practice Pattern Recognition
 When solving problems, use **[pattern-recognition-guide.md](guides/pattern-recognition-guide.md)** to identify the right approach
@@ -80,7 +80,7 @@ Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Tries
 
 ## Key Features
 
-- **75 Algorithm Patterns:** Complete coverage of interview topics
+- **92 Algorithm Patterns:** Complete coverage of interview topics
 - **TypeScript Implementations:** Clean, working code for every pattern
 - **Pattern Recognition Guide:** Learn to identify which pattern to apply
 - **Concept Relationships:** Understand how patterns connect and build on each other

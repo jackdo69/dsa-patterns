@@ -2,6 +2,10 @@
 
 Tags: string
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 Implement the `myAtoi(string s)` function, which converts a string to a 32-bit signed integer.
@@ -15,7 +19,7 @@ The algorithm for `myAtoi(string s)` is as follows:
 
 Return the integer as the final result.
 
-### Implementation
+### Solution
 
 ```typescript
 function myAtoi(s: string): number {

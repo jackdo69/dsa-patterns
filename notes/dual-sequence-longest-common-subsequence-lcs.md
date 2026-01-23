@@ -2,6 +2,10 @@
 
 Tags: dynamic programming
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Given two strings `text1` and `text2`, return the length of their longest **common subsequence**. If there is no **common subsequence**, return `0`. A **subsequence** of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters. For example, `"ace"` is a subsequence of `"abcde"`.  A **common subsequence** of two strings is a subsequence that is common to both strings.*
@@ -13,7 +17,7 @@ Tags: dynamic programming
 - if no character found, we have 2 choice, either skip the position in text1 or skip the position in text 2
 - Time complexity: O(m*n)
 
-### Implementation
+### Solution
 
 ```typescript
   function longestCommonSubsequence(text1: string, text2: string): number {

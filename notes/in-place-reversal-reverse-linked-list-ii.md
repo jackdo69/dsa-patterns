@@ -2,6 +2,10 @@
 
 Tags: linked list
 
+### Interview Frequency
+
+High
+
 ### Question
 
 Given the `head` of a singly linked list and two integers `left` and `right` where `left <= right`, reverse the nodes of the list from position `left` to position `right`, and return *the reversed list*.
@@ -53,7 +57,7 @@ Phase 3 - Reconnect:
   Result: 1→4→3→2→5
 ```
 
-### Implementation
+### Solution
 
 ```typescript
 /**

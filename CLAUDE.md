@@ -1,6 +1,6 @@
 # DSA Patterns Codebase
 
-A pattern-based Data Structures & Algorithms study system for technical interviews. Contains **75 algorithm patterns** across 13 categories, all implemented in **TypeScript**.
+A pattern-based Data Structures & Algorithms study system for technical interviews. Contains **92 algorithm patterns** across 15 categories, all implemented in **TypeScript**.
 
 ## Structure
 
@@ -11,7 +11,7 @@ A pattern-based Data Structures & Algorithms study system for technical intervie
 │   ├── concept-relationships.md      # How patterns interconnect
 │   ├── quick-reference.md            # One-page cheat sheet with complexities
 │   └── pattern-combinations.md       # Complex problem strategies
-├── notes/                        # 75 pattern markdown files (main content)
+├── notes/                        # 92 pattern markdown files (main content)
 ├── docsify/                      # Docsify configuration files
 │   ├── docsify-config.js             # Site config with tag colors
 │   ├── custom.css                    # Custom styling
@@ -22,19 +22,21 @@ A pattern-based Data Structures & Algorithms study system for technical intervie
 
 ## Pattern Categories
 
-1. Arrays & Strings (two pointer, sliding window, prefix sum, Kadane's)
-2. Arrays Advanced (matrix operations, cyclic sort)
-3. Linked Lists (fast/slow, reversal, merge)
-4. Stacks & Queues (monotonic stack/queue, expression evaluation)
-5. Binary Search (rotated array, k closest)
-6. Trees - DFS (preorder, inorder, postorder, LCA, serialize)
-7. Trees & Graphs - BFS (level order, islands, cycle detection)
-8. Graph Algorithms (topological sort, union find, Dijkstra, Bellman-Ford, Floyd-Warshall, MST)
-9. Heaps (merge k lists, median stream, scheduling)
-10. Backtracking (subsets, permutations, combinations)
-11. Greedy (intervals, stock problems)
-12. Dynamic Programming (knapsack variants, LCS, LIS, grid DP, interval DP)
-13. Advanced Data Structures (Trie, LRU Cache, Fenwick Tree)
+1. Arrays & Strings (two sum, two pointer, sliding window, prefix sum, Kadane's)
+2. Hash Maps (group anagrams, top k frequent, longest consecutive)
+3. Arrays Advanced (matrix operations, cyclic sort)
+4. Linked Lists (fast/slow, reversal, merge)
+5. Stacks & Queues (min stack, monotonic stack/queue, expression evaluation)
+6. Binary Search (rotated array, k closest)
+7. Trees - DFS (preorder, inorder, postorder, path sum, diameter, LCA, serialize)
+8. Trees & Graphs - BFS (level order, right side view, islands, cycle detection)
+9. Graph Algorithms (clone graph, word ladder, topological sort, union find, Dijkstra, Bellman-Ford, Floyd-Warshall, MST)
+10. Heaps (merge k lists, median stream, scheduling)
+11. Backtracking (subsets, permutations, combinations)
+12. Greedy (intervals, stock problems)
+13. Dynamic Programming (knapsack variants, LCS, LIS, grid DP, interval DP)
+14. Sorting (merge sort, sort list, quick sort)
+15. Advanced Data Structures (Trie, LRU Cache, Fenwick Tree)
 
 ## File Conventions
 
@@ -71,7 +73,7 @@ Uses Docsify for documentation site with search and tag filtering.
 
 ## Key Files for Quick Reference
 
-- `guides/quick-reference.md` - All 75 patterns with time/space complexity
+- `guides/quick-reference.md` - All 92 patterns with time/space complexity
 - `guides/pattern-recognition-guide.md` - Decision tree: "What pattern should I use?"
 - `_sidebar.md` - Full navigation structure
 - `docsify/docsify-config.js` - Tag color definitions (25 tags)

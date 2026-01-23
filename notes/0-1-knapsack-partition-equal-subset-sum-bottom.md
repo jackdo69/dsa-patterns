@@ -1,5 +1,9 @@
 # *0/1 Knapsack - Partition Equal Subset Sum - Bottom up approach
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Given an integer array `nums`, return `true` if you can partition the array into two subsets such that the sum of the elements in both subsets is equal or `false` otherwise. e.g* 
@@ -13,7 +17,7 @@ Output: true
 
 - Note: When we iterate the sum, we need to go backward, which to stop using a number twice, because we process larger sum first, so when we update `dp[i]`  we only look at states that haven’t used the current number
 
-### Implementations
+### Solution
 
 ```typescript
 function canPartition(nums: number[]): boolean {

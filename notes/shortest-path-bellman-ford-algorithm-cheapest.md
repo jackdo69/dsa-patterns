@@ -2,12 +2,16 @@
 
 Tags: dynamic programming, graph
 
+### Interview Frequency
+
+Very Low
+
 ### Ideas
 
 - Bellman Ford algorithm allow to find shortest path when the edges weight can be negative
 - **Time complexity**: Bellman Ford algorithn takes longer than Dijkstra algorithm with O(E*V) because all edges are relaxed V-1 times
 
-### Implementations
+### Solution
 
 **Question:** There are `n` cities connected by some number of flights. You are given an array `flights` where `flights[i] = [from, to, price]` indicates that there is a flight from city `from` to city `to` with cost `price`.
 

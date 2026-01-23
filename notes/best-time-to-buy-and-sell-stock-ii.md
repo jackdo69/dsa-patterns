@@ -2,6 +2,10 @@
 
 Tags: dynamic programming, greedy
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *You are given an integer array `prices` where `prices[i]` is the price of a given stock on the `ith` day.*
@@ -16,7 +20,7 @@ Tags: dynamic programming, greedy
 - In other words, we want to capture all the upward movement of the price
 - We only care about positive differences between consecutive days.
 
-### Implementation
+### Solution
 
 ```typescript
 function maxProfit(prices: number[]): number {

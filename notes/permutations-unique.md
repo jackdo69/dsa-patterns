@@ -2,6 +2,10 @@
 
 Tags: backtracking, dfs
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 - Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.*
@@ -15,7 +19,7 @@ Output:
  [2,1,1]]
 ```
 
-### Implementations
+### Solution
 
 ```typescript
   function permuteUnique(nums: number[]): number[][] {

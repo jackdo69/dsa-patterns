@@ -9,6 +9,7 @@
 | If Problem Has... | Use Pattern | Time | Space |
 |-------------------|-------------|------|-------|
 | "subarray/substring", "contiguous" | **Sliding Window** | O(n) | O(1) or O(k) |
+| "two sum", "complement", "frequency" | **Hash Map** | O(n) | O(n) |
 | "sorted array", "two sum", "pair" | **Two Pointers** | O(n) | O(1) |
 | "range sum", "subarray sum" | **Prefix Sum** | O(n) | O(n) |
 | "max/min subarray sum" | **Kadane's** | O(n) | O(1) |
@@ -34,110 +35,131 @@
 
 ---
 
-## 📚 All 75 Patterns (Categorized)
+## 📚 All 92 Patterns (Categorized)
 
-### ARRAYS (7)
-1. **Prefix Sum** - O(n), O(n) - Range sum queries
-2. **Kadane's** - O(n), O(1) - Max subarray sum
-3. **Product Except Self** - O(n), O(1) - Array multiplication
-4. **Two Pointers** - O(n), O(1) - Sorted array pairs
-5. **Cyclic Sort** - O(n), O(1) - Find missing/duplicate in [1..n]
-6. **In-place Rotation** - O(n), O(1) - Rotate array
-7. **Move Zeroes** - O(n), O(1) - In-place rearrangement
+### ARRAYS (10)
+1. **Two Sum (Hash Map)** - O(n), O(n) - Complement lookup
+2. **3Sum (Two Pointers)** - O(n²), O(1) - Triplet finding
+3. **Trapping Rain Water** - O(n), O(1) - Two pointer bottleneck
+4. **Prefix Sum** - O(n), O(n) - Range sum queries
+5. **Kadane's** - O(n), O(1) - Max subarray sum
+6. **Product Except Self** - O(n), O(1) - Array multiplication
+7. **Two Pointers** - O(n), O(1) - Sorted array pairs
+8. **Cyclic Sort** - O(n), O(1) - Find missing/duplicate in [1..n]
+9. **In-place Rotation** - O(n), O(1) - Rotate array
+10. **Move Zeroes** - O(n), O(1) - In-place rearrangement
+
+### HASH MAPS (3)
+11. **Group Anagrams** - O(n·k log k), O(n·k) - Sort-based grouping
+12. **Top K Frequent** - O(n), O(n) - Bucket sort frequency
+13. **Longest Consecutive Sequence** - O(n), O(n) - Set-based streak
 
 ### SLIDING WINDOW (3)
-8. **Fixed Size** - O(n), O(k) - Window size k
-9. **Variable Size** - O(n), O(k) - Longest/shortest substring
-10. **Monotonic Queue/Stack** - O(n), O(k) - Sliding window max/min
+14. **Fixed Size** - O(n), O(k) - Window size k
+15. **Variable Size** - O(n), O(k) - Longest/shortest substring
+16. **Monotonic Queue/Stack** - O(n), O(k) - Sliding window max/min
 
 ### STRINGS (5)
-11. **String Reversal** - O(n), O(1) - In-place reverse
-12. **ATOI** - O(n), O(1) - String to integer
-13. **Rabin Karp** - O(n+m), O(1) - Pattern matching
-14. **Expanding from Center** - O(n²), O(1) - Palindromes
-15. **Trie** - O(L), O(N*L) - Prefix tree
+17. **String Reversal** - O(n), O(1) - In-place reverse
+18. **ATOI** - O(n), O(1) - String to integer
+19. **Rabin Karp** - O(n+m), O(1) - Pattern matching
+20. **Expanding from Center** - O(n²), O(1) - Palindromes
+21. **Trie** - O(L), O(N*L) - Prefix tree
 
-### STACK (3)
-16. **Valid Parentheses** - O(n), O(n) - Matching pairs
-17. **Monotonic Stack** - O(n), O(n) - Next greater/smaller
-18. **Expression Evaluation** - O(n), O(n) - Calculator
+### STACK (5)
+22. **Valid Parentheses** - O(n), O(n) - Matching pairs
+23. **Min Stack** - O(1) all ops, O(n) - Stack with min tracking
+24. **Daily Temperatures** - O(n), O(n) - Monotonic stack application
+25. **Monotonic Stack** - O(n), O(n) - Next greater/smaller
+26. **Expression Evaluation** - O(n), O(n) - Calculator
 
 ### LINKED LIST (6)
-19. **Fast & Slow (Floyd's)** - O(n), O(1) - Cycle detection
-20. **In-Place Reversal** - O(n), O(1) - Reverse list
-21. **Merge Two Sorted** - O(n+m), O(1) - Merge lists
-22. **Remove Nth from End** - O(n), O(1) - Remove node
-23. **Intersection Detection** - O(n+m), O(1) - Find intersection
-24. **Rotate List** - O(n), O(1) - Reorder list
+27. **Fast & Slow (Floyd's)** - O(n), O(1) - Cycle detection
+28. **In-Place Reversal** - O(n), O(1) - Reverse list
+29. **Merge Two Sorted** - O(n+m), O(1) - Merge lists
+30. **Remove Nth from End** - O(n), O(1) - Remove node
+31. **Intersection Detection** - O(n+m), O(1) - Find intersection
+32. **Rotate List** - O(n), O(1) - Reorder list
 
 ### BINARY SEARCH (4)
-25. **Monotonic Functions** - O(log n), O(1) - Classic binary search
-26. **Rotated Sorted Array** - O(log n), O(1) - Find min/max
-27. **K Closest Elements** - O(log n + k), O(1) - Binary search + expand
-28. **Median of 2 Sorted** - O(log(min(m,n))), O(1) - Binary search on smaller
+33. **Monotonic Functions** - O(log n), O(1) - Classic binary search
+34. **Rotated Sorted Array** - O(log n), O(1) - Find min/max
+35. **K Closest Elements** - O(log n + k), O(1) - Binary search + expand
+36. **Median of 2 Sorted** - O(log(min(m,n))), O(1) - Binary search on smaller
 
-### TREES (6)
-29. **BFS (Level Order)** - O(n), O(n) - Level by level
-30. **DFS Preorder** - O(n), O(h) - Root first
-31. **DFS Inorder** - O(n), O(h) - Left-Root-Right
-32. **DFS Postorder** - O(n), O(h) - Children first
-33. **LCA** - O(n), O(h) - Lowest common ancestor
-34. **Serialize/Deserialize** - O(n), O(n) - Tree to string
+### TREES (11)
+37. **BFS (Level Order)** - O(n), O(n) - Level by level
+38. **Binary Tree Right Side View** - O(n), O(n) - BFS last per level
+39. **DFS Preorder** - O(n), O(h) - Root first
+40. **DFS Inorder** - O(n), O(h) - Left-Root-Right
+41. **DFS Postorder** - O(n), O(h) - Children first
+42. **Path Sum** - O(n), O(h) - Root-to-leaf sum
+43. **Path Sum II** - O(n), O(h) - All valid paths (backtracking)
+44. **Diameter of Binary Tree** - O(n), O(h) - Max path through any node
+45. **Balanced Binary Tree** - O(n), O(h) - Height-balanced check
+46. **LCA** - O(n), O(h) - Lowest common ancestor
+47. **Serialize/Deserialize** - O(n), O(n) - Tree to string
 
 ### MATRIX (2)
-35. **Spiral Traversal** - O(m*n), O(1) - Spiral order
-36. **Set Matrix Zeroes** - O(m*n), O(1) - In-place modification
+48. **Spiral Traversal** - O(m*n), O(1) - Spiral order
+49. **Set Matrix Zeroes** - O(m*n), O(1) - In-place modification
 
-### GRAPHS (9)
-37. **DFS** - O(V+E), O(V) - Explore all paths
-38. **BFS** - O(V+E), O(V) - Shortest path (unweighted)
-39. **DFS Cycle Detection** - O(V+E), O(V) - Detect cycles
-40. **Topological Sort (Kahn's)** - O(V+E), O(V) - Dependency order
-41. **Dijkstra's** - O((V+E) log V), O(V) - Shortest path (weighted)
-42. **Bellman Ford** - O(VE), O(V) - With negative weights
-43. **Floyd Warshall** - O(V³), O(V²) - All pairs shortest
-44. **Union Find** - O(α(n)), O(n) - Dynamic connectivity
-45. **Kruskal's (MST)** - O(E log E), O(V) - Minimum spanning tree
+### GRAPHS (11)
+50. **DFS** - O(V+E), O(V) - Explore all paths
+51. **BFS** - O(V+E), O(V) - Shortest path (unweighted)
+52. **Clone Graph** - O(V+E), O(V) - Deep copy with cycle handling
+53. **Word Ladder** - O(n·L·26), O(n) - BFS shortest transformation
+54. **DFS Cycle Detection** - O(V+E), O(V) - Detect cycles
+55. **Topological Sort (Kahn's)** - O(V+E), O(V) - Dependency order
+56. **Dijkstra's** - O((V+E) log V), O(V) - Shortest path (weighted)
+57. **Bellman Ford** - O(VE), O(V) - With negative weights
+58. **Floyd Warshall** - O(V³), O(V²) - All pairs shortest
+59. **Union Find** - O(α(n)), O(n) - Dynamic connectivity
+60. **Kruskal's (MST)** - O(E log E), O(V) - Minimum spanning tree
 
 ### BACKTRACKING (4)
-46. **Subset** - O(2ⁿ), O(n) - Generate all subsets
-47. **Permutations** - O(n!), O(n) - Generate all permutations
-48. **Combination Sum** - O(2ⁿ), O(n) - Find combinations
-49. **Palindrome Partitioning** - O(2ⁿ), O(n) - Partition string
+61. **Subset** - O(2ⁿ), O(n) - Generate all subsets
+62. **Permutations** - O(n!), O(n) - Generate all permutations
+63. **Combination Sum** - O(2ⁿ), O(n) - Find combinations
+64. **Palindrome Partitioning** - O(2ⁿ), O(n) - Partition string
 
 ### DYNAMIC PROGRAMMING (11)
-50. **1D DP (Fibonacci)** - O(n), O(n) or O(1) - Sequence problems
-51. **Grid DP** - O(m*n), O(m*n) - Path counting
-52. **LIS (Dynamic Subproblems)** - O(n²) or O(n log n), O(n) - Longest increasing
-53. **Dual Sequence (LCS)** - O(m*n), O(m*n) - Two strings/arrays
-54. **0/1 Knapsack (Top-down)** - O(n*sum), O(n*sum) - Choose/skip
-55. **0/1 Knapsack (Bottom-up)** - O(n*sum), O(n*sum) - Tabulation
-56. **Unbounded Knapsack** - O(n*amount), O(amount) - Unlimited use
-57. **Interval DP** - O(n³), O(n²) - Range problems
-58. **Word Break** - O(n²), O(n) - String segmentation
-59. **Stock Buy/Sell I** - O(n), O(1) - One transaction
-60. **Stock Buy/Sell II** - O(n), O(1) - Multiple transactions
+65. **1D DP (Fibonacci)** - O(n), O(n) or O(1) - Sequence problems
+66. **Grid DP** - O(m*n), O(m*n) - Path counting
+67. **LIS (Dynamic Subproblems)** - O(n²) or O(n log n), O(n) - Longest increasing
+68. **Dual Sequence (LCS)** - O(m*n), O(m*n) - Two strings/arrays
+69. **0/1 Knapsack (Top-down)** - O(n*sum), O(n*sum) - Choose/skip
+70. **0/1 Knapsack (Bottom-up)** - O(n*sum), O(n*sum) - Tabulation
+71. **Unbounded Knapsack** - O(n*amount), O(amount) - Unlimited use
+72. **Interval DP** - O(n³), O(n²) - Range problems
+73. **Word Break** - O(n²), O(n) - String segmentation
+74. **Stock Buy/Sell I** - O(n), O(1) - One transaction
+75. **Stock Buy/Sell II** - O(n), O(1) - Multiple transactions
 
 ### GREEDY (4)
-61. **Merge Intervals** - O(n log n), O(1) - Interval merging
-62. **Jump Game** - O(n), O(1) - Greedy choice
-63. **Task Scheduling** - O(n log n), O(1) - Scheduling
-64. **Candy** - O(n), O(n) - Distribution
+76. **Merge Intervals** - O(n log n), O(1) - Interval merging
+77. **Jump Game** - O(n), O(1) - Greedy choice
+78. **Task Scheduling** - O(n log n), O(1) - Scheduling
+79. **Candy** - O(n), O(n) - Distribution
 
 ### HEAP (4)
-65. **Min Heap** - O(log n) insert/delete, O(n) build - Priority queue
-66. **Find Median (Two Heaps)** - O(log n) insert, O(1) median - Stream median
-67. **Merge k Sorted** - O(n log k), O(k) - Merge lists/arrays
-68. **Heap vs BST** - Conceptual understanding
+80. **Min Heap** - O(log n) insert/delete, O(n) build - Priority queue
+81. **Find Median (Two Heaps)** - O(log n) insert, O(1) median - Stream median
+82. **Merge k Sorted** - O(n log k), O(k) - Merge lists/arrays
+83. **Heap vs BST** - Conceptual understanding
 
-### DESIGN & ADVANCED (7)
-69. **LRU Cache** - O(1) get/put, O(capacity) space - Cache design
-70. **Fenwick Tree (BIT)** - O(log n) update/query, O(n) space - Range queries
-71. **Quick Sort** - O(n log n) avg, O(n²) worst, O(log n) space - Sorting
-72. **Maths (Base, Modular, Log)** - varies - Number theory
-73. **Permutations/Subsets (Math)** - O(1) - Combinatorics
-74. **Merge Sorted Array** - O(n+m), O(1) - Two pointer merge
-75. **Time Complexity** - Conceptual - Big O analysis
+### SORTING (3)
+84. **Merge Sort** - O(n log n), O(n) - Stable divide and conquer
+85. **Sort List** - O(n log n), O(log n) - Merge sort on linked list
+86. **Quick Sort** - O(n log n) avg, O(n²) worst, O(log n) space - Partition sort
+
+### DESIGN & ADVANCED (6)
+87. **LRU Cache** - O(1) get/put, O(capacity) space - Cache design
+88. **Fenwick Tree (BIT)** - O(log n) update/query, O(n) space - Range queries
+89. **Maths (Base, Modular, Log)** - varies - Number theory
+90. **Permutations/Subsets (Math)** - O(1) - Combinatorics
+91. **Merge Sorted Array** - O(n+m), O(1) - Two pointer merge
+92. **Time Complexity** - Conceptual - Big O analysis
 
 ---
 

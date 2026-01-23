@@ -2,6 +2,10 @@
 
 Tags: dynamic programming, greedy
 
+### Interview Frequency
+
+High
+
 ### Question
 
 *You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.*
@@ -18,7 +22,7 @@ Tags: dynamic programming, greedy
     - For each potential selling day, we calculate the profit using min price so far as buying price
     - Then we keep track of max profit we can achieve
 
-### Implementation
+### Solution
 
 ```typescript
 function maxProfit(prices: number[]): number {

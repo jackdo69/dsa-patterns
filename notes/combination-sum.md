@@ -2,6 +2,10 @@
 
 Tags: backtracking
 
+### Interview Frequency
+
+High
+
 ### Question
 
 *Given an array of **distinct** integers `candidates` and a target integer `target`, return a list of all **unique combinations** of `candidates` where the chosen numbers sum to `target`. You may return the combinations in **any order**.*
@@ -21,7 +25,7 @@ not include the current element
 with recursion, we pass in the sum down, until it equal the target
 if we out of loop or sum > target, we breaks
 
-### Implementation
+### Solution
 
 ```typescript
 function combinationSum(candidates: number[], target: number): number[][] {

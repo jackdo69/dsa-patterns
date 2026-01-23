@@ -2,11 +2,15 @@
 
 Tags: dfs, tree
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.*
 
-### Implementation
+### Solution
 
 ```typescript
 /*

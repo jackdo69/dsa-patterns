@@ -1,10 +1,14 @@
 # Fenwick tree - Binary Index Tree
 
+### Interview Frequency
+
+Very Low
+
 ### Ideas
 
 - It’s an data structure that specialised in calculating the prefix sum with `O(logn)` time complexity, but it comes with the trade off that when updating an element, it also takes `O(logn)` time complexity. Even it’s called a “tree”, it actually uses an array to represents the value of all the nodes. An Binary Index Tree (BIT) which represents an array of length `n` will have `n` nodes and `logn` height
 
-### Implementations
+### Solution
 
 ```typescript
 class BinaryIndexTree {

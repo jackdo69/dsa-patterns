@@ -8,7 +8,7 @@ Tags: array
 - The algorithm states that the `maxSum` at position `n` of array `arr` will either be `arr[n]` OR `maxSum(n-1) + arr[n]`
 - **Time Complexity:** O(n)
 
-### Implementations
+### Solution
 
 ```typescript
 function maxSubArray(nums: number[]): number {

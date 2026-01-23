@@ -2,6 +2,10 @@
 
 Tags: matrix
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire row and column to `0`'s.
@@ -20,7 +24,7 @@ Use two arrays to mark which rows and columns need to be zeroed:
 **Time Complexity:** O(m × n)
 **Space Complexity:** O(m + n)
 
-### Implementation
+### Solution
 
 ```typescript
 function setZeroes(matrix: number[][]): void {

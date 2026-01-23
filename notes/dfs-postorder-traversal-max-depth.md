@@ -2,13 +2,17 @@
 
 Tags: dfs, tree
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Given the `root` of a binary tree, return its maximum depth.*
 
 *A binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.*
 
-### Implementation
+### Solution
 
 ```typescript
 function maxDepth(root: TreeNode | null): number {

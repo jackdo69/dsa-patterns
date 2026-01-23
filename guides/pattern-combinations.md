@@ -594,7 +594,7 @@ Most hard interview problems require combining multiple patterns. This guide sho
 ## 🎓 Practice Progression
 
 ### Level 1: Master Single Patterns First
-- Complete all 75 individual patterns
+- Complete all 92 individual patterns
 - Solve 2-3 problems for each pattern
 - Build strong foundation
 

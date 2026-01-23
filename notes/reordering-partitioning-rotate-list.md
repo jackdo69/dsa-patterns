@@ -2,6 +2,10 @@
 
 Tags: linked list
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 Given the `head` of a linked list, rotate the list to the right by `k` places.
@@ -14,7 +18,7 @@ Since `k` can exceed the list length, first compute the length and normalize wit
 
 **Why not two-pointer gap?** Unlike remove nth node from end (where `n` is guaranteed valid), `k` here can exceed the list length. The fast pointer would overshoot before establishing the gap, so we'd need the length anyway to normalize `k`. Once we have the length, walking directly to `length - k - 1` is simpler than a two-pointer setup.
 
-### Implementation
+### Solution
 
 ```typescript
 function rotateRight(head: ListNode | null, k: number): ListNode | null {

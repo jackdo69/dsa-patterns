@@ -2,6 +2,10 @@
 
 Tags: dfs, tree
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Given the `root` of a binary tree, determine if it is a valid binary search tree (BST).*
@@ -15,7 +19,7 @@ Tags: dfs, tree
 - *The right subtree of a node contains only nodes with keys **strictly greater than** the node's key.*
 - *Both the left and right subtrees must also be binary search trees.*
 
-### Implementation
+### Solution
 
 ```typescript
 function isValidBST(root: TreeNode | null): boolean {

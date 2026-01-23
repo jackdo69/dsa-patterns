@@ -2,6 +2,10 @@
 
 Tags: string, two pointer
 
+### Interview Frequency
+
+Low
+
 ### Question
 
 *Given a string `s`, return the longest palindromic substring in `s`.*
@@ -19,7 +23,7 @@ For each center, expand outward while characters match. Track the longest palind
 **Time Complexity:** O(n²) - each expansion can take O(n)
 **Space Complexity:** O(1) - only storing pointers
 
-### Implementations
+### Solution
 
 ```typescript
 function longestPalindrome(s: string): string {

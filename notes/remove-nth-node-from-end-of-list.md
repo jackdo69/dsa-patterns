@@ -2,6 +2,10 @@
 
 Tags: linked list, two-pointer
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 *Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.*
@@ -10,7 +14,7 @@ Tags: linked list, two-pointer
 
 Use two pointers with an `n`-step gap. Advance `right` by `n` steps, then move both `left` and `right` together until `right` reaches the last node. Now `left` is the predecessor of the target — relink it to skip the removed node. If `right` is null after the initial advance, the head itself is being removed so return `head.next`.
 
-### Implementations
+### Solution
 
 ```typescript
 /**

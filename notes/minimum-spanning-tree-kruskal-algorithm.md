@@ -2,13 +2,17 @@
 
 Tags: graph
 
+### Interview Frequency
+
+Very Low
+
 ### Ideas
 
 - Minimum Spanning Tree (MST) is a tree that spans all vertices of the graph and has the smallest sum of edge weights among all possible spanning trees. This concept is useful in real-life applications such as minimizing the cost of laying cables or pipelines to connect multiple locations efficiently.
 - **Selection Process**: Sorts all edges and adds them if they don't create a cycle (using Union Find / Disjoint Set)
 - **Time Complexity**: O(E log E) due to sorting edges
 
-### Implementations
+### Solution
 
 ```typescript
 function kruskalAlgorithm(V: number, edges: [number, number, number][]): number {

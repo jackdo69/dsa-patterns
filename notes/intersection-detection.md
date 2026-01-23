@@ -2,35 +2,42 @@
 
 Tags: linked list, two pointer
 
+### Interview Frequency
+
+Medium
+
 ### Question
 
 Given the heads of two singly linked-lists `headA` and `headB`, return *the node at which the two lists intersect*. If the two linked lists have no intersection at all, return `null`.
 
 ### Ideas
 
-- We use 2 pointers, 1 from each list, if one list ends, we move the pointer to the second list, and vice versa
-- 2 cases will happen
-    - if 2 list intersects, then the different in length will be from 2 heads to the intersection point, since 2 pointers have to travel that both of that different length, it will meet in the intersection point
-    
-    ```typescript
-    List A: a1 -> a2 -> c1 -> c2
-    List B: b1 -> b2 -> b3 -> c1 -> c2
-    
-    pointerA: a1 -> a2 -> c1 -> c2 -> b1 -> b2 -> b3 -> c1
-    pointerB: b1 -> b2 -> b3 -> c1 -> c2 -> a1 -> a2 -> c1
-    ```
-    
-    - if 2 list don’t intersects, both pointer will eventually becomes `null` then the loop exits
-    
-    ```typescript
-    List A: 1 -> 2 -> 3 -> null
-    List B: 4 -> 5 -> null
-    pointerA: 1 -> 2 -> 3 -> null -> 4 -> 5 -> null
-    pointerB: 4 -> 5 -> null -> 1 -> 2 -> 3 -> null
-    ```
+Use two pointers starting at each head. When a pointer reaches the end of its list, redirect it to the head of the **other** list. This equalizes the total distance each pointer travels: both walk exactly `lengthA + lengthB` steps. The length difference is absorbed in the first pass, so on the second pass both pointers are aligned and will meet at the intersection node.
+
+**Case 1 — lists intersect:** The shared tail has the same length for both, so the difference is only in the prefix. After swapping lists, both pointers have traveled through both prefixes and arrive at the intersection together.
+
+```
+List A: a1 -> a2 -> c1 -> c2
+List B: b1 -> b2 -> b3 -> c1 -> c2
+
+pointerA: a1 -> a2 -> c1 -> c2 -> b1 -> b2 -> b3 -> [c1] ✓
+pointerB: b1 -> b2 -> b3 -> c1 -> c2 -> a1 -> a2 -> [c1] ✓
+```
+
+**Case 2 — no intersection:** Both pointers reach `null` at the same time (after traveling `lengthA + lengthB` steps), so the loop exits and returns `null`.
+
+```
+List A: 1 -> 2 -> 3 -> null
+List B: 4 -> 5 -> null
+
+pointerA: 1 -> 2 -> 3 -> 4 -> 5 -> [null]
+pointerB: 4 -> 5 -> 1 -> 2 -> 3 -> [null]
+```
     
 
-### Implementation
+**Simpler fallback** if the above trick is hard to recall: compute both lengths, advance the longer list's pointer by the difference, then walk both together until they meet. Same O(n + m) time, O(1) space — just two explicit passes instead of the elegant single-loop version.
+
+### Solution
 
 ```typescript
 function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {

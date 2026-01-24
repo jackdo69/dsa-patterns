@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "A comprehensive, pattern-based approach to mastering Data Structures & Algorithms",
   "scripts": {
-    "start": "http-server -p 3000 -c-1"
+    "start": "http-server -p 3000 -c-1",
+    "format": "prettier playground/solution.ts --write --config playground/.prettierrc.js",
+    "exec": "ts-node playground/solution.ts",
+    "test": "npm run format && npm run exec"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "prettier": "^3.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }

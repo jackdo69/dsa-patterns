@@ -11,15 +11,36 @@ Interview Frequency: Medium
 *Given an array of integers `temperatures` represents the daily temperatures, return an array `answer` such that `answer[i]` is the number of days you have to wait after the `i`th day to get a warmer temperature. If there is no future day with a warmer temperature, keep `answer[i] == 0`.*
 ### Ideas
 
-This is a classic monotonic stack problem. The stack stores indices of temperatures we haven't found a warmer day for yet.
+**The brute force** is: for each day, scan forward to find the next warmer day. That's O(n²).
 
-For each new temperature:
-- While the stack is non-empty and the current temperature is greater than the temperature at the stack's top index → pop and record the distance.
-- Push the current index onto the stack.
+**The insight:** when you encounter a warmer day, it answers the question for ALL recent cooler days at once. You just need to remember which days are still "waiting" for a warmer day — a stack does exactly this.
 
-The stack maintains a **decreasing** temperature order (from bottom to top). When a warmer temperature arrives, it resolves all cooler pending temperatures on top of the stack.
+The stack holds **indices of days still waiting for a warmer temperature**, in decreasing temperature order (warmest at bottom, coolest on top).
 
-Each index is pushed and popped at most once → O(n) time.
+Step by step with `temperatures = [73, 74, 75, 71, 69, 72, 76, 73]`:
+
+```
+i=0 (73): stack empty, push 0.             stack: [0(73)]
+i=1 (74): 74 > 73 → pop 0, answer[0] = 1-0 = 1. Push 1.
+                                            stack: [1(74)]
+i=2 (75): 75 > 74 → pop 1, answer[1] = 2-1 = 1. Push 2.
+                                            stack: [2(75)]
+i=3 (71): 71 < 75 → just push 3.           stack: [2(75), 3(71)]
+i=4 (69): 69 < 71 → just push 4.           stack: [2(75), 3(71), 4(69)]
+i=5 (72): 72 > 69 → pop 4, answer[4] = 5-4 = 1.
+          72 > 71 → pop 3, answer[3] = 5-3 = 2.
+          72 < 75 → stop. Push 5.           stack: [2(75), 5(72)]
+i=6 (76): 76 > 72 → pop 5, answer[5] = 6-5 = 1.
+          76 > 75 → pop 2, answer[2] = 6-2 = 4.
+          stack empty → stop. Push 6.       stack: [6(76)]
+i=7 (73): 73 < 76 → just push 7.           stack: [6(76), 7(73)]
+```
+
+Days left in the stack (indices 6, 7) never found a warmer day → `answer` stays 0.
+
+Result: `[1, 1, 4, 2, 1, 1, 0, 0]`
+
+**Why the stack stays in decreasing order:** you only push when the current temp is cooler than the top (otherwise you pop first). So bottom-to-top is always warmest-to-coolest. When a hot day arrives, it "resolves" all the cooler days sitting on top.
 
 ### Solution
 

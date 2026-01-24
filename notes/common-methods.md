@@ -49,3 +49,38 @@ string.substring(startIndex, endIndex)
 // After while loop overshoots by one on each side
 return s.substring(left + 1, right);
 ```
+
+### splice
+
+Modifies an array in place — can remove, replace, or insert elements. Returns the removed elements.
+
+```typescript
+array.splice(startIndex, deleteCount, ...itemsToInsert)
+```
+
+- `startIndex` - index to start modifying
+- `deleteCount` - number of elements to remove (0 to remove nothing)
+- `itemsToInsert` - optional elements to add at that position
+
+**Examples:**
+```typescript
+const arr = [1, 2, 3, 4, 5];
+
+// Remove 2 elements starting at index 1
+arr.splice(1, 2);           // returns [2, 3], arr = [1, 4, 5]
+
+// Insert without removing (deleteCount = 0)
+arr.splice(1, 0, 10, 20);   // returns [], arr = [1, 10, 20, 4, 5]
+
+// Replace 1 element at index 2
+arr.splice(2, 1, 99);       // returns [20], arr = [1, 10, 99, 4, 5]
+
+// Remove from the end (negative index)
+arr.splice(-2, 2);          // returns [4, 5], arr = [1, 10, 99]
+```
+
+**Common use case - remove remaining k elements from end:**
+```typescript
+// In remove-k-digits, if k > 0 after scanning
+stack.splice(stack.length - k, k);
+```

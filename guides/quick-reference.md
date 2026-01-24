@@ -289,19 +289,61 @@ function dp(n) {
 }
 ```
 
-### 8. Binary Search
+### 8a. Binary Search (Classic - Exact Match)
 ```javascript
 function binarySearch(arr, target) {
     let left = 0, right = arr.length - 1;
 
     while (left <= right) {
-        let mid = Math.floor((left + right) / 2);
+        let mid = left + Math.floor((right - left) / 2);
         if (arr[mid] === target) return mid;
         else if (arr[mid] < target) left = mid + 1;
         else right = mid - 1;
     }
     return -1;
 }
+// Uses left <= right, returns as soon as target is found
+// Use when: searching for a specific value in sorted array
+```
+
+### 8b. Binary Search (First True - First Occurrence)
+```javascript
+function firstTrue(arr) {
+    let left = 0, right = arr.length - 1;
+    let firstTrueIndex = -1;
+
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+        if (feasible(mid)) {
+            firstTrueIndex = mid;
+            right = mid - 1;     // keep searching left for earlier match
+        } else {
+            left = mid + 1;
+        }
+    }
+    return firstTrueIndex;
+}
+// Continues searching even after finding a match
+// Use when: "find first element that satisfies condition"
+```
+
+### 8c. Binary Search (Boundary - Finding Position)
+```javascript
+function lowerBound(arr, target) {
+    let left = 0, right = arr.length;  // Note: not arr.length - 1
+
+    while (left < right) {             // Note: < instead of <=
+        let mid = Math.floor((left + right) / 2);
+        if (arr[mid] < target) {
+            left = mid + 1;
+        } else {
+            right = mid;               // Note: not mid - 1
+        }
+    }
+    return left;  // left == right at this point
+}
+// Right pointer is exclusive boundary, never subtracts 1 from mid
+// Use when: finding insertion position, boundaries between regions
 ```
 
 ### 9. Union Find

@@ -51,7 +51,6 @@
   * [Expression Evaluation - Calculator](notes/expression-evaluation-basic-calculator.md)
 
 * Patterns - Binary Search
-  * [Monotonic Function - Binary Search](notes/monotonic-function-binary-search-patterns.md)
   * [Find Min Max - Rotated Array](notes/find-min-max-search-in-rotated-sorted-array.md)
   * [Find k Closest Elements](notes/find-k-closest-elements.md)
   * [Median of 2 Sorted Arrays](notes/median-of-2-sorted-arrays.md)

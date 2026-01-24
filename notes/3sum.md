@@ -26,30 +26,24 @@ Sorting costs O(n log n), and the two-pointer scan for each element is O(n), giv
 ```typescript
 function threeSum(nums: number[]): number[][] {
   nums.sort((a, b) => a - b);
+  const n = nums.length;
   const result: number[][] = [];
 
-  for (let i = 0; i < nums.length - 2; i++) {
-    // Skip duplicates for i
+  for (let i = 0; i < n - 2; i++) {
     if (i > 0 && nums[i] === nums[i - 1]) continue;
-    // Early termination: smallest value > 0 means no more triplets
     if (nums[i] > 0) break;
-
+    const target = 0 - nums[i];
     let left = i + 1;
-    let right = nums.length - 1;
-
+    let right = n - 1;
     while (left < right) {
-      const sum = nums[i] + nums[left] + nums[right];
-      if (sum === 0) {
+      if (nums[left] + nums[right] === target) {
         result.push([nums[i], nums[left], nums[right]]);
-        // Skip duplicates
         while (left < right && nums[left] === nums[left + 1]) left++;
         while (left < right && nums[right] === nums[right - 1]) right--;
-        left++;
         right--;
-      } else if (sum < 0) {
         left++;
       } else {
-        right--;
+        nums[left] + nums[right] > target ? right-- : left++;
       }
     }
   }

@@ -11,13 +11,33 @@ Interview Frequency: High
 *Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in **any order**.*
 ### Ideas
 
-Count frequencies with a hash map, then find the top k. There are multiple approaches:
+Count frequencies with a hash map, then find the top k.
 
-1. **Sort by frequency** — O(n log n)
-2. **Min-heap of size k** — O(n log k)
-3. **Bucket sort** — O(n): create an array of buckets where index = frequency. Since no element can appear more than `n` times, the array has at most `n + 1` buckets. Walk from highest bucket down and collect k elements.
+**Bucket sort approach (O(n)):**
 
-Bucket sort is optimal since it avoids any comparison-based sorting.
+The key insight is: the maximum possible frequency of any element is `n` (the array length). So we can create an array of size `n + 1` where the **index represents the frequency**, and each bucket holds the elements that appear that many times.
+
+Step by step with `nums = [1,1,1,2,2,3]`, `k = 2`:
+
+1. Count frequencies: `{1: 3, 2: 2, 3: 1}`
+2. Create buckets array of size `n + 1 = 7`:
+   ```
+   index:  0    1    2    3    4    5    6
+   value: [ ] [3]  [2]  [1]  [ ]  [ ]  [ ]
+   ```
+   - `3` appears 1 time → goes in bucket[1]
+   - `2` appears 2 times → goes in bucket[2]
+   - `1` appears 3 times → goes in bucket[3]
+3. Walk from the **end** (highest frequency) and collect elements until you have `k`:
+   - bucket[6]: empty
+   - bucket[5]: empty
+   - bucket[4]: empty
+   - bucket[3]: `[1]` → collect it, count = 1
+   - bucket[2]: `[2]` → collect it, count = 2 = k, done
+
+Result: `[1, 2]`
+
+This works because instead of sorting elements by frequency (O(n log n)), we directly place them at their frequency index — essentially using frequency as an array address. Walking from the end gives us the most frequent elements first.
 
 ### Solution
 

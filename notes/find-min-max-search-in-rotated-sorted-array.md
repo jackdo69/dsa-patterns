@@ -27,39 +27,38 @@ Output: 4
 
 ```typescript
 function search(nums: number[], target: number): number {
-  let n = nums.length;
-  let left = 0,
-    right = n - 1,
-    pivot = -1;
+  const n = nums.length;
+  const last = nums[n - 1];
 
-  // Find the pivot (smallest element index)
+  /**
+   * find the pivot, the first element that is smaller than last
+   */
+  let left = 0;
+  let right = nums.length - 1;
+  let pivot = -1;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
-    // the pivot must be on the right
-    if (nums[mid] > nums[right]) {
+    if (nums[mid] > last) {
       left = mid + 1;
-      pivot = left;
     } else {
+      pivot = mid;
       right = mid - 1;
     }
   }
 
-  // Binary search on the correct half
-  function binarySearch(left: number, right: number): number {
-    while (left <= right) {
-      const mid = Math.floor((left + right) / 2);
-      if (nums[mid] === target) return mid;
-      if (nums[mid] < target) left = mid + 1;
-      else right = mid - 1;
+  function bSearch(i: number, j: number): number {
+    while (i <= j) {
+      const mid = Math.floor((i + j) / 2);
+      if (nums[mid] === target) {
+        return mid;
+      } else if (nums[mid] < target) {
+        i = mid + 1;
+      } else {
+        j = mid - 1;
+      }
     }
     return -1;
   }
-
-  // Determine search range
-  if (target >= nums[pivot] && target <= nums[n - 1]) {
-    return binarySearch(pivot, n - 1);
-  } else {
-    return binarySearch(0, pivot - 1);
-  }
+  return target >= nums[pivot] && target <= nums[n - 1] ? bSearch(pivot, n - 1) : bSearch(0, pivot - 1);
 }
 ```

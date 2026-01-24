@@ -330,21 +330,30 @@ function firstTrue(arr) {
 ### 8c. Binary Search (Boundary - Finding Position)
 ```javascript
 function lowerBound(arr, target) {
-    let left = 0, right = arr.length;  // Note: not arr.length - 1
-
-    while (left < right) {             // Note: < instead of <=
-        let mid = Math.floor((left + right) / 2);
-        if (arr[mid] < target) {
-            left = mid + 1;
+    let left = 0;
+    let right = nums.length;
+    while (left < right) {
+        const mid = Math.floor((left+right)/2);
+        if (nums[mid] >= target) {
+            right = mid
         } else {
-            right = mid;               // Note: not mid - 1
+            left = mid + 1
         }
     }
-    return left;  // left == right at this point
+    return left;  // left  the first index where >= target
 }
 // Right pointer is exclusive boundary, never subtracts 1 from mid
 // Use when: finding insertion position, boundaries between regions
 ```
+
+**8b and 8c are the same concept** — both find the "first index where a condition is true." The lower bound is a compact form where the answer lands at `left === right` instead of being saved explicitly.
+
+| | First True (8b) | Lower Bound (8c) |
+|---|---|---|
+| Feasible? | `feasible(mid)` → save, go left | `arr[mid] >= target` → go left |
+| Not feasible? | go right | `arr[mid] < target` → go right |
+| Answer | `firstTrueIndex` | `left` (when `left === right`) |
+| `right` init | `arr.length - 1` | `arr.length` (answer can be past end) |
 
 ### 9. Union Find
 ```javascript

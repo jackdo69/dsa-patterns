@@ -125,6 +125,8 @@
   * [Quick Sort](notes/quick-sort.md)
 
 * Other Topics
+  * [Binary Search - Lower vs Upper Bound](notes/binary-search-lowerbound-vs-upperbound.md)
+  * [Tree Traversal Wiki](notes/tree-traversal-wiki.md)
   * [Time Complexity](notes/time-complexity.md)
   * [Maths](notes/maths.md)
   * [Bitwise](notes/bitwise.md)

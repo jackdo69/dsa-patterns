@@ -207,7 +207,40 @@ function slidingWindow(s) {
 }
 ```
 
-### 3. DFS (Tree/Graph)
+### 3a. Pre-order Traversal (Root → Left → Right)
+```javascript
+function preorder(node) {
+    if (!node) return;
+    process(node);        // ← root first
+    preorder(node.left);
+    preorder(node.right);
+}
+// Use when: building a copy of tree, serialization, prefix expressions
+```
+
+### 3b. In-order Traversal (Left → Root → Right)
+```javascript
+function inorder(node) {
+    if (!node) return;
+    inorder(node.left);
+    process(node);        // ← root in middle
+    inorder(node.right);
+}
+// Use when: BST gives sorted order, validate BST, kth smallest
+```
+
+### 3c. Post-order Traversal (Left → Right → Root)
+```javascript
+function postorder(node) {
+    if (!node) return;
+    postorder(node.left);
+    postorder(node.right);
+    process(node);        // ← root last (children processed first)
+}
+// Use when: delete tree, calculate height/diameter, evaluate expressions
+```
+
+### 3d. DFS (Graph)
 ```javascript
 function dfs(node, visited = new Set()) {
     if (!node || visited.has(node)) return;
@@ -346,14 +379,7 @@ function lowerBound(arr, target) {
 // Use when: finding insertion position, boundaries between regions
 ```
 
-**8b and 8c are the same concept** — both find the "first index where a condition is true." The lower bound is a compact form where the answer lands at `left === right` instead of being saved explicitly.
-
-| | First True (8b) | Lower Bound (8c) |
-|---|---|---|
-| Feasible? | `feasible(mid)` → save, go left | `arr[mid] >= target` → go left |
-| Not feasible? | go right | `arr[mid] < target` → go right |
-| Answer | `firstTrueIndex` | `left` (when `left === right`) |
-| `right` init | `arr.length - 1` | `arr.length` (answer can be past end) |
+See [Binary Search - Lower vs Upper Bound](../notes/binary-search-lowerbound-vs-upperbound.md) for detailed comparison and walkthroughs.
 
 ### 9. Union Find
 ```javascript

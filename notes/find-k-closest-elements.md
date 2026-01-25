@@ -15,6 +15,30 @@ Interview Frequency: Low
 - *`|a - x| < |b - x|`, or*
 - *`|a - x| == |b - x|` and `a < b`*
 
+### Ideas
+
+This is a **sliding window** problem. The answer is always a contiguous window of size `k` in the sorted array (because the array is sorted, the k closest elements are adjacent). The **starting point** of the window can be found using **lower bound binary search**.
+
+**"Should I slide the window right?"**
+
+At each `mid`, the current window is `arr[mid]` to `arr[mid + k - 1]`. To decide whether to slide right, compare what you'd **lose** (left edge `arr[mid]`) vs what you'd **gain** (next element `arr[mid + k]`):
+
+- If `arr[mid]` is farther from `x` than `arr[mid + k]` → worth sliding right (`left = mid + 1`)
+- Otherwise → not worth it, keep or move left (`right = mid`)
+
+Step by step with `arr = [1, 2, 3, 4, 5]`, `k = 3`, `x = 3`:
+
+```
+left=0, right=2
+
+mid=1: lose arr[1]=2 (dist 1), gain arr[4]=5 (dist 2). Lose < Gain → not worth. right=1
+mid=0: lose arr[0]=1 (dist 2), gain arr[3]=4 (dist 1). Lose > Gain → worth it. left=1
+
+left === right = 1 → window is arr[1..3] = [2, 3, 4]
+```
+
+This is the lower bound pattern (8c) where the condition is: "the element we'd gain is at least as far as the one we'd lose" → stop sliding.
+
 ### Solution
 
 ```typescript

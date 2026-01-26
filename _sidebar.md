@@ -91,7 +91,7 @@
 * Backtracking
   * [Subset](notes/subset.md)
   * [Permutations Unique](notes/permutations-unique.md)
-  * [Combination Sum](notes/combination-sum.md)
+  * [Pruning - Combination Sum](notes/pruning-combination-sum.md)
   * [Palindrome Partitioning](notes/palindrome-partitioning.md)
 
 * Greedy

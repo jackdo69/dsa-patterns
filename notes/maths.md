@@ -38,7 +38,7 @@ If 2^x = n, then log₂(n) = x
 - **Set**: A collection of distinct elements where order doesn't matter (e.g., {a, b})
 - **Permutation**: A specific ordered arrangement of set elements where order matters (e.g., [a, b] and [b, a] are different)
 
-Example with a set of 3 letters {a,b,c} if we try to form a permutation, the first position will have 3 choice, second position will have 2 choice, and third will have 1 choice. Altogether we have 3 * 2 * 1 = 3! = 6 permutations
+Example with a set of 3 letters {a,b,c} if we try to form a permutation, the first position will have 3 choice, second position will have 2 choice, and third will have 1 choice. Altogether we have 3 * 2 * 1 = 3! = 6 permutations. See [Permutations pattern](notes/permutations-unique.md) for the backtracking implementation.
 
 ### Subsets
 
@@ -46,7 +46,7 @@ A subset is another set that contains all the element of the original set. In or
 
 Include it or exclude it
 
-So a set of `n` elements will have 2 ^ n subsets. 
+So a set of `n` elements will have 2 ^ n subsets. See [Subset pattern](notes/subset.md) for the backtracking implementation. 
 
 Some examples of this decision making are binary tree `O(logn)`. And the opposite of time complexity backtracking with `O(2^n)`
 

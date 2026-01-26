@@ -13,27 +13,51 @@ Interview Frequency: High
 - *Input: nums = [1,2,3]*
 Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
 
+### Ideas
+
+**Subsets (power set):** All possible combinations of elements, including the empty set. An array of n elements has 2^n subsets. See [Maths](notes/maths.md) for the theory behind this.
+
+**Binary decision tree:** At each element, we make a binary choice - include it or exclude it. This creates a binary tree where each leaf is a valid subset.
+
+```
+                    []
+                 /      \
+            [1]           []
+           /   \        /    \
+       [1,2]   [1]    [2]     []
+       /  \    / \    / \    /  \
+   [1,2,3][1,2][1,3][1][2,3][2][3][]
+```
+
+**Key mechanics:**
+- Base case: when `idx === nums.length`, we've made all decisions → add path to result
+- Recursive case: try both branches (exclude first, then include)
+- Backtrack after including by calling `path.pop()`
+
+**Time: O(n × 2^n)** — 2^n subsets, each takes O(n) to copy
+
+**Space: O(n)** — recursion depth + path array
+
 ### Solution
 
 ```typescript
-  function subsets(nums: number[]): number[][] {
-    const result: number[][] = [];
+function subsets(nums: number[]): number[][] {
+  const result: number[][] = [];
 
-    function buildSubsets(size: number, pos: number, path: number[]) {
-      if (size === 0) {
-        result.push([...path]);
-        return;
-      }
-      for (let i = pos; i < nums.length; i++) {
-        path.push(nums[i]);
-        buildSubsets(size - 1, i + 1, path);
-        path.pop();
-      }
+  function dfs(idx: number, path: number[]) {
+    if (idx === nums.length) {
+      result.push([...path]);
+      return;
     }
-    for (let i = 0; i <= nums.length; i++) {
-      buildSubsets(i, 0, []);
-    }
-
-    return result;
+    // Exclude nums[idx]
+    dfs(idx + 1, path);
+    // Include nums[idx]
+    path.push(nums[idx]);
+    dfs(idx + 1, path);
+    path.pop();
   }
+
+  dfs(0, []);
+  return result;
+}
 ```

@@ -116,62 +116,62 @@ export function printTree(root: TreeNode | null): void {
 }
 
 export class HeapItem<T> {
-public  weight: number;
-public  value: T
+  public weight: number;
+  public value: T;
   constructor(_val: T, _weight: number) {
     this.weight = _weight;
     this.value = _val;
   }
 }
-export class _MinHeap <T>{
- private items : Array<HeapItem<T>>
- constructor() {
-  this.items = [] 
- }
-
- swap(i: number, j: number): void {
-  [this.items[i], this.items[j]] = [this.items[j], this.items[i]]
- }
-
- bubbleUp(): void {
-  let index = this.items.length -1;
-  while (index > 0) {
-    const parent = Math.floor((index - 1)/2);
-    if (this.items[parent].weight <= this.items[index].weight) break; 
-      this.swap(index, parent)
-      index = parent
+export class _MinHeap<T> {
+  private items: Array<HeapItem<T>>;
+  constructor() {
+    this.items = [];
   }
- }
 
- bubbleDown(): void {
-  let index = 0;
-  const n = this.items.length;
-  while (index < n - 1) {
-    let smallest = index;
-    const left = 2 * index + 1;
-    const right = 2 * index + 2;
-    if (left < n && this.items[left].weight < this.items[smallest].weight) smallest = left;
-    if (right < n && this.items[right].weight < this.items[smallest].weight) smallest = right;
-    if (smallest === index) break;
-    this.swap(index, smallest);
-    index = smallest;
+  swap(i: number, j: number): void {
+    [this.items[i], this.items[j]] = [this.items[j], this.items[i]];
   }
- }
 
- public push(item: HeapItem<T>) {
-  this.items.push(item)
-  this.bubbleUp()
- }
+  bubbleUp(): void {
+    let index = this.items.length - 1;
+    while (index > 0) {
+      const parent = Math.floor((index - 1) / 2);
+      if (this.items[parent].weight <= this.items[index].weight) break;
+      this.swap(index, parent);
+      index = parent;
+    }
+  }
 
- public pop(): HeapItem<T> | null {
-  if (this.items.length === 0) return null;
-  this.swap(0, this.items.length - 1);
-  const item = this.items.pop()!;
-  this.bubbleDown();
-  return item;
- }
+  bubbleDown(): void {
+    let index = 0;
+    const n = this.items.length;
+    while (index < n - 1) {
+      let smallest = index;
+      const left = 2 * index + 1;
+      const right = 2 * index + 2;
+      if (left < n && this.items[left].weight < this.items[smallest].weight) smallest = left;
+      if (right < n && this.items[right].weight < this.items[smallest].weight) smallest = right;
+      if (smallest === index) break;
+      this.swap(index, smallest);
+      index = smallest;
+    }
+  }
 
- public size() : number {
-  return this.items.length;
- }
+  public push(item: HeapItem<T>) {
+    this.items.push(item);
+    this.bubbleUp();
+  }
+
+  public pop(): HeapItem<T> | null {
+    if (this.items.length === 0) return null;
+    this.swap(0, this.items.length - 1);
+    const item = this.items.pop()!;
+    this.bubbleDown();
+    return item;
+  }
+
+  public size(): number {
+    return this.items.length;
+  }
 }

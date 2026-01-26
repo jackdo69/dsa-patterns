@@ -1,30 +1,20 @@
-import {_MinHeap, HeapItem} from "./data-structure"
-function networkDelayTime(times: number[][], n: number, k: number): number {
-  const adjList = new Map<number,HeapItem<number>[]>()
-  for (const [source, dest, weight] of times) {
-    const item = new HeapItem(dest,weight)
-    adjList.set(source, [...(adjList.get(source) || []), item])
-  }
-  const shortest = new Map<number, number> ()
-  for (let i = 1; i <= n; i++) shortest.set(i, Infinity)
-    shortest.set(k,0) // start from k
+function combinationSum(candidates: number[], target: number): number[][] {
+  const result : number[][] = [];
 
-  const heap = new _MinHeap<number>()
-  heap.push(new HeapItem<number>(k,0))
-
-  while (heap.size()) {
-    const {value: node, weight: currentTime} = heap.pop()!;
-    if (currentTime > shortest.get(node)!) continue;
-    for (const {value: nextNode, weight: travelTime} of adjList.get(node) || []) {
-      const shortestTime = shortest.get(nextNode)!;
-      const newTime = currentTime + travelTime
-      if (newTime < shortestTime) {
-        shortest.set(nextNode, newTime)
-        heap.push(new HeapItem(nextNode, newTime))
-      }
+  function dfs(idx: number, path: number[], sum:number) {
+    if (sum === target) {
+      result.push([...path])
+      return;
+    }
+    for (let i = idx; i < candidates.length; i++) {
+      const num = candidates[i]
+      if (sum + num > target) continue;
+      path.push(num)
+      dfs(i, path, sum + num)
+      path.pop()
     }
   }
-  const result = Math.max(...(shortest.values()))
-  return result === Infinity ? -1 : result
+  dfs(0, [], 0)
 
+  return result;    
 };

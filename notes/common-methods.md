@@ -26,6 +26,29 @@ const digit = s[i].charCodeAt(0) - '0'.charCodeAt(0);
 // '5'.charCodeAt(0) - '0'.charCodeAt(0) = 53 - 48 = 5
 ```
 
+### String.fromCharCode
+
+Converts a Unicode code point back to a character. The inverse of `charCodeAt`.
+
+```typescript
+String.fromCharCode(code)
+```
+
+**Examples:**
+```typescript
+String.fromCharCode(65)   // 'A'
+String.fromCharCode(97)   // 'a'
+String.fromCharCode(48)   // '0'
+```
+
+**Common use case - iterate through a-z:**
+```typescript
+for (let c = 'a'.charCodeAt(0); c <= 'z'.charCodeAt(0); c++) {
+  const char = String.fromCharCode(c);
+  // do something with char
+}
+```
+
 ### substring
 
 Extracts a portion of a string between two indices.

@@ -16,47 +16,57 @@ Interview Frequency: High
 
 ### Ideas
 
-- The order of vertices in a acyclic directed graph (DAG)  so that if there is a direction between vertex *u* and vertex *v,* then vertex u will appear before vertex v in the order. This algorithm is very useful for task scheduling when one task is relying on another task
-- **Steps:**
-1. Initialize a hash map to store the in-degrees (count of edges go into this vertex)
-2. Go through the nodes, count the in-degree of each node.
-3. Push the nodes with 0 in-degree into the queue.
-4. Pop each node from the queue, subtract 1 from the in-degree of each of its neighbors (each node it points to).
-5. If a node's in-degree drops to 0, then push it into the queue.
-6. repeat until the queue is empty. If any nodes remain unprocessed, then there must be a cycle.
+**What is Topological Sort?**
+A linear ordering of vertices in a directed acyclic graph (DAG) where for every edge `u → v`, vertex `u` comes before `v`. Think of it as a valid sequence to complete tasks with dependencies.
+
+**Kahn's Algorithm Intuition**
+- A node with **in-degree 0** has no dependencies — it can be processed immediately
+- After processing a node, its dependents lose one dependency (in-degree decreases by 1)
+- When a dependent's in-degree reaches 0, it's ready to process
+- If we process all nodes, no cycle exists. If some remain, there's a cycle (they're stuck waiting on each other)
+
+**Steps:**
+1. Build an adjacency list and count in-degrees for all nodes
+2. Add all nodes with in-degree 0 to a queue (these have no prerequisites)
+3. While queue is not empty:
+   - Pop a node and mark it as processed
+   - For each neighbor, decrement its in-degree
+   - If neighbor's in-degree becomes 0, add it to the queue
+4. If processed count equals total nodes → no cycle (return true)
+   Otherwise → cycle exists (return false)
 
 ### Solution
 
 ```typescript
 function canFinish(numCourses: number, prerequisites: number[][]): boolean {
-  const inDegree = new Map();
-  const subcourses = new Map();
-  for (let i = 0; i < numCourses; i++) {
-    inDegree.set(i, 0);
-  }
-  for (const [curr, preq] of prerequisites) {
-    inDegree.set(curr, inDegree.get(curr) + 1);
-    subcourses.set(preq, [...(subcourses.get(preq) || []), curr]);
-  }
-  const queue: number[] = [];
+  const preReqMap = new Map<number, number[]>()
+  const inDegree = new Array(numCourses).fill(0)
 
-  for (const course of Array.from(inDegree.keys())) {
-    if (inDegree.get(course) === 0) queue.push(course);
+  for (const [main, pre] of prerequisites) {
+    inDegree[main] = inDegree[main] + 1
+    preReqMap.set(pre, [...(preReqMap.get(pre) ||[]), main])
   }
-  let courses = 0;
-  while (queue.length) {
-    const course = queue.shift();
-    courses++;
-    if (courses === numCourses) return true;
-    const children = subcourses.get(course);
-    if (children && children.length) {
-      for (const c of children) {
-        const degree = inDegree.get(c);
-        inDegree.set(c, degree - 1);
-        if (degree === 1) queue.push(c);
-      }
+
+  const stack:number[] = [];
+  for (let i = 0; i < numCourses; i++) {
+    if (inDegree[i] === 0) stack.push(i)
+  }
+
+  let completed = 0;
+  while (stack.length) {
+    const course = stack.shift()!
+    completed++
+    if (completed === numCourses) return true;
+    for (const child of preReqMap.get(course) || []) {
+     inDegree[child] = inDegree[child] - 1 
+     if (inDegree[child] === 0) stack.push(child)
     }
   }
-  return courses === numCourses;
+  return completed === numCourses
 }
 ```
+
+### See Also
+
+- [Topological Sort (concept)](notes/topological-sort-wiki.md) — what it is and when to use it
+- [DFS Approach](notes/dfs-cycle-detection-course-schedule-ii.md) — alternative using DFS + cycle detection

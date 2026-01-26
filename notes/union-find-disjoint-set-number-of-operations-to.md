@@ -12,10 +12,43 @@ Interview Frequency: Medium
 - *You are given an initial computer network `connections`. You can extract certain cables between two directly connected computers, and place them between any pair of disconnected computers to make them directly connected.*
 - *Return the minimum number of times you need to do this in order to make all the computers connected. If it is not possible, return `-1`.*
 
+### Ideas
+
+**Union Find** and **Disjoint Set** are the same thing — just different names:
+- "Disjoint Set" describes *what it is*: a collection of non-overlapping sets
+- "Union Find" describes *what it does*: the two operations `union()` and `find()`
+
+It tracks which elements belong to the same group (connected component). Use it when you need to:
+- Check if two nodes are connected
+- Count number of connected components
+- Dynamically merge groups
+
+**Two operations:**
+- `find(x)` - returns the root/parent of x's group
+- `union(x, y)` - merges the groups containing x and y
+
+**Path compression:** In `find`, set each node's parent directly to the root. This flattens the tree, making future lookups nearly O(1).
+
+```typescript
+function find(i: number): number {
+  if (parent[i] !== i) parent[i] = find(parent[i]); // path compression
+  return parent[i];
+}
+```
+
+**For this problem:**
+1. Need at least `n - 1` cables to connect `n` computers
+2. Use union find to count connected components
+3. To connect `k` components, we need `k - 1` cables
+
+**Time: O(N × α(N)) ≈ O(N)** where α is the inverse Ackermann function (nearly constant)
+
+**Space: O(N)** for the parent array
+
 ### Solution
 
 ```typescript
-  function makeConnected(n: number, connections: number[][]): number {
+function makeConnected(n: number, connections: number[][]): number {
   // we need minimum n-1 connections
   if (connections.length < n - 1) return -1;
 

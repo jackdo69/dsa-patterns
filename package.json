@@ -4,7 +4,7 @@
   "description": "A comprehensive, pattern-based approach to mastering Data Structures & Algorithms",
   "scripts": {
     "start": "http-server -p 3000 -c-1",
-    "format": "prettier playground/solution.ts --write --config playground/.prettierrc.js",
+    "format": "prettier playground/*.ts --write --config playground/.prettierrc.js",
     "exec": "ts-node playground/solution.ts",
     "test": "npm run format && npm run exec"
   },

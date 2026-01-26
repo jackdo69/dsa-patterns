@@ -6,7 +6,7 @@
   * [Quick Reference](guides/quick-reference.md)
   * [Pattern Guide](guides/pattern-guide.md)
 
-* Patterns - Arrays & Strings
+* Arrays & Strings
   * [Two Sum](notes/two-sum.md)
   * [Two Pointer - Container With Most Water](notes/container-with-most-water.md)
   * [3Sum](notes/3sum.md)
@@ -21,12 +21,12 @@
   * [String to Integer (ATOI)](notes/string-to-integer-ascii-to-integer-atoi.md)
   * [Expanding from Center - Palindrome](notes/expanding-from-center-longest-palindrome-substri.md)
 
-* Patterns - Hash Maps
+* Hash Maps
   * [Group Anagrams](notes/group-anagrams.md)
   * [Top K Frequent Elements](notes/top-k-frequent-elements.md)
   * [Longest Consecutive Sequence](notes/longest-consecutive-sequence.md)
 
-* Patterns - Arrays Advanced
+* Arrays Advanced
   * [Set Matrix Zeroes](notes/set-matrix-zeroes.md)
   * [Spiral Traversal](notes/spiral-traversal.md)
   * [In-place Rotation](notes/in-place-rotation.md)
@@ -34,7 +34,7 @@
   * [Merge Sorted Array](notes/merge-sorted-array.md)
   * [Floyd's Cycle Detection - Find Duplicate](notes/cyclic-sort-find-the-duplicate-number.md)
 
-* Patterns - Linked Lists
+* Linked Lists
   * [Fast & Slow - Floyd's Algorithm](notes/fast-slow-floyd-s-algorithm-cycle-detection.md)
   * [In-Place Reversal](notes/in-place-reversal-reverse-linked-list-ii.md)
   * [Remove Nth Node from End](notes/remove-nth-node-from-end-of-list.md)
@@ -42,7 +42,7 @@
   * [Reordering - Rotate List](notes/reordering-partitioning-rotate-list.md)
   * [Intersection Detection](notes/intersection-detection.md)
 
-* Patterns - Stacks & Queues
+* Stacks & Queues
   * [Valid Parentheses](notes/valid-parentheses.md)
   * [Min Stack](notes/min-stack.md)
   * [Daily Temperatures](notes/daily-temperatures.md)
@@ -50,12 +50,12 @@
   * [Monotonic Queue - Sliding Window Max](notes/monotonic-queue-stack-sliding-window-maximum.md)
   * [Expression Evaluation - Calculator](notes/expression-evaluation-basic-calculator.md)
 
-* Patterns - Binary Search
+* Binary Search
   * [Find Min Max - Rotated Array](notes/find-min-max-search-in-rotated-sorted-array.md)
   * [Find k Closest Elements](notes/find-k-closest-elements.md)
   * [Median of 2 Sorted Arrays](notes/median-of-2-sorted-arrays.md)
 
-* Patterns - Trees (DFS)
+* Trees & Graphs
   * [DFS Preorder - Same Tree](notes/dfs-preorder-traversal-same-tree.md)
   * [DFS In-order - Validate BST](notes/dfs-in-order-traversal-validate-binary-search-tr.md)
   * [DFS Postorder - Max Depth](notes/dfs-postorder-traversal-max-depth.md)
@@ -65,15 +65,13 @@
   * [Balanced Binary Tree](notes/balanced-binary-tree.md)
   * [Lowest Common Ancestor (LCA)](notes/lowest-common-ancestor-lca.md)
   * [Serialize and Deserialize Tree](notes/serialize-and-deserialize-binary-tree.md)
-
-* Patterns - Trees & Graphs (BFS)
   * [BFS - Level Order Traversal](notes/bfs-binary-tree-level-order-traversal.md)
   * [Binary Tree Right Side View](notes/binary-tree-right-side-view.md)
   * [BFS - Rotting Oranges](notes/bfs-rotting-oranges.md)
   * [DFS - Number of Islands](notes/dfs-number-of-islands.md)
   * [DFS Cycle Detection - Course Schedule](notes/dfs-cycle-detection-course-schedule-ii.md)
 
-* Patterns - Graph Algorithms
+* Graph Algorithms
   * [Clone Graph](notes/clone-graph.md)
   * [Word Ladder](notes/word-ladder.md)
   * [Topological Sort - Kahn's Algorithm](notes/topological-sort-kahn-algorithm-course-schedul.md)
@@ -83,27 +81,27 @@
   * [Floyd Warshall - All Pairs Shortest](notes/shortest-path-floy-warshall-algorithm-minimum.md)
   * [MST - Kruskal's Algorithm](notes/minimum-spanning-tree-kruskal-algorithm.md)
 
-* Patterns - Heaps
+* Heaps
   * [Min Heap](notes/min-heap.md)
   * [Merge k Sorted Lists](notes/merge-k-sorted-lists.md)
   * [Find Median from Data Stream](notes/find-median-from-data-stream.md)
   * [Task Scheduling](notes/task-scheduling.md)
   * [Min Heap vs BST](notes/min-heap-vs-binary-search-tree.md)
 
-* Patterns - Backtracking
+* Backtracking
   * [Subset](notes/subset.md)
   * [Permutations Unique](notes/permutations-unique.md)
   * [Combination Sum](notes/combination-sum.md)
   * [Palindrome Partitioning](notes/palindrome-partitioning.md)
 
-* Patterns - Greedy
+* Greedy
   * [Jump Game](notes/jump-game.md)
   * [Merge Interval](notes/merge-interval.md)
   * [Best Time to Buy and Sell Stock](notes/best-time-to-buy-and-sell-stock.md)
   * [Best Time to Buy and Sell Stock II](notes/best-time-to-buy-and-sell-stock-ii.md)
   * [Candy](notes/candy.md)
 
-* Patterns - Dynamic Programming
+* Dynamic Programming
   * [Basic - Fibonacci (1D Array)](notes/basic-fibonacci-1d-array.md)
   * [0/1 Knapsack - Target Sum](notes/0-1-knapsack-target-sum-top-down-approach.md)
   * [0/1 Knapsack - Partition Equal Subset](notes/0-1-knapsack-partition-equal-subset-sum-bottom.md)
@@ -114,12 +112,12 @@
   * [Interval DP - Bursting Balloons](notes/interval-dp-busting-balloons.md)
   * [Word Break](notes/word-break.md)
 
-* Patterns - Advanced Data Structures
+* Advanced Data Structures
   * [Trie - Prefix Tree](notes/trie-prefix-tree.md)
   * [LRU Cache](notes/lru-cache.md)
   * [Fenwick Tree - Binary Index Tree](notes/fenwick-tree-binary-index-tree.md)
 
-* Patterns - Sorting
+* Sorting
   * [Merge Sort](notes/merge-sort.md)
   * [Sort List](notes/sort-list.md)
   * [Quick Sort](notes/quick-sort.md)
@@ -127,6 +125,7 @@
 * Other Topics
   * [Binary Search - Lower vs Upper Bound](notes/binary-search-lowerbound-vs-upperbound.md)
   * [Tree Traversal Wiki](notes/tree-traversal-wiki.md)
+  * [Topological Sort Wiki](notes/topological-sort-wiki.md)
   * [Time Complexity](notes/time-complexity.md)
   * [Maths](notes/maths.md)
   * [Bitwise](notes/bitwise.md)

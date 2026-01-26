@@ -4,66 +4,56 @@ Tags: heap
 
 ### Ideas
 
-- A min heap is a data structure, similar to binary tree, with each node has 2 children, but the child is always the greater than the parent.
-- Min heap nodes values can be represents in an array `queue`
-- A node at index `n` will have its left child at index `2 * n + 1` and right child at `2 * n + 2`
-- **Note:** Only the nodes of the path from root to leaf (vertical) is sorted, not the nodes in the same level (very different from binary search tree), this also explains for the time complexity characteristic of min heap
-- **Time complexity:**
-    - insert/delete: O(logn) → the height of the tree is logn
+A binary tree stored in an array where each parent is smaller than its children. The root (index 0) is always the minimum.
+
+**3 formulas:**
+```
+parent = (i - 1) / 2
+left   = 2i + 1
+right  = 2i + 2  (or just left + 1)
+```
+
+**Mental model:**
+- `push`: add to end, keep swapping with parent while parent is bigger
+- `pop`: save root, move last to root, keep swapping with smaller child while child is smaller
+
+**Time:** O(log n) for push/pop — height of tree is log n
 
 ### Solution
 
 ```typescript
-class _MinHeap {
-  private items: number[];
-  constructor() {
-    this.items = [];
-  }
-  swap(i: number, j: number) {
-    [this.items[i], this.items[j]] = [this.items[j], this.items[i]];
-  }
-  size(): number {
-    return this.items.length;
-  }
-  push(num: number): void {
-    this.items.push(num);
-    this.bubbleUp();
-  }
-  pop(): number | null {
-    const n = this.size();
-    if (n === 0) return null;
-    this.swap(0, n - 1);
-    const num = this.items.pop()!;
-    this.bubbleDown();
-    return num;
-  }
+class MinHeap {
+  private heap: number[] = [];
 
-  peak(): number {
-    return this.items[0];
-  }
-
-  private bubbleDown(): void {
-    let index = 0;
-    const n = this.size();
-    while (index < n - 1) {
-      let smallest = index;
-      const left = 2 * index + 1;
-      const right = 2 * index + 2;
-      if (left < n && this.items[smallest] > this.items[left]) smallest = left;
-      if (right < n && this.items[smallest] > this.items[right]) smallest = right;
-      if (smallest === index) break;
-      this.swap(index, smallest);
-      index = smallest;
-    }
-  }
-  private bubbleUp(): void {
-    let index = this.size() - 1;
+  push(value: number) {
+    this.heap.push(value);
+    let index = this.heap.length - 1;
     while (index > 0) {
       const parent = Math.floor((index - 1) / 2);
-      if (this.items[parent] <= this.items[index]) break;
-      this.swap(index, parent);
+      if (this.heap[parent] <= this.heap[index]) break;
+      [this.heap[parent], this.heap[index]] = [this.heap[index], this.heap[parent]];
       index = parent;
     }
   }
+
+  pop(): number | undefined {
+    if (!this.heap.length) return undefined;
+    [this.heap[0], this.heap[this.heap.length - 1]] = [this.heap[this.heap.length - 1], this.heap[0]];
+    const min = this.heap.pop()!;
+    let index = 0;
+    while (index < this.heap.length) {
+      let smallest = index;
+      const left = 2 * index + 1;
+      const right = 2 * index + 2;
+      if (left < this.heap.length && this.heap[left] < this.heap[smallest]) smallest = left;
+      if (right < this.heap.length && this.heap[right] < this.heap[smallest]) smallest = right;
+      if (smallest === index) break;
+      [this.heap[index], this.heap[smallest]] = [this.heap[smallest], this.heap[index]];
+      index = smallest;
+    }
+    return min;
+  }
+
+  size() { return this.heap.length; }
 }
 ```

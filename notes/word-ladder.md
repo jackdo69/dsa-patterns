@@ -8,51 +8,52 @@ Interview Frequency: Medium
 
 ### Question
 
-*Given two words `beginWord` and `endWord`, and a dictionary `wordList`, return the number of words in the **shortest transformation sequence** from `beginWord` to `endWord`, such that:
+Given two words `beginWord` and `endWord`, and a dictionary `wordList`, return the number of words in the **shortest transformation sequence** from `beginWord` to `endWord`, such that:
 - Only one letter can be changed at a time.
-- Each transformed word must exist in the word list.*
+- Each transformed word must exist in the word list.
 
-*Return 0 if no such sequence exists.*
+Return 0 if no such sequence exists.
 ### Ideas
 
-Model this as an unweighted graph problem: each word is a node, and edges connect words that differ by exactly one letter. The shortest path in an unweighted graph is found by BFS.
+Think of words as nodes in a graph. Two words are connected if they differ by exactly one letter. We need the shortest path from `beginWord` to `endWord` → use BFS.
 
-For efficient neighbor finding, instead of comparing every pair of words O(n² · L), use a wildcard pattern approach:
-- For each word, generate patterns by replacing each character with `*` (e.g., "hot" → "*ot", "h*t", "ho*").
-- Build a map from patterns to words. Two words are neighbors if they share a pattern.
+**Finding neighbors:** For each position in the current word, try replacing it with every letter a-z. If the new word exists in the word list, it's a valid neighbor.
 
-BFS from `beginWord`, expanding level by level. The first time you reach `endWord` gives the shortest path length.
+**Why BFS?** BFS explores level by level, so the first time we reach `endWord`, we've found the shortest path.
+
+**Time: O(N × L²)** where N = number of words, L = word length
+- Visit at most N words
+- For each word: L positions × 26 letters × O(L) to create new string and hash lookup
+- 26 is constant → O(N × L × L) = O(N × L²)
+
+**Space: O(N × L)** for the wordSet and visited set storing words
 
 ### Solution
 
 ```typescript
 function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {
-  const wordSet = new Set(wordList);
-  if (!wordSet.has(endWord)) return 0;
-
-  const queue: [string, number][] = [[beginWord, 1]];
+  let chars = "";
+  for (let i = "a".charCodeAt(0); i <= "z".charCodeAt(0); i++) {
+    chars += String.fromCharCode(i); // "abcd...."
+  }
+  const n = beginWord.length;
   const visited = new Set<string>([beginWord]);
-
-  while (queue.length > 0) {
-    const [word, level] = queue.shift()!;
-
-    for (let i = 0; i < word.length; i++) {
-      for (let c = 97; c <= 122; c++) { // 'a' to 'z'
-        const char = String.fromCharCode(c);
-        if (char === word[i]) continue;
-
-        const newWord = word.slice(0, i) + char + word.slice(i + 1);
-
-        if (newWord === endWord) return level + 1;
-
-        if (wordSet.has(newWord) && !visited.has(newWord)) {
-          visited.add(newWord);
-          queue.push([newWord, level + 1]);
+  const stack: [string, number][] = [[beginWord, 1]];
+  const set = new Set<string>(wordList);
+  while (stack.length) {
+    const [word, level] = stack.shift()!;
+    for (let i = 0; i < n; i++) {
+      for (const c of chars) {
+        if (c === word[i]) continue;
+        const augmentedWord = word.slice(0, i) + c + word.slice(i + 1);
+        if (set.has(augmentedWord) && augmentedWord === endWord) return level + 1;
+        if (!visited.has(augmentedWord) && set.has(augmentedWord)) {
+          visited.add(augmentedWord);
+          stack.push([augmentedWord, level + 1]);
         }
       }
     }
   }
-
   return 0;
 }
 ```

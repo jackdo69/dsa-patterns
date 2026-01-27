@@ -1,6 +1,6 @@
 # Min Heap vs Binary Search Tree
 
-Tags: binary search tree, heap
+Topic: heap, binary search tree
 
 - **Structure and ordering**
     - BST has all nodes of the left sub tree smaller than current node, and the current node smaller than all the nodes of the right sub tree, this enable the in-order traversal to produce sorted output

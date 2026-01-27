@@ -86,7 +86,6 @@
   * [Merge k Sorted Lists](notes/merge-k-sorted-lists.md)
   * [Find Median from Data Stream](notes/find-median-from-data-stream.md)
   * [Task Scheduling](notes/task-scheduling.md)
-  * [Min Heap vs BST](notes/min-heap-vs-binary-search-tree.md)
 
 * Backtracking
   * [Subset](notes/subset.md)
@@ -122,10 +121,12 @@
   * [Sort List](notes/sort-list.md)
   * [Quick Sort](notes/quick-sort.md)
 
-* Other Topics
+* Concepts & Wikis
   * [Binary Search - Lower vs Upper Bound](notes/binary-search-lowerbound-vs-upperbound.md)
   * [Tree Traversal Wiki](notes/tree-traversal-wiki.md)
   * [Topological Sort Wiki](notes/topological-sort-wiki.md)
+  * [Dynamic Programming Wiki](notes/dynamic-programming-wiki.md)
+  * [Min Heap vs BST](notes/min-heap-vs-binary-search-tree.md)
   * [Time Complexity](notes/time-complexity.md)
   * [Maths](notes/maths.md)
   * [Bitwise](notes/bitwise.md)

@@ -6,6 +6,8 @@ Difficulty: Medium
 
 Interview Frequency: High
 
+[← Dynamic Programming Wiki](notes/dynamic-programming-wiki.md)
+
 ### Question
 
 *Given a string `s` and a dictionary of strings `wordDict`, return `true` if `s` can be segmented into a space-separated sequence of one or more dictionary words.*

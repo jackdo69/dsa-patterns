@@ -14,7 +14,7 @@ Single Pointer (iteration)
 ├── Fast & Slow Pointers → Cycle Detection
 └── Sliding Window → Longest Substring Without Repeating
 ```
-[Container With Most Water](../notes/container-with-most-water.md) | [3Sum](../notes/3sum.md) | [Move Zeroes](../notes/move-zeroes.md) | [Cycle Detection](../notes/fast-slow-floyd-s-algorithm-cycle-detection.md) | [Longest Substring Without Repeating](../notes/variable-size-longest-substring-without-repeatin.md)
+[Container With Most Water](/notes/container-with-most-water.md) | [3Sum](/notes/3sum.md) | [Move Zeroes](/notes/move-zeroes.md) | [Cycle Detection](/notes/fast-slow-floyd-s-algorithm-cycle-detection.md) | [Longest Substring Without Repeating](/notes/variable-size-longest-substring-without-repeatin.md)
 
 ### Recursion Family
 ```
@@ -24,7 +24,7 @@ Simple Recursion
 ├── Backtracking (DFS + undo) → Subsets, Permutations
 └── Memoization → Top-down DP
 ```
-[Merge Sort](../notes/merge-sort.md) | [Quick Sort](../notes/quick-sort.md) | [Path Sum](../notes/path-sum.md) | [Number of Islands](../notes/dfs-number-of-islands.md) | [Subsets](../notes/subset.md) | [Permutations](../notes/permutations-unique.md)
+[Merge Sort](/notes/merge-sort.md) | [Quick Sort](/notes/quick-sort.md) | [Path Sum](/notes/path-sum.md) | [Number of Islands](/notes/dfs-number-of-islands.md) | [Subsets](/notes/subset.md) | [Permutations](/notes/permutations-unique.md)
 
 ### Graph Traversal
 ```
@@ -38,7 +38,7 @@ Graph Problems
 ├── Ordering → Topological Sort
 └── Minimum Spanning Tree → Kruskal's
 ```
-[Dijkstra](../notes/shortest-path-dijkstra-algorithm-network-delay.md) | [Bellman Ford](../notes/shortest-path-bellman-ford-algorithm-cheapest.md) | [Floyd Warshall](../notes/shortest-path-floy-warshall-algorithm-minimum.md) | [Topological Sort](../notes/topological-sort-kahn-algorithm-course-schedul.md) | [Kruskal's](../notes/minimum-spanning-tree-kruskal-algorithm.md) | [Union Find](../notes/union-find-disjoint-set-number-of-operations-to.md)
+[Dijkstra](/notes/shortest-path-dijkstra-algorithm-network-delay.md) | [Bellman Ford](/notes/shortest-path-bellman-ford-algorithm-cheapest.md) | [Floyd Warshall](/notes/shortest-path-floy-warshall-algorithm-minimum.md) | [Topological Sort](/notes/topological-sort-kahn-algorithm-course-schedul.md) | [Kruskal's](/notes/minimum-spanning-tree-kruskal-algorithm.md) | [Union Find](/notes/union-find-disjoint-set-number-of-operations-to.md)
 
 ### Optimization
 ```
@@ -53,7 +53,7 @@ Optimization Problems
 │       └── Interval (range [i,j]) → Burst Balloons
 └── Monotonic answer space → Binary Search on Answer
 ```
-[Fibonacci](../notes/basic-fibonacci-1d-array.md) | [Unique Paths](../notes/grid-unique-paths.md) | [LCS](../notes/dual-sequence-longest-common-subsequence-lcs.md) | [Target Sum](../notes/0-1-knapsack-target-sum-top-down-approach.md) | [Coin Change](../notes/unbounded-knapsack-coin-change.md) | [Burst Balloons](../notes/interval-dp-busting-balloons.md) | [DP Wiki](../notes/dynamic-programming-wiki.md)
+[Fibonacci](/notes/basic-fibonacci-1d-array.md) | [Unique Paths](/notes/grid-unique-paths.md) | [LCS](/notes/dual-sequence-longest-common-subsequence-lcs.md) | [Target Sum](/notes/0-1-knapsack-target-sum-top-down-approach.md) | [Coin Change](/notes/unbounded-knapsack-coin-change.md) | [Burst Balloons](/notes/interval-dp-busting-balloons.md) | [DP Wiki](/notes/dynamic-programming-wiki.md)
 
 ---
 

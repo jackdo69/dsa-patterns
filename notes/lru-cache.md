@@ -8,6 +8,8 @@ Interview Frequency: High
 
 ### Question
 
+[LeetCode 146 - LRU Cache](https://leetcode.com/problems/lru-cache/)
+
 - *Design a data structure that follows the constraints of a [**Least Recently Used (LRU) cache**](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU).*
 - *Implement the `LRUCache` class:*
 - *`*LRUCache(int capacity)` Initialize the LRU cache with **positive** size `capacity`.**

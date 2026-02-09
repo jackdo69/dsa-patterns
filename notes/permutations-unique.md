@@ -10,6 +10,8 @@ See [Maths](notes/maths.md) for the theory behind permutations and factorial.
 
 ### Question
 
+[LeetCode 47 - Permutations II](https://leetcode.com/problems/permutations-ii/)
+
 - *Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.**
 - *Example*
 

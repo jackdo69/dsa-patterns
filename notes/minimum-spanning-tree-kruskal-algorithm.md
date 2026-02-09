@@ -6,6 +6,12 @@ Difficulty: Medium
 
 Interview Frequency: Very Low
 
+### Question
+
+[LeetCode 1584 - Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
+
+*You are given an array `points` representing integer coordinates of some points on a 2D-plane, where `points[i] = [xi, yi]`. The cost of connecting two points `[xi, yi]` and `[xj, yj]` is the manhattan distance between them: `|xi - xj| + |yi - yj|`. Return the minimum cost to make all points connected.*
+
 ### Ideas
 
 - Minimum Spanning Tree (MST) is a tree that spans all vertices of the graph and has the smallest sum of edge weights among all possible spanning trees. This concept is useful in real-life applications such as minimizing the cost of laying cables or pipelines to connect multiple locations efficiently.

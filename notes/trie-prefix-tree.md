@@ -8,6 +8,8 @@ Interview Frequency: Medium
 
 ### Question
 
+[LeetCode 208 - Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
 - *A [**trie**](https://en.wikipedia.org/wiki/Trie) (pronounced as "try") or **prefix tree** is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker. Implement the Trie class:*
 - *`*Trie()` Initializes the trie object.**
 - *`*void insert(String word)` Inserts the string `word` into the trie.**

@@ -29,6 +29,7 @@
 * Arrays Advanced
   * [Set Matrix Zeroes](notes/set-matrix-zeroes.md)
   * [Spiral Traversal](notes/spiral-traversal.md)
+  * [Rotate Image](notes/rotate-image-matrix.md)
   * [In-place Rotation](notes/in-place-rotation.md)
   * [Move Zeroes](notes/move-zeroes.md)
   * [Merge Sorted Array](notes/merge-sorted-array.md)
@@ -65,6 +66,7 @@
   * [Diameter of Binary Tree](notes/diameter-of-binary-tree.md)
   * [Balanced Binary Tree](notes/balanced-binary-tree.md)
   * [Lowest Common Ancestor (LCA)](notes/lowest-common-ancestor-lca.md)
+  * [Construct Tree from Traversals](notes/construct-tree-from-traversals.md)
   * [Serialize and Deserialize Tree](notes/serialize-and-deserialize-binary-tree.md)
   * [BFS - Level Order Traversal](notes/bfs-binary-tree-level-order-traversal.md)
   * [Binary Tree Right Side View](notes/binary-tree-right-side-view.md)
@@ -86,27 +88,34 @@
   * [Min Heap](notes/min-heap.md)
   * [Merge k Sorted Lists](notes/merge-k-sorted-lists.md)
   * [Find Median from Data Stream](notes/find-median-from-data-stream.md)
+  * [Kth Largest Element - Quick Select](notes/kth-largest-element-quick-select.md)
   * [Task Scheduling](notes/task-scheduling.md)
 
 * Backtracking
   * [Subset](notes/subset.md)
   * [Permutations Unique](notes/permutations-unique.md)
   * [Pruning - Combination Sum](notes/pruning-combination-sum.md)
+  * [Generate Parentheses](notes/generate-parentheses-backtracking.md)
+  * [Word Search](notes/word-search-grid-backtracking.md)
   * [Palindrome Partitioning](notes/palindrome-partitioning.md)
 
 * Greedy
   * [Jump Game](notes/jump-game.md)
   * [Merge Interval](notes/merge-interval.md)
+  * [Meeting Rooms II](notes/meeting-rooms-ii-interval-heap.md)
   * [Best Time to Buy and Sell Stock](notes/best-time-to-buy-and-sell-stock.md)
   * [Best Time to Buy and Sell Stock II](notes/best-time-to-buy-and-sell-stock-ii.md)
   * [Candy](notes/candy.md)
 
 * Dynamic Programming
+  * [Climbing Stairs (1D DP)](notes/climbing-stairs-1d-dp.md)
+  * [House Robber (1D DP)](notes/house-robber-1d-dp.md)
   * [Basic - Fibonacci (1D Array)](notes/basic-fibonacci-1d-array.md)
   * [0/1 Knapsack - Target Sum](notes/0-1-knapsack-target-sum-top-down-approach.md)
   * [0/1 Knapsack - Partition Equal Subset](notes/0-1-knapsack-partition-equal-subset-sum-bottom.md)
   * [Unbounded Knapsack - Coin Change](notes/unbounded-knapsack-coin-change.md)
   * [Dual Sequence - LCS](notes/dual-sequence-longest-common-subsequence-lcs.md)
+  * [Edit Distance](notes/edit-distance-dual-sequence-dp.md)
   * [Dynamic Subproblems - LIS](notes/dynamic-number-of-subproblems-longest-increasing.md)
   * [Grid - Unique Paths](notes/grid-unique-paths.md)
   * [Interval DP - Bursting Balloons](notes/interval-dp-busting-balloons.md)
@@ -122,6 +131,10 @@
   * [Sort List](notes/sort-list.md)
   * [Quick Sort](notes/quick-sort.md)
 
+* Bit Manipulation
+  * [Single Number (XOR)](notes/single-number-xor.md)
+  * [Bitwise](notes/bitwise.md)
+
 * Concepts & Wikis
   * [Binary Search - Lower vs Upper Bound](notes/binary-search-lowerbound-vs-upperbound.md)
   * [Tree Traversal Wiki](notes/tree-traversal-wiki.md)
@@ -130,6 +143,5 @@
   * [Min Heap vs BST](notes/min-heap-vs-binary-search-tree.md)
   * [Time Complexity](notes/time-complexity.md)
   * [Maths](notes/maths.md)
-  * [Bitwise](notes/bitwise.md)
   * [Loop Fundamentals](notes/loop-fundamentals.md)
   * [Common Methods](notes/common-methods.md)

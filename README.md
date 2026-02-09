@@ -4,7 +4,7 @@ A comprehensive, pattern-based approach to mastering Data Structures & Algorithm
 
 ## What's Inside
 
-This repository contains **92 algorithm patterns** designed to help you:
+This repository contains **102 algorithm patterns** designed to help you:
 - **Understand** core DSA concepts and how they relate
 - **Recognize** which pattern to apply to new problems
 - **Practice** systematically at your own pace
@@ -18,7 +18,7 @@ This repository contains **92 algorithm patterns** designed to help you:
 │   ├── quick-reference.md             # Triggers, all patterns, code templates
 │   └── pattern-guide.md              # Pattern families, combinations, anti-patterns
 │
-├── notes/                             # 92 pattern implementations
+├── notes/                             # 102 pattern implementations
 │   ├── Arrays & Strings
 │   ├── Trees & Graphs
 │   ├── Dynamic Programming
@@ -34,7 +34,7 @@ This repository contains **92 algorithm patterns** designed to help you:
 ## Quick Start
 
 ### 1. Browse All Patterns
-Explore **[quick-reference.md](guides/quick-reference.md)** to see all 92 patterns with triggers, complexity, and code templates
+Explore **[quick-reference.md](guides/quick-reference.md)** to see all 102 patterns with triggers, complexity, and code templates
 
 ### 2. Understand Relationships & Combinations
 Read **[pattern-guide.md](guides/pattern-guide.md)** to learn how patterns connect, combine, and when NOT to use them
@@ -72,7 +72,7 @@ Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Tries
 
 ## Key Features
 
-- **92 Algorithm Patterns:** Complete coverage of interview topics with interview frequency ratings
+- **102 Algorithm Patterns:** Complete coverage of interview topics with LeetCode links
 - **TypeScript Implementations:** Clean, working code for every pattern
 - **Quick Reference:** Triggers, all patterns with complexity, and code templates
 - **Pattern Guide:** How patterns relate, combine, and when NOT to use them

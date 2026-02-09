@@ -32,10 +32,15 @@
 | "optimize", "min/max", has subproblems | **Dynamic Programming** | varies | varies |
 | "intervals", "merge", "schedule" | **Greedy (Intervals)** | O(n log n) | O(1) |
 | "prefix matching", "word search" | **Trie** | O(L) | O(N*L) |
+| "find single element", "appears once" | **XOR (Bit Manipulation)** | O(n) | O(1) |
+| "generate valid combinations" | **Backtracking** | O(4ⁿ/√n) | O(n) |
+| "search word in grid" | **Grid Backtracking** | O(m·n·4^L) | O(L) |
+| "minimum rooms/resources" | **Interval + Heap** | O(n log n) | O(n) |
+| "rotate matrix 90°" | **Transpose + Reverse** | O(n²) | O(1) |
 
 ---
 
-## 📚 All 92 Patterns (Categorized)
+## 📚 All 102 Patterns (Categorized)
 
 ### ARRAYS (10)
 1. [**Two Sum (Hash Map)**](/notes/two-sum.md) - O(n), O(n) - Complement lookup
@@ -87,7 +92,7 @@
 35. [**K Closest Elements**](/notes/find-k-closest-elements.md) - O(log n + k), O(1) - Binary search + expand
 36. [**Median of 2 Sorted**](/notes/median-of-2-sorted-arrays.md) - O(log(min(m,n))), O(1) - Binary search on smaller
 
-### TREES (11)
+### TREES (12)
 37. [**BFS (Level Order)**](/notes/bfs-binary-tree-level-order-traversal.md) - O(n), O(n) - Level by level
 38. [**Binary Tree Right Side View**](/notes/binary-tree-right-side-view.md) - O(n), O(n) - BFS last per level
 39. [**DFS Preorder**](/notes/dfs-preorder-traversal-same-tree.md) - O(n), O(h) - Root first
@@ -98,68 +103,80 @@
 44. [**Diameter of Binary Tree**](/notes/diameter-of-binary-tree.md) - O(n), O(h) - Max path through any node
 45. [**Balanced Binary Tree**](/notes/balanced-binary-tree.md) - O(n), O(h) - Height-balanced check
 46. [**LCA**](/notes/lowest-common-ancestor-lca.md) - O(n), O(h) - Lowest common ancestor
-47. [**Serialize/Deserialize**](/notes/serialize-and-deserialize-binary-tree.md) - O(n), O(n) - Tree to string
+47. [**Construct Tree from Traversals**](/notes/construct-tree-from-traversals.md) - O(n), O(n) - Build from preorder/inorder
+48. [**Serialize/Deserialize**](/notes/serialize-and-deserialize-binary-tree.md) - O(n), O(n) - Tree to string
 
-### MATRIX (2)
-48. [**Spiral Traversal**](/notes/spiral-traversal.md) - O(m*n), O(1) - Spiral order
-49. [**Set Matrix Zeroes**](/notes/set-matrix-zeroes.md) - O(m*n), O(1) - In-place modification
+### MATRIX (3)
+49. [**Spiral Traversal**](/notes/spiral-traversal.md) - O(m*n), O(1) - Spiral order
+50. [**Set Matrix Zeroes**](/notes/set-matrix-zeroes.md) - O(m*n), O(1) - In-place modification
+51. [**Rotate Image**](/notes/rotate-image-matrix.md) - O(n²), O(1) - 90° rotation in-place
 
 ### GRAPHS (11)
-50. [**DFS**](/notes/dfs-number-of-islands.md) - O(V+E), O(V) - Explore all paths
-51. [**BFS**](/notes/bfs-rotting-oranges.md) - O(V+E), O(V) - Shortest path (unweighted)
-52. [**Clone Graph**](/notes/clone-graph.md) - O(V+E), O(V) - Deep copy with cycle handling
-53. [**Word Ladder**](/notes/word-ladder.md) - O(n·L·26), O(n) - BFS shortest transformation
-54. [**DFS Cycle Detection**](/notes/dfs-cycle-detection-course-schedule-ii.md) - O(V+E), O(V) - Detect cycles
-55. [**Topological Sort (Kahn's)**](/notes/topological-sort-kahn-algorithm-course-schedul.md) - O(V+E), O(V) - Dependency order
-56. [**Dijkstra's**](/notes/shortest-path-dijkstra-algorithm-network-delay.md) - O((V+E) log V), O(V) - Shortest path (weighted)
-57. [**Bellman Ford**](/notes/shortest-path-bellman-ford-algorithm-cheapest.md) - O(VE), O(V) - With negative weights
-58. [**Floyd Warshall**](/notes/shortest-path-floy-warshall-algorithm-minimum.md) - O(V³), O(V²) - All pairs shortest
-59. [**Union Find**](/notes/union-find-disjoint-set-number-of-operations-to.md) - O(α(n)), O(n) - Dynamic connectivity
-60. [**Kruskal's (MST)**](/notes/minimum-spanning-tree-kruskal-algorithm.md) - O(E log E), O(V) - Minimum spanning tree
+52. [**DFS**](/notes/dfs-number-of-islands.md) - O(V+E), O(V) - Explore all paths
+53. [**BFS**](/notes/bfs-rotting-oranges.md) - O(V+E), O(V) - Shortest path (unweighted)
+54. [**Clone Graph**](/notes/clone-graph.md) - O(V+E), O(V) - Deep copy with cycle handling
+55. [**Word Ladder**](/notes/word-ladder.md) - O(n·L·26), O(n) - BFS shortest transformation
+56. [**DFS Cycle Detection**](/notes/dfs-cycle-detection-course-schedule-ii.md) - O(V+E), O(V) - Detect cycles
+57. [**Topological Sort (Kahn's)**](/notes/topological-sort-kahn-algorithm-course-schedul.md) - O(V+E), O(V) - Dependency order
+58. [**Dijkstra's**](/notes/shortest-path-dijkstra-algorithm-network-delay.md) - O((V+E) log V), O(V) - Shortest path (weighted)
+59. [**Bellman Ford**](/notes/shortest-path-bellman-ford-algorithm-cheapest.md) - O(VE), O(V) - With negative weights
+60. [**Floyd Warshall**](/notes/shortest-path-floy-warshall-algorithm-minimum.md) - O(V³), O(V²) - All pairs shortest
+61. [**Union Find**](/notes/union-find-disjoint-set-number-of-operations-to.md) - O(α(n)), O(n) - Dynamic connectivity
+62. [**Kruskal's (MST)**](/notes/minimum-spanning-tree-kruskal-algorithm.md) - O(E log E), O(V) - Minimum spanning tree
 
-### BACKTRACKING (4)
-61. [**Subset**](/notes/subset.md) - O(2ⁿ), O(n) - Generate all subsets
-62. [**Permutations**](/notes/permutations-unique.md) - O(n!), O(n) - Generate all permutations
-63. [**Combination Sum**](/notes/pruning-combination-sum.md) - O(2ⁿ), O(n) - Find combinations
-64. [**Palindrome Partitioning**](/notes/palindrome-partitioning.md) - O(2ⁿ), O(n) - Partition string
+### BACKTRACKING (6)
+63. [**Subset**](/notes/subset.md) - O(2ⁿ), O(n) - Generate all subsets
+64. [**Permutations**](/notes/permutations-unique.md) - O(n!), O(n) - Generate all permutations
+65. [**Combination Sum**](/notes/pruning-combination-sum.md) - O(2ⁿ), O(n) - Find combinations
+66. [**Generate Parentheses**](/notes/generate-parentheses-backtracking.md) - O(4ⁿ/√n), O(n) - Valid parentheses
+67. [**Word Search**](/notes/word-search-grid-backtracking.md) - O(m·n·4^L), O(L) - Grid backtracking
+68. [**Palindrome Partitioning**](/notes/palindrome-partitioning.md) - O(2ⁿ), O(n) - Partition string
 
-### DYNAMIC PROGRAMMING (11) — [Wiki](/notes/dynamic-programming-wiki.md)
-65. [**1D DP (Fibonacci)**](/notes/basic-fibonacci-1d-array.md) - O(n), O(n) or O(1) - Sequence problems
-66. [**Grid DP**](/notes/grid-unique-paths.md) - O(m*n), O(m*n) - Path counting
-67. [**LIS (Dynamic Subproblems)**](/notes/dynamic-number-of-subproblems-longest-increasing.md) - O(n²) or O(n log n), O(n) - Longest increasing
-68. [**Dual Sequence (LCS)**](/notes/dual-sequence-longest-common-subsequence-lcs.md) - O(m*n), O(m*n) - Two strings/arrays
-69. [**0/1 Knapsack (Top-down)**](/notes/0-1-knapsack-target-sum-top-down-approach.md) - O(n*sum), O(n*sum) - Choose/skip
-70. [**0/1 Knapsack (Bottom-up)**](/notes/0-1-knapsack-partition-equal-subset-sum-bottom.md) - O(n*sum), O(n*sum) - Tabulation
-71. [**Unbounded Knapsack**](/notes/unbounded-knapsack-coin-change.md) - O(n*amount), O(amount) - Unlimited use
-72. [**Interval DP**](/notes/interval-dp-busting-balloons.md) - O(n³), O(n²) - Range problems
-73. [**Word Break**](/notes/word-break.md) - O(n²), O(n) - String segmentation
-74. [**Stock Buy/Sell I**](/notes/best-time-to-buy-and-sell-stock.md) - O(n), O(1) - One transaction
-75. [**Stock Buy/Sell II**](/notes/best-time-to-buy-and-sell-stock-ii.md) - O(n), O(1) - Multiple transactions
+### DYNAMIC PROGRAMMING (14) — [Wiki](/notes/dynamic-programming-wiki.md)
+69. [**Climbing Stairs**](/notes/climbing-stairs-1d-dp.md) - O(n), O(1) - 1D DP intro
+70. [**House Robber**](/notes/house-robber-1d-dp.md) - O(n), O(1) - 1D DP with skip
+71. [**1D DP (Fibonacci)**](/notes/basic-fibonacci-1d-array.md) - O(n), O(n) or O(1) - Sequence problems
+72. [**Grid DP**](/notes/grid-unique-paths.md) - O(m*n), O(m*n) - Path counting
+73. [**LIS (Dynamic Subproblems)**](/notes/dynamic-number-of-subproblems-longest-increasing.md) - O(n²) or O(n log n), O(n) - Longest increasing
+74. [**Dual Sequence (LCS)**](/notes/dual-sequence-longest-common-subsequence-lcs.md) - O(m*n), O(m*n) - Two strings/arrays
+75. [**Edit Distance**](/notes/edit-distance-dual-sequence-dp.md) - O(m*n), O(m*n) - String transformation
+76. [**0/1 Knapsack (Top-down)**](/notes/0-1-knapsack-target-sum-top-down-approach.md) - O(n*sum), O(n*sum) - Choose/skip
+77. [**0/1 Knapsack (Bottom-up)**](/notes/0-1-knapsack-partition-equal-subset-sum-bottom.md) - O(n*sum), O(n*sum) - Tabulation
+78. [**Unbounded Knapsack**](/notes/unbounded-knapsack-coin-change.md) - O(n*amount), O(amount) - Unlimited use
+79. [**Interval DP**](/notes/interval-dp-busting-balloons.md) - O(n³), O(n²) - Range problems
+80. [**Word Break**](/notes/word-break.md) - O(n²), O(n) - String segmentation
+81. [**Stock Buy/Sell I**](/notes/best-time-to-buy-and-sell-stock.md) - O(n), O(1) - One transaction
+82. [**Stock Buy/Sell II**](/notes/best-time-to-buy-and-sell-stock-ii.md) - O(n), O(1) - Multiple transactions
 
-### GREEDY (4)
-76. [**Merge Intervals**](/notes/merge-interval.md) - O(n log n), O(1) - Interval merging
-77. [**Jump Game**](/notes/jump-game.md) - O(n), O(1) - Greedy choice
-78. [**Task Scheduling**](/notes/task-scheduling.md) - O(n log n), O(1) - Scheduling
-79. [**Candy**](/notes/candy.md) - O(n), O(n) - Distribution
+### GREEDY (5)
+83. [**Merge Intervals**](/notes/merge-interval.md) - O(n log n), O(1) - Interval merging
+84. [**Meeting Rooms II**](/notes/meeting-rooms-ii-interval-heap.md) - O(n log n), O(n) - Min rooms needed
+85. [**Jump Game**](/notes/jump-game.md) - O(n), O(1) - Greedy choice
+86. [**Task Scheduling**](/notes/task-scheduling.md) - O(n log n), O(1) - Scheduling
+87. [**Candy**](/notes/candy.md) - O(n), O(n) - Distribution
 
-### HEAP (4)
-80. [**Min Heap**](/notes/min-heap.md) - O(log n) insert/delete, O(n) build - Priority queue
-81. [**Find Median (Two Heaps)**](/notes/find-median-from-data-stream.md) - O(log n) insert, O(1) median - Stream median
-82. [**Merge k Sorted**](/notes/merge-k-sorted-lists.md) - O(n log k), O(k) - Merge lists/arrays
-83. [**Heap vs BST**](/notes/min-heap-vs-binary-search-tree.md) - Conceptual understanding
+### HEAP (5)
+88. [**Min Heap**](/notes/min-heap.md) - O(log n) insert/delete, O(n) build - Priority queue
+89. [**Find Median (Two Heaps)**](/notes/find-median-from-data-stream.md) - O(log n) insert, O(1) median - Stream median
+90. [**Merge k Sorted**](/notes/merge-k-sorted-lists.md) - O(n log k), O(k) - Merge lists/arrays
+91. [**Kth Largest Element**](/notes/kth-largest-element-quick-select.md) - O(n) avg, O(k) - Quick Select
+92. [**Heap vs BST**](/notes/min-heap-vs-binary-search-tree.md) - Conceptual understanding
 
 ### SORTING (3)
-84. [**Merge Sort**](/notes/merge-sort.md) - O(n log n), O(n) - Stable divide and conquer
-85. [**Sort List**](/notes/sort-list.md) - O(n log n), O(log n) - Merge sort on linked list
-86. [**Quick Sort**](/notes/quick-sort.md) - O(n log n) avg, O(n²) worst, O(log n) space - Partition sort
+93. [**Merge Sort**](/notes/merge-sort.md) - O(n log n), O(n) - Stable divide and conquer
+94. [**Sort List**](/notes/sort-list.md) - O(n log n), O(log n) - Merge sort on linked list
+95. [**Quick Sort**](/notes/quick-sort.md) - O(n log n) avg, O(n²) worst, O(log n) space - Partition sort
+
+### BIT MANIPULATION (1)
+96. [**Single Number (XOR)**](/notes/single-number-xor.md) - O(n), O(1) - XOR properties
 
 ### OTHER TOPICS (6)
-87. [**LRU Cache**](/notes/lru-cache.md) - O(1) get/put, O(capacity) space - Cache design
-88. [**Fenwick Tree (BIT)**](/notes/fenwick-tree-binary-index-tree.md) - O(log n) update/query, O(n) space - Range queries
-89. [**Maths (Base, Modular, Log)**](/notes/maths.md) - varies - Number theory
-90. **Permutations/Subsets (Math)** - O(1) - Combinatorics
-91. [**Merge Sorted Array**](/notes/merge-sorted-array.md) - O(n+m), O(1) - Two pointer merge
-92. [**Time Complexity**](/notes/time-complexity.md) - Conceptual - Big O analysis
+97. [**LRU Cache**](/notes/lru-cache.md) - O(1) get/put, O(capacity) space - Cache design
+98. [**Fenwick Tree (BIT)**](/notes/fenwick-tree-binary-index-tree.md) - O(log n) update/query, O(n) space - Range queries
+99. [**Maths (Base, Modular, Log)**](/notes/maths.md) - varies - Number theory
+100. **Permutations/Subsets (Math)** - O(1) - Combinatorics
+101. [**Merge Sorted Array**](/notes/merge-sorted-array.md) - O(n+m), O(1) - Two pointer merge
+102. [**Time Complexity**](/notes/time-complexity.md) - Conceptual - Big O analysis
 
 ---
 
